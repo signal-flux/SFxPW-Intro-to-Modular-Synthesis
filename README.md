@@ -1,2 +1,3 @@
-# SFxPW-Intro-to-Modular-Synthesis
-Lessons Assignments, and Media Resources for SFxPW: Intro to Modular Synthesis
+# Signal Flux x Pioneer Works: Introduction to Modular Synthesis
+
+Lessons, assignments, and media resources for SFxPW: ITMS.
