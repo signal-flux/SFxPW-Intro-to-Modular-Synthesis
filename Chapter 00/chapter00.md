@@ -40,7 +40,7 @@ In the context of modular synthesizers, an individual *module* is a device that 
 
 
 
-![Doepfer Case Unpatched](./images//pw_doepfer_unpatched.png)
+![Doepfer Case Unpatched](./images/pw_doepfer_unpatched.png)
 
 
 
@@ -56,7 +56,7 @@ Each module provides its own functionality to the user.  The various operations 
 
 Some inputs may be electromechanical: *knobs*, *sliders*, *switches*, or even *touchpads* which you can control with your hands.  These elements are normally referred to as the *interface*, as they let you interact with the inner workings of the module in a performative or compositional manner; they are similar to the *volume* and *station* knobs from the radio example.  These electromechanical interface elements create *control signals* which each module uses internally to determine how to produce its output, just like the knobs on a radio.
 
-![Intellijel Metropolis, Eurorack Module](./images//pw_metropolis.png)
+![Intellijel Metropolis, Eurorack Module](./images/pw_metropolis.png)
 
 While sliders and knobs are great for performance and direct interaction, they are not unique to modular synthesizers.  What makes modular synthesizers unique are the *input jacks* and *output* *jacks*, which allow you to reconfigure how the modules send signals from one to another; this is done by connecting an output jack on one module to an input jack on another module using a *patch cable.*  When a patch cable connects two modules together, the source module outputs a signal from its jack which is sent over the cable to the connected input on the destination module.  Some inputs expect to receive an audio signal to process or transform, while other inputs expect to receive control signals.  
 
@@ -66,7 +66,7 @@ The cables are known as *patch cables* because they create a patchwork out of th
 
 The process of patching is *modular* in nature: each module performs its own distinct operations on its inputs and outputs.  How you the user, choose to connect these flexible, modular processing blocks together is where the fun - and compositional challenge - lies!  A *patch* (noun) is a particular arrangement of the connections between a given set of modules.  A "patch" might make up an entire musical composition, or it might be used as a subcomponent of a larger patch - patches within patches!
 
-![A modular synth patch](./images/pw_doepfer_patch.JPG)
+![A modular synth patch](./images/pw_doepfer_patch.jpg)
 
 ## 0.2 Voltage
 
