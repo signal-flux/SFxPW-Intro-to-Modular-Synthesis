@@ -36,8 +36,9 @@
   - Deleting modules
   - Using patch cables to connect modules
   - 'Multing' patch cables
-  - Using the VCV Rack oscillscope
+  - Using the VCV Rack oscillscope to visualize constant voltages, LFOs, and Oscillators
   - Getting sound out
+  - Using VCOs, LFOs, Attenuators/Attenuverters, and VCAs
 
 ### Key Vocabulary
 
@@ -111,21 +112,19 @@ Gates, Pulse-Width, Triggers, Clocks, Clock Dividers, Envelopes, Attack-Decay-Su
 
 ### Homework
 
-| Type       | Link                                        |
-| ---------- | ------------------------------------------- |
-| *Review*   |                                             |
-|            |                                             |
-|            |                                             |
-|            |                                             |
-|            |                                             |
-| *Preview*  |                                             |
-|            |                                             |
-|            |                                             |
-| *Activity* | [Analyze a patch]()                         |
-|            | [Research a module]()                       |
-|            | [Come to Modular on the Spot at Nowadays]() |
-|            |                                             |
-|            |                                             |
+| Type       | Link                                                         |
+| ---------- | ------------------------------------------------------------ |
+| *Review*   | [Chapter 04: Creating an Event (Clocks, Triggers, Gates, and Envelopes)]() |
+|            | [Chapter 05: Creating a Melody (Sequences, Volt-per-octave, Quantizers)]() |
+|            | [Chapter 06: Mixers]()                                       |
+|            |                                                              |
+| *Preview*  | [Chapter 07: Timbre: Waveshape, Spectrum, and Voltage Controlled Filters]() |
+|            |                                                              |
+| *Activity* | [Analyze a patch]()                                          |
+|            | [Research a module]()                                        |
+|            | [Come to *Modular on the Spot* @ Nowadays]() (optional)      |
+|            | Build a Patch that includ                                    |
+|            |                                                              |
 
 
 
@@ -154,22 +153,22 @@ Gates, Pulse-Width, Triggers, Clocks, Clock Dividers, Envelopes, Attack-Decay-Su
 
 ### Homework
 
-| Type       | Link                                        |
-| ---------- | ------------------------------------------- |
-| *Review*   |                                             |
-|            |                                             |
-|            |                                             |
-|            |                                             |
-|            |                                             |
-| *Preview*  |                                             |
-|            |                                             |
-|            |                                             |
-| *Activity* | [Analyze a patch]()                         |
-|            | [Research a module]()                       |
-|            | Make a [ModularGrid]() account              |
-|            | [Come to Modular on the Spot at Nowadays]() |
-|            |                                             |
-|            |                                             |
+| Type       | Link                     |
+| ---------- | ------------------------ |
+| *Review*   |                          |
+|            |                          |
+|            |                          |
+|            |                          |
+|            |                          |
+| *Preview*  |                          |
+|            |                          |
+|            |                          |
+| *Activity* | [Go to Control]()        |
+|            | [Make a musical patch]() |
+|            |                          |
+|            |                          |
+|            |                          |
+|            |                          |
 
 
 
