@@ -1,17 +1,19 @@
 # Intro to Modular Synthesis @ Pioneer Works
 
-
-
-
+0. [Pre-Class Prep Work](#Pre-Class Prep Work)
+1. [Week 1: Modular Thinking](#Week-1)
+2. [Week 2: Creating Events](#Week-2)
+3. [Week 3: Sculpting Timbre and Time](#Week-3)
+4. [Week 4: The Real World](#Week-4)
 
 
 
 ## Pre-Class Prep Work
 
-- Install [VCV Rack](vcvrack.com) on your laptop computer.  Once installed, 
-- Read *Chapter 00 - Intro to Modular Thinking.*  We will be going over all this (and more!) in our first class.  
-- Review these very short web demos on [pitch](https://learningsynths.ableton.com/making-changes/amplitude),  [amplitude](https://learningsynths.ableton.com/making-changes/pitch), and playing with [both](https://learningsynths.ableton.com/making-changes/play-with-amplitude-and-pitch).
-- Remember to bring your laptop, headphones, and notetaking materials!
+1. Install [VCV Rack](vcvrack.com) on your laptop computer.  Once installed, 
+2. Read [Chapter 00 - Introduction to Modular Thinking](./Chapter-00/chapter00.md).  We will be going over all this (and more!) in our first class.  
+3. Review these very short web demos on [pitch](https://learningsynths.ableton.com/making-changes/amplitude), [amplitude](https://learningsynths.ableton.com/making-changes/pitch) and [playing with both](https://learningsynths.ableton.com/making-changes/play-with-amplitude-and-pitch).
+4. Remember to bring your laptop, headphones, and notetaking materials!
 
 
 
@@ -181,6 +183,7 @@ Triggers, Rising-EdgeTrigger/Gate Threshold, Gates, Pulse-Width, Clocks, Clock M
   - MIDI
   - Audio
   - Envelope Following
+  - CV Tools
 - **Finding Modular Inspiration** (15 minutes)
 - **Planning a Case/Getting into Hardware** (20 minutes)
 - **Break** (5 minutes)
