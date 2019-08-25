@@ -1,0 +1,103 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 53,
+      "plugin": "SignalFlux",
+      "version": "1.0.0",
+      "model": "SimpleKnob",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.505499899
+        }
+      ],
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 55,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 14.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        8,
+        0
+      ]
+    },
+    {
+      "id": 56,
+      "plugin": "SignalFlux",
+      "version": "1.0.0",
+      "model": "SimpleKnob",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "pos": [
+        23,
+        0
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 89,
+      "outputModuleId": 53,
+      "outputId": 0,
+      "inputModuleId": 55,
+      "inputId": 0,
+      "color": "#c91847"
+    },
+    {
+      "id": 91,
+      "outputModuleId": 56,
+      "outputId": 0,
+      "inputModuleId": 55,
+      "inputId": 1,
+      "color": "#0c8e15"
+    }
+  ]
+}
