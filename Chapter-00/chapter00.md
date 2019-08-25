@@ -1,6 +1,6 @@
 # Chapter 0: Modular Thinking, Voltage, and Sound
 
-
+*need to create intro text*
 
 ## 0.0 Radio, Radio
 
@@ -108,3 +108,18 @@ So how do we actually do all this?  To build a patch - or analyze one - it iss i
 4. *Experimentation may involve stumbling in the dark*: Embrace it.  Enjoy it. See where it takes you, and don't stress if it's not where you expected/where you wanted.  You can always unpatch and start down a new path.
 
 In the next series of lessons, we will start building up our collection of flashlights to see through the modular thickets.
+
+## 0.4 Looking Ahead
+
+| Chapter | Focus                                                        |
+| ------- | ------------------------------------------------------------ |
+| 01      | The basics of navigating VCV Rack; getting familiar with the concept of voltage; using an oscilloscope to visualize voltage. |
+| 02      | The core building block of synthesis, the voltage-controlled oscillator; the concepts of frequency and amplitude; understanding how audio is transmitted as voltage; using low-frequency oscillators (LFOs) as control voltage to affect the pitch of audio-rate voltage-controlled oscillators (VCOs). |
+| 03      | Using voltage-controlled amplifiers to control the loudness of audio signals; amplitude. |
+| 04      | Creating an *event* - something which has a beginning, middle, and end, through the use of envelope generators (EGs); triggers, gates, and clocks: the drivers of modular time. |
+| 05      | Accurately controlling the pitch of oscillators using the volt-per-octave tuning standard, quantizers, and scales. |
+| 06      | Using mixers to combine audio signals; using mixers to combine control voltage signals. |
+| 07      | Sculpting the timbre of sound by controlling waveshape and using voltage-controlled filters (VCFs); the frequency domain and fourier analysis. |
+| 08      | Techniques for creating rhythm out of clock streams.         |
+| 09      | Utilities like sample+hold and slew limiting.                |
+| 10      | Controlled randomness.                                       |

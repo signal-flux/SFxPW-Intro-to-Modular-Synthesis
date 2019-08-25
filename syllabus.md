@@ -19,6 +19,10 @@
 
 ## Week 1
 
+### Modular Thinking
+
+*need to create gist for the week*
+
 ### Agenda
 
 - **Introductions** (10 minutes)
@@ -72,6 +76,10 @@ Pitch, Timbre, Loudness, Voltage, Signal, Input, Output, Control Voltage (CV), M
 
 
 ## Week 2
+
+### Creating Events
+
+*need to create gist for the week and documents for the homework assignments*
 
 ### Agenda
 
@@ -132,6 +140,10 @@ Triggers, Rising-EdgeTrigger/Gate Threshold, Gates, Pulse-Width, Clocks, Clock M
 
 ## Week 3
 
+### Sculpting Timbre and Time
+
+*need to create gist for the day and plan for the lab and flesh out homework assignments*
+
 ### Agenda
 
 - **Review** (15 minutes)
@@ -175,6 +187,10 @@ Triggers, Rising-EdgeTrigger/Gate Threshold, Gates, Pulse-Width, Clocks, Clock M
 
 
 ## Week 4
+
+### The Real World
+
+*need to create gist for the week, flesh out bullets for the other sections of the agenda, along with vocab and suggestions for where to go next*
 
 ### Agenda
 
