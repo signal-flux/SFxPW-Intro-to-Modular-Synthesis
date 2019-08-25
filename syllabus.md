@@ -53,13 +53,13 @@ Pitch, Timbre, Loudness, Voltage, Signal, Input, Output, Control Voltage (CV), M
 | Type                  | Link                                                         |
 | --------------------- | ------------------------------------------------------------ |
 | *Review*              | [Vocabulary]()                                               |
-|                       | [Chapter 00: Introduction to Modular Thinking]()             |
-|                       | [Chapter 01: Introduction to VCV Rack and Generating Voltage]() |
-|                       | [Chapter 02: Voltage-Controlled Oscillators: Audio and LFOs]() |
-|                       | [Chapter 03: Voltage Controlled Amplifiers]()                |
+|                       | [Chapter 00: Introduction to Modular Thinking](./Chapter-00/chapter00.md) |
+|                       | [Chapter 01: Introduction to VCV Rack and Generating Voltage](./Chapter-01/chapter01.md) |
+|                       | [Chapter 02: Voltage-Controlled Oscillators](./Chapter-02/chapter02.md) |
+|                       | [Chapter 03: Voltage Controlled Amplifiers](./Chapter-03/chapter03.md) |
 |                       |                                                              |
-| *Preview*             | [Chapter 04: Creating an Event (Clocks, Triggers, Gates, and Envelopes)]() |
-|                       | [Chapter 05: Creating a Melody (Sequences, Volt-per-octave, Quantizers)]() |
+| *Preview*             | [Chapter 04: Creating an Event (Clocks, Triggers, Gates, and Envelopes)](./Chapter-04/chapter04.md) |
+|                       | [Chapter 05: Creating a Melody (Sequences, Volt-per-octave, Quantizers)](./Chapter-05/chapter05.md) |
 |                       |                                                              |
 | *Suggested Listening* | [Blawan - *Wet Will Always Dry* (2018)]()                    |
 |                       | [Bernard Parmegiani - *La Création Du Monde* (1984)]()       |
