@@ -84,7 +84,15 @@ While audio-rate signals move extremely fast, control signals (aka *control volt
 
 ## 0.3 Modular Synthesis
 
-Composing, performing, improvising, and experimenting with a modular synthesizer involves controlling various parameters of sound across across many different time scales.  Parameters of sound to compose with include (but are not limited to): Loudness, timbre, pitch, noise, space, density, harmony.  The different time scales to be considered when composing with a modular synthesizer may be broadly painted in three colors:
+Composing, performing, improvising, and experimenting with a modular synthesizer involves controlling various parameters of sound across across many different time scales.  Parameters of sound to compose with include (but are not limited to): Loudness, timbre, pitch, noise, space, density, harmony.  Control voltage tools like low-frequency oscillators, envelopes, sequences, and more are used to *modulate* these parameters, or change them over time.  Click the links in the following table to hear a few different types of modulation applied to the three core parameters of tonal sound. 
+
+|              | LFO                     | Envelope                     | Sequence                     |
+| ------------ | ----------------------- | ---------------------------- | ---------------------------- |
+| **Pitch**    | LFO applied to Pitch    | Envelope applied Pitch       | Sequence applied to Pitch    |
+| **Timbre**   | LFO applied to Timbre   | Envelope applied to Timbre   | Sequence applied to Timbre   |
+| **Loudness** | LFO applied to Loudness | Envelope applied to Loudness | Sequence applied to Loudness |
+
+The different time scales to be considered when composing with a modular synthesizer may be broadly painted in three colors:
 
 - Micro (shortest): Individual sonic events, ranging from a single grain of sound to a full-bodied note or a percussive strike.  From single strokes of a pen to letters to words.
 - Meso (middle): Musical or sonic gestures, collections of micro events, textures, verses. From phrases to sentences to paragraphs.
