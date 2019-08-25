@@ -1,6 +1,6 @@
 # Intro to Modular Synthesis @ Pioneer Works
 
-0. [Pre-Class Prep Work](#Pre-Class Prep Work)
+0. [Pre-Class Prep Work](#Pre-Class-Prep Work)
 1. [Week 1: Modular Thinking](#Week-1)
 2. [Week 2: Creating Events](#Week-2)
 3. [Week 3: Sculpting Timbre and Time](#Week-3)
@@ -116,11 +116,11 @@ Triggers, Rising-EdgeTrigger/Gate Threshold, Gates, Pulse-Width, Clocks, Clock M
 
 | Type       | Link                                                         |
 | ---------- | ------------------------------------------------------------ |
-| *Review*   | [Chapter 04: Creating an Event (Clocks, Triggers, Gates, and Envelopes)]() |
-|            | [Chapter 05: Creating a Melody (Sequences, Volt-per-octave, Quantizers)]() |
-|            | [Chapter 06: Mixers]()                                       |
+| *Review*   | [Chapter 04: Creating an Event (Clocks, Triggers, Gates, and Envelopes)](./Chapter-04/chapter04.md) |
+|            | [Chapter 05: Creating a Melody (Sequences, Volt-per-octave, Quantizers)](./Chapter-05/chapter05.md) |
+|            | [Chapter 06: Mixers](./Chapter-06/chapter06.md)              |
 |            |                                                              |
-| *Preview*  | [Chapter 07: Timbre: Waveshape, Spectrum, and Voltage Controlled Filters]() |
+| *Preview*  | [Chapter 07: Timbre: Waveshape, Spectrum, and Voltage Controlled Filters](./Chapter-07/chapter07.md) |
 |            |                                                              |
 | *Activity* | [Analyze a patch]()                                          |
 |            | [Research a module]()                                        |
