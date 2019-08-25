@@ -84,13 +84,13 @@ While audio-rate signals move extremely fast, control signals (aka *control volt
 
 ## 0.3 Modular Synthesis
 
-Composing, performing, improvising, and experimenting with a modular synthesizer involves controlling various parameters of sound across across many different time scales.  Parameters of sound to compose with include (but are not limited to): Loudness, timbre, pitch, noise, space, density, harmony.  Control voltage tools like low-frequency oscillators, envelopes, sequences, and more are used to *modulate* these parameters, or change them over time.  Click the links in the following table to hear a few different types of modulation applied to the three core parameters of tonal sound. 
+Composing, performing, improvising, and experimenting with a modular synthesizer involves controlling various parameters of sound across across many different time scales.  Parameters of sound to compose with include (but are not limited to): Loudness, timbre, pitch, noise, space, density, harmony.  Control voltage tools like low-frequency oscillators, envelopes, sequences, and more are used to *modulate* these parameters, or change them over time.  Click the links in the following table to hear a few different types of modulation (LFOs, Envelopes, and Sequences) applied to the three core parameters of tonal sound (Pitch, Timbre, and Loudness). We will explore each type of modulation and each parameter in much greater depth throughout the course.  Come back once you have completed this class to read the previous sentence and enjoy the bad pun buried within it!
 
-|              | LFO                     | Envelope                     | Sequence                     |
-| ------------ | ----------------------- | ---------------------------- | ---------------------------- |
-| **Pitch**    | LFO applied to Pitch    | Envelope applied Pitch       | Sequence applied to Pitch    |
-| **Timbre**   | LFO applied to Timbre   | Envelope applied to Timbre   | Sequence applied to Timbre   |
-| **Loudness** | LFO applied to Loudness | Envelope applied to Loudness | Sequence applied to Loudness |
+|              | LFO                                                          | Envelope                                                     | Sequence                                                     |
+| ------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **Pitch**    | [LFO applied to Pitch](https://www.dropbox.com/s/04kkwjqc0pvzxmb/pitch-lfo.wav?dl=0) | [Envelope applied Pitch](https://www.dropbox.com/s/ynvfxpgmd30o3us/pitch-envelope.wav?dl=0) | [Sequence applied to Pitch](https://www.dropbox.com/s/69mcoj4hf8ggxhs/pitch-sequence.wav?dl=0) |
+| **Timbre**   | [LFO applied to Timbre](https://www.dropbox.com/s/a0mmldmlh3f0fxp/timbre-lfo.wav?dl=0) | [Envelope applied to Timbre](https://www.dropbox.com/s/amdnqaundukbf2k/timbre-envelope.wav?dl=0) | [Sequence applied to Timbre](https://www.dropbox.com/s/4mbglav19p98btg/timbre-sequence.wav?dl=0) |
+| **Loudness** | [LFO applied to Loudness](https://www.dropbox.com/s/1qvhf0on97qemb1/loudness-lfo.wav?dl=0) | [Envelope applied to Loudness](https://www.dropbox.com/s/qw32hpao67k4oi6/loudness-envelope.wav?dl=0) | [Sequence applied to Loudness](https://www.dropbox.com/s/5fxa4pecb3wyhpd/loudness-squence.wav?dl=0) |
 
 The different time scales to be considered when composing with a modular synthesizer may be broadly painted in three colors:
 
