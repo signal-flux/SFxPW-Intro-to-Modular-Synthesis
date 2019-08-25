@@ -108,7 +108,7 @@ Pitch, Timbre, Loudness, Voltage, Signal, Input, Output, Control Voltage (CV), M
 
 [Click here for definitions](./glossary.md#week-2)
 
-Gates, Pulse-Width, Triggers, Clocks, Clock Dividers, Envelopes, Attack-Decay-Sustain-Release, Scale, Volt-Per-Octave (V/oct), Sequence/Sequencers, Quantizer, Sample & Hold, Unity Mixer, Mixer
+Triggers, Rising-EdgeTrigger/Gate Threshold, Gates, Pulse-Width, Clocks, Clock Modulation, Clock Dividers, Envelope, Envelope Generator (EG), Attack, Decay, Sustain, Release, Interval, Octave, Scale, Volt-Per-Octave (V/oct), Sequence/Sequencers, Quantizer, Sample & Hold, Unity Mixer, Mixer
 
 ### Homework
 
@@ -123,7 +123,7 @@ Gates, Pulse-Width, Triggers, Clocks, Clock Dividers, Envelopes, Attack-Decay-Su
 | *Activity* | [Analyze a patch]()                                          |
 |            | [Research a module]()                                        |
 |            | [Come to *Modular on the Spot* @ Nowadays]() (optional)      |
-|            | Build a Patch that includ                                    |
+|            |                                                              |
 |            |                                                              |
 
 
