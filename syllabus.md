@@ -6,7 +6,7 @@
 
 
 
-## Pre-class Prep Work
+## Pre-Class Prep Work
 
 - Install [VCV Rack](vcvrack.com) on your laptop computer.  Once installed, 
 - Read *Chapter 00 - Intro to Modular Thinking.*  We will be going over all this (and more!) in our first class.  
