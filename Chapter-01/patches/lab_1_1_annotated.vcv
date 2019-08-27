@@ -1,0 +1,239 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 42,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "SimpleKnob",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 46,
+      "pos": [
+        32,
+        0
+      ]
+    },
+    {
+      "id": 43,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 14.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        46,
+        0
+      ]
+    },
+    {
+      "id": 44,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 14.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        46,
+        1
+      ]
+    },
+    {
+      "id": 45,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "SimpleKnob",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "pos": [
+        32,
+        1
+      ]
+    },
+    {
+      "id": 46,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 51,
+      "rightModuleId": 42,
+      "text": "1) Connect the Unipolar Offset output to the Scope's X-In.\n\n2) Try adjusting the Unipolar Offset's knob.  What happens on the Scope as the knob turns clockwise? And counterclockwise?  \n\n3) The blue line on the scope is called a trace.  The scope visualizes the current voltage fed into the X- and Y-inputs as two separate traces (red and blue respectively).\n\n4) The x-axis of the display is Time, while the y-axis of the display is voltage level. The horizontal line at the middle of the scope corresponds to a voltage level of 0V.  The top of the scope is +10V, and the bottom is -10V.",
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 47,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "BipolarKnob",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 49,
+      "pos": [
+        67,
+        0
+      ]
+    },
+    {
+      "id": 48,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "BipolarKnob",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 50,
+      "pos": [
+        67,
+        1
+      ]
+    },
+    {
+      "id": 49,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 47,
+      "text": "5) Connect the Bipolar Offset's output to the Scope's Y-In.\n\n6) Notice that the knob is at noon, but the pink trace for the Y-In is at 0V.  How is this different from when the Unipolar Offset is at noon?\n\n7) Try adjusting the Bipolar Offset knob clockwise and counterclockwise.  What is the minimum and maximum voltage it can generate?\n\n8) The Bipolar Offset generates voltages from -5V to +5V, where as the Unipolar Offset generates voltages from 0V to +10V. \n\n\n      ",
+      "pos": [
+        73,
+        0
+      ]
+    },
+    {
+      "id": 50,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 48,
+      "text": "Your patch should look like this row when you are done!",
+      "pos": [
+        73,
+        1
+      ]
+    },
+    {
+      "id": 51,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 46,
+      "text": "The following notepads will walk you through this exercise! ",
+      "pos": [
+        0,
+        0
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 43,
+      "outputModuleId": 45,
+      "outputId": 0,
+      "inputModuleId": 44,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 44,
+      "outputModuleId": 48,
+      "outputId": 0,
+      "inputModuleId": 44,
+      "inputId": 1,
+      "color": "#c91847"
+    }
+  ]
+}

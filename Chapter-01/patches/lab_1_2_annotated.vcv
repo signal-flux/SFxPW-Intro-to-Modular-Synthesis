@@ -1,0 +1,311 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 57,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 14.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 59,
+      "rightModuleId": 68,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        51,
+        0
+      ]
+    },
+    {
+      "id": 58,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 62,
+      "rightModuleId": 63,
+      "text": "1) Connect the output of the Unipolar Offset to the X-input on the left Scope.\n\n2) Connect the same output to the X-input on the right scope. To this, you will need to \"mult\" the signal: i.e. send a single signal from one source to two destinations.  First click and hold the *destination* to create a patch cable, then drag back to the *source*.  If you click and drag on the source first, you will lose the patch cable that is already there.\n\n3) Set the TIME knob on the left Sope fully CCW, and the TIME knob on the right Scope fully CW.\n\n3) Play with the Unipolar Offset knob.  How are the Scope displays Different?     ",
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 59,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "SimpleKnob",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 63,
+      "rightModuleId": 57,
+      "pos": [
+        45,
+        0
+      ]
+    },
+    {
+      "id": 63,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 14.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 58,
+      "rightModuleId": 59,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        32,
+        0
+      ]
+    },
+    {
+      "id": 62,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 58,
+      "text": "The notepads will guide you through the exercise!",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 64,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 6.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 65,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        32,
+        1
+      ]
+    },
+    {
+      "id": 65,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "SimpleKnob",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 64,
+      "rightModuleId": 66,
+      "pos": [
+        45,
+        1
+      ]
+    },
+    {
+      "id": 66,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 16.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 65,
+      "rightModuleId": 67,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        51,
+        1
+      ]
+    },
+    {
+      "id": 67,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 66,
+      "text": "Your modules should look like this when you are done - note the different positions of the \"TIME\" knobs on the two Scope modules!",
+      "pos": [
+        64,
+        1
+      ]
+    },
+    {
+      "id": 68,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 57,
+      "text": "4) The TTME knob controls the *time-scale* of the X-axis on each Scope.  It controls how slowly the Scope's display gets updated with new information - in other words, it controls how long a timespan, or how far into the past, the Scope is visualizing.  \n\n5) Fully CCW, the Scope displays a very long time span, and you should be able to see very slow changes.  This is the most \"zoomed out\" (like viewing a century or a millenium on a timeline).  \n\n6) Fully CW, the Scope displays a very short time span and is useful for seeing the instantaneous value of a voltage, or quickly changing voltages like audio signals.  This is like viewing days/hours on a timeline. ",
+      "pos": [
+        64,
+        0
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 95,
+      "outputModuleId": 65,
+      "outputId": 0,
+      "inputModuleId": 66,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 96,
+      "outputModuleId": 65,
+      "outputId": 0,
+      "inputModuleId": 64,
+      "inputId": 0,
+      "color": "#0986ad"
+    }
+  ]
+}
