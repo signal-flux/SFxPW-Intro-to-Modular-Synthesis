@@ -16,29 +16,29 @@
 
 ### Modular Thinking
 
-*need to create gist for the week*
+*This week, we will learn about the physics of sound, the fundamental concepts of modular synthesis like signal flow, patching, control voltage, and modulation, and get familiar with VCV Rack, an open-source modular Eurorack modular synthesis emulator.*
 
 ### Agenda
 
-- **Introductions** (10 minutes)
-- **Course Overview** (10 minutes)
-- **Modular Thinking** (20 minutes)
+- **Introductions**
+- **Course Overview**
+- **Modular Thinking**
   - The Parameters of Sound
   - The Electronic Transmission of Sound
   - So What's a Patch?
   - Control Voltage and Modulation
-- **Modular Building Blocks** (30 minutes)
+- **Modular Building Blocks**
   - Oscilloscopes: Visualizing Voltage
   - Oscillators: Frequency and Amplitude
   - Attenuators & Voltage Controlled Amplifiers: Amplitude Control
 - **Break** (5 minutes)
-- **Lab - Introduction to VCV Rack** (45 minutes)
+- **Lab - Introduction to VCV Rack**
   - Adding modules
   - Deleting modules
   - Using patch cables to connect modules
   - 'Multing' patch cables
   - Using the VCV Rack oscillscope to visualize constant voltages, LFOs, and Oscillators
-  - Getting sound out
+  - Getting sound out of VCV Rack.
   - Using VCOs, LFOs, Attenuators/Attenuverters, and VCAs
 
 ### Key Vocabulary
@@ -52,17 +52,17 @@ Pitch, Timbre, Loudness, Voltage, Signal, Input, Output, Control Voltage (CV), M
 | Type                  | Link                                                         |
 | --------------------- | ------------------------------------------------------------ |
 | *Review*              | [Vocabulary]()                                               |
-|                       | [Chapter 00: Introduction to Modular Thinking](./Chapter-00/chapter00.md) |
-|                       | [Chapter 01: Introduction to VCV Rack and Generating Voltage](./Chapter-01/chapter01.md) |
-|                       | [Chapter 02: Voltage-Controlled Oscillators](./Chapter-02/chapter02.md) |
-|                       | [Chapter 03: Voltage Controlled Amplifiers](./Chapter-03/chapter03.md) |
+|                       | [00: Introduction to Modular Thinking](./Chapter-00/chapter00.md) |
+|                       | [01: Introduction to VCV Rack and Generating Voltage](./Chapter-01/chapter01.md) |
+|                       | [02: Voltage-Controlled Oscillators](./Chapter-02/chapter02.md) |
+|                       | [03: Voltage Controlled Amplifiers](./Chapter-03/chapter03.md) |
 |                       |                                                              |
-| *Preview*             | [Chapter 04: Creating an Event (Clocks, Triggers, Gates, and Envelopes)](./Chapter-04/chapter04.md) |
-|                       | [Chapter 05: Creating a Melody (Sequences, Volt-per-octave, Quantizers)](./Chapter-05/chapter05.md) |
+| *Preview*             | [04: Creating an Event (Clocks, Triggers, Gates, and Envelopes)](./Chapter-04/chapter04.md) |
+|                       | [05: Creating a Melody (Sequences, Volt-per-octave, Quantizers)](./Chapter-05/chapter05.md) |
 |                       |                                                              |
-| *Suggested Listening* | [Blawan - *Wet Will Always Dry* (2018)]()                    |
-|                       | [Bernard Parmegiani - *La Création Du Monde* (1984)]()       |
-|                       | [Laurie Spiegel - *The Expanding Universe* (1980)]()         |
+| *Suggested Listening* | Blawan - *Wet Will Always Dry* (2018) - [[*Direct Download*](https://www.dropbox.com/sh/tfi694y0woky5q6/AACL5mXmbMi_ysIDs3Vl6BiHa?dl=0), [*Spotify*](https://open.spotify.com/album/0tAeHP4BXGplGcD6rdYXjy?si=8quFgbnMQbO3RkgIuDttPQ)] |
+|                       | Bernard Parmegiani - *La Création Du Monde* (1984) - [[*Direct Download*](),[*Spotify*]()] |
+|                       | Laurie Spiegel - *The Expanding Universe* (1980) - [[*Direct Download*](),[*Spotify*]()] |
 |                       | [Suzanne Ciani on Modular Synthesis (YouTube)](https://www.youtube.com/watch?v=QRx-YdqHLus&t=250s) |
 |                       |                                                              |
 

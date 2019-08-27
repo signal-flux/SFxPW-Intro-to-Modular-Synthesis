@@ -8,11 +8,13 @@ While VCV Rack is a digital environment, we will continue to talk about the sign
 
 In these first two labs, we will look at a critical tool for understanding *signals*: the *oscilloscope*.  An oscilloscope allows you to visualize the voltage level of a signal in order to understand how the signal is actually changing over time.  Understanding how a signal changes over time is critical to understanding how the signal is affecting any of the other modules it might be connected to.  We will also look at two simple signal generator modules which output a constant voltages.  The magnitude or *level* of the constant voltage can be set by a knob.
 
-So, let's begin!  Click on the links to download the two labs, which will walk you step-by-step through the basics of viewing a voltage with an oscilloscope.
+## Labs
 
-[Lab 1.1: Generating Voltages and Viewing with the Oscilloscope](./patches/lab_1_1_annotated.vcv)
+So, let's begin!  Right-click (or alt/opt-click) on the links below; then click `Save as ..` to download the two VCV Rack labs.  Once download, double-click them in your file browser, or open them using VCV Rack's `File > Open` dialog.  The two labs will walk you step-by-step through the basics of viewing a voltage with an oscilloscope.
 
-[Lab 1.2: Oscilloscope Timescales](lab_1_2_annotated.vcv)
+[Lab 1.1: Generating Voltages and Viewing with the Oscilloscope](./patches/lab_1_1_annotated.vcv) (`Right-click > Save as ...`)
+
+[Lab 1.2: Oscilloscope Timescales](lab_1_2_annotated.vcv) (`Right-click > Save as ...`)
 
 ## Additional Notes on Lab 1.1 and 1.2
 
