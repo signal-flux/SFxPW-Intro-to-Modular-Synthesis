@@ -29,7 +29,7 @@
 - **Course Overview** (10 minutes)
 - **Modular Thinking** (20 minutes)
   - The Parameters of Sound
-  - The Electronic Reproduction of Sound
+  - The Electronic Transmission of Sound
   - So What's a Patch?
   - Control Voltage and Modulation
 - **Modular Building Blocks** (30 minutes)
