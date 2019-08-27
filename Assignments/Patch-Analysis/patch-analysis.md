@@ -1,4 +1,16 @@
-# Patch Analysis Rules of Thumb
+# Patch Analysis
+
+One of the most important tools as you become a synthesist is becoming self-sufficient.  No matter how much you think you know, you will never know anything!  Knowing *what to do* when you don't know something though is the most valuable tool you can have!  This assignment will help you develop that skill.
+
+Your task is to break down the following patch. There are further instructions within the patch, as well as a guide for analyzing patches included below.
+
+[Patch to Analyze](./patch-for-analysis.vcv) 
+
+Once you think you have a good sense of what is happening in the patch, please look over the annotated version which explains what every part of the patch is doing!
+
+[Patch to Analyze, Analyzed](./patch-for-analysis-annotated.vcv)
+
+## Analysis Principles
 
 When looking at a patch - whether in a tutorial video, on a forum, with a collaborator, in this class, or even after you have been patching in a flow/experimental-state for a while - it can be quite overwhelming to figure out what is going on.  However, if you make the task of analyzing a modular synthesis patch more... modular... it becomes much more manageable!  Here are some useful tools to help you break the task of "analyze this patch" down into smaller parts.
 

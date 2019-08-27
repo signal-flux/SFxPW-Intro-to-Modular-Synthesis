@@ -130,8 +130,8 @@ Triggers, Rising-EdgeTrigger/Gate Threshold, Gates, Pulse-Width, Clocks, Clock M
 |            |                                                              |
 | *Preview*  | [Chapter 07: Timbre: Waveshape, Spectrum, and Voltage Controlled Filters](./Chapter-07/chapter07.md) |
 |            |                                                              |
-| *Activity* | [Analyze a patch]()                                          |
-|            | [Research a module]()                                        |
+| *Activity* | [Analyze a patch](./patch-analysis.md)                       |
+|            | [Research a module](./assignments/Module-Breakdown/module-breakdown.md) |
 |            | [Come to *Modular on the Spot* @ Nowadays]() (optional)      |
 |            |                                                              |
 |            |                                                              |
@@ -167,22 +167,22 @@ Triggers, Rising-EdgeTrigger/Gate Threshold, Gates, Pulse-Width, Clocks, Clock M
 
 ### Homework
 
-| Type       | Link                     |
-| ---------- | ------------------------ |
-| *Review*   |                          |
-|            |                          |
-|            |                          |
-|            |                          |
-|            |                          |
-| *Preview*  |                          |
-|            |                          |
-|            |                          |
-| *Activity* | [Go to Control]()        |
-|            | [Make a musical patch]() |
-|            |                          |
-|            |                          |
-|            |                          |
-|            |                          |
+| Type       | Link                                                         |
+| ---------- | ------------------------------------------------------------ |
+| *Review*   |                                                              |
+|            |                                                              |
+|            |                                                              |
+|            |                                                              |
+|            |                                                              |
+| *Preview*  |                                                              |
+|            |                                                              |
+|            |                                                              |
+| *Activity* | [Visit Control](./assignments/Visit-Control/visit-control.md) |
+|            | [Make a musical patch]()                                     |
+|            |                                                              |
+|            |                                                              |
+|            |                                                              |
+|            |                                                              |
 
 
 
