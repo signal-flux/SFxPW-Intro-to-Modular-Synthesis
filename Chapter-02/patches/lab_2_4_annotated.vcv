@@ -129,7 +129,7 @@
       "model": "Notes",
       "params": [],
       "leftModuleId": 149,
-      "text": "3a) An \"attenuverter\" acts identically to an attuator when you turn the knob from noon to fully clockwise.\n\n3b) An \"attenuverter\" inverts the input signal before attenuating as you turn the knob from noon to fully counterclockwise. When fully counterclockwise, the original signal is passed.\n\n3c) In terms of multiplication, you can think of an attenuverter as performing the following actions:\n\nMultiply by -1 when fully CCW.\nMultiply by 0 when at noon.\nMultiply by +1 when fully CW.\n\nScale proportionally at intermediate positions.      \n   ",
+      "text": "3a) An attenuverter acts identically to an attenuator when you turn the knob from noon to fully clockwise.\n\n3b) An \"attenuverter\" inverts the input signal before attenuating as you turn the knob from noon to fully counterclockwise. When fully counterclockwise, the original signal is passed but with opposite polarity (inverted).\n\n3c) In terms of multiplication, you can think of an attenuverter as performing the following actions:\n\nMultiply by -1 when fully CCW.\nMultiply by 0 when at noon.\nMultiply by +1 when fully CW.\n\nScale proportionally at intermediate positions.      \n   ",
       "pos": [
         47,
         0

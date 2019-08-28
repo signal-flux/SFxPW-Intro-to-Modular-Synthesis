@@ -1,10 +1,10 @@
 {
-  "version": "1.1.3",
+  "version": "1.1.1",
   "modules": [
     {
       "id": 57,
       "plugin": "Fundamental",
-      "version": "1.2.1",
+      "version": "1.2.0",
       "model": "Scope",
       "params": [
         {
@@ -44,7 +44,7 @@
       "rightModuleId": 68,
       "data": {
         "lissajous": 0,
-        "external": 0
+        "external": 1
       },
       "pos": [
         51,
@@ -54,12 +54,12 @@
     {
       "id": 58,
       "plugin": "Core",
-      "version": "1.1.3",
+      "version": "1.0.0",
       "model": "Notes",
       "params": [],
       "leftModuleId": 62,
       "rightModuleId": 63,
-      "text": "1) Connect the output of the Unipolar Offset to the X-input on the left Scope.\n\n2) Connect the same output to the X-input on the right scope. To this, you will need to \"mult\" the signal: i.e. send a single signal from one source to two destinations.  First click and hold the *destination* to create a patch cable, then drag back to the *source*.  If you click and drag on the source first, you will lose the patch cable that is already there.\n\n3) Set the TIME knob on the left Scope fully CCW, and the TIME knob on the right Scope fully CW.\n\n3) Play with the Unipolar Offset knob.  How are the Scope displays Different?     ",
+      "text": "1) Connect the output of the Unipolar Offset to the X-In on the left Scope.\n\n2) Connect the Unipolar Offset output to the X-In on the right scope. To do this, you will need to \"MULT\" the signal: i.e. send a single signal from one source to two destinations. Instead of clicking on the Unipolar Offset output, Cmd-Click or Ctrl-Click the output jack to create a second patch cable which you can drag to the destination input (X-in on the second Scope).\n\n3) Set the TIME knob on the left Scope fully CCW, and the TIME knob on the right Scope fully CW.\n\n4) Play with the Unipolar Offset knob.  How are the Scope displays similar? Dfferent?     ",
       "pos": [
         16,
         0
@@ -86,7 +86,7 @@
     {
       "id": 63,
       "plugin": "Fundamental",
-      "version": "1.2.1",
+      "version": "1.2.0",
       "model": "Scope",
       "params": [
         {
@@ -126,7 +126,7 @@
       "rightModuleId": 59,
       "data": {
         "lissajous": 0,
-        "external": 0
+        "external": 1
       },
       "pos": [
         32,
@@ -136,7 +136,7 @@
     {
       "id": 62,
       "plugin": "Core",
-      "version": "1.1.3",
+      "version": "1.0.0",
       "model": "Notes",
       "params": [],
       "rightModuleId": 58,
@@ -149,7 +149,7 @@
     {
       "id": 64,
       "plugin": "Fundamental",
-      "version": "1.2.1",
+      "version": "1.2.0",
       "model": "Scope",
       "params": [
         {
@@ -188,7 +188,7 @@
       "rightModuleId": 65,
       "data": {
         "lissajous": 0,
-        "external": 0
+        "external": 1
       },
       "pos": [
         32,
@@ -216,7 +216,7 @@
     {
       "id": 66,
       "plugin": "Fundamental",
-      "version": "1.2.1",
+      "version": "1.2.0",
       "model": "Scope",
       "params": [
         {
@@ -256,7 +256,7 @@
       "rightModuleId": 67,
       "data": {
         "lissajous": 0,
-        "external": 0
+        "external": 1
       },
       "pos": [
         51,
@@ -266,7 +266,7 @@
     {
       "id": 67,
       "plugin": "Core",
-      "version": "1.1.3",
+      "version": "1.0.0",
       "model": "Notes",
       "params": [],
       "leftModuleId": 66,
@@ -279,11 +279,11 @@
     {
       "id": 68,
       "plugin": "Core",
-      "version": "1.1.3",
+      "version": "1.0.0",
       "model": "Notes",
       "params": [],
       "leftModuleId": 57,
-      "text": "4) The TTME knob controls the *time-scale* of the X-axis on each Scope.  It controls how slowly the Scope's display gets updated with new information - in other words, it controls how long a timespan, or how far into the past, the Scope is visualizing.  \n\n5) Fully CCW, the Scope displays a very long time span, and you should be able to see very slow changes.  This is the most \"zoomed out\" (like viewing a century or a millenium on a timeline).  \n\n6) Fully CW, the Scope displays a very short time span and is useful for seeing the instantaneous value of a voltage, or quickly changing voltages like audio signals.  This is like viewing days/hours on a timeline. ",
+      "text": "5) The TTME knob controls the *time-scale* of the X-axis on each Scope.  It controls how slowly the Scope's display gets updated with new information - in other words, it controls how long a timespan the Scope visualizes, or how far into the past you can see.  \n\n6) Fully CCW, the Scope displays a very long timespan, and you should be able to see very slow changes.  This is the most \"zoomed out\" (like viewing a century or a millenium on a timeline).  \n\n7) Fully CW, the Scope displays a very short time span and is useful for seeing the instantaneous value of a voltage, or quickly changing voltages like audio signals.  This is like viewing days/hours on a timeline. ",
       "pos": [
         64,
         0

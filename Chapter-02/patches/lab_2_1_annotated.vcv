@@ -7,7 +7,7 @@
       "version": "1.0.0",
       "model": "Notes",
       "params": [],
-      "text": "The LFO-1 module is a *low-frequency oscillator*; this means that it produces a voltage which rises and falls in a repetitive pattern at a constant rate. \n\nThere are a lot of knobs and switches on it.  For now, we will only focus on the knob labeled \"FREQ\" (frequency), and the bottom row of output jacks (NB: All output jacks from the VCV Rack \"Fundamental Library\" have black boxes around them.\n\nFollow the instructions on the notepads to complete the lab! ",
+      "text": "The LFO-1 module is a *LOW-FREQUENCY OSCILLATOR*.  This means that it produces a voltage which rises and falls in a repetitive pattern at a constant, adjustable rate. \n\nThere are a lot of knobs and switches on it.  For now, we will only focus on the knob labeled \"FREQ\" (frequency), and the bottom row of output jacks.  NB: All output jacks from the VCV Rack \"Fundamental Library\" have black boxes around them.\n\nFollow the instructions on the notepads to complete the lab! ",
       "pos": [
         0,
         0
@@ -98,7 +98,7 @@
       "rightModuleId": 82,
       "data": {
         "lissajous": 0,
-        "external": 0
+        "external": 1
       },
       "pos": [
         60,
@@ -112,7 +112,7 @@
       "model": "Notes",
       "params": [],
       "rightModuleId": 78,
-      "text": "1) Set the TIME scale knob on the Scope to about 9 o'clock. Also click on the \"INT/EXT\" button on the Scope to set the scope to EXT mode (don't worry about what this does - we will cover it another time).    \n\n2) Connect the SIN (short for \"sine wave\") output on the LFO to the X-In on the Scope.\n\n3) What do you see on the Scope? Observe how the LFO-1 is outputting a voltage which rises and falls in a repetitive pattern.  \n\n5) Each complete iteration of the pattern is called a *CYCLE*.\n\n6) The time it takes to complete one cycle is called the *PERIOD*. \n\n",
+      "text": " 1) Connect the SIN (short for \"sine wave\") output on the LFO to the X-In on the Scope.\n\n2) Set the TIME scale knob on the Scope to about 9 o'clock\n\n3) What do you see on the Scope? Observe how the LFO-1 is outputting a voltage which rises and falls in a repetitive pattern.  \n\n5) Each complete iteration of the pattern is called a *CYCLE*.\n\n6) The time it takes to complete one cycle is called the *PERIOD*. \n\n",
       "pos": [
         18,
         0
@@ -126,7 +126,7 @@
       "params": [],
       "leftModuleId": 78,
       "rightModuleId": 79,
-      "text": "7) The \"FREQUENCY\" of an oscillator is the number of cycles it completes in one second and is measured in Hertz (1 Hz = 1 cycle per second = 1 c.p.s.).\n\n8) Adjust the knob labeled \"FREQ\" - turn it clockwise (CW) by clicking hte knob and dragging up, CCW by clicking the knob and dragging down.  \n\n8) How does the shape change?\n\n9) As you turn the knob CCW, the oscillator takes longer to complete one cycle, meaning it has a lower frequency (longer period).  As you turn the knob CW, the oscillator takes less time to complete one cycle, meaning it has a higher frequency (shorter period). \n",
+      "text": "7) The \"FREQUENCY\" of an oscillator is the number of cycles it completes in one second and is measured in Hertz (1 Hz = 1 cycle per second = 1 c.p.s.).\n\n8) Adjust the knob labeled \"FREQ\" - turn it clockwise (CW) by clicking the knob and dragging up, CCW by clicking the knob and dragging down.  \n\n8) How does the shape change?\n\n9) As you turn the knob CCW, the oscillator takes longer to complete one cycle, meaning it has a lower frequency (longer period).  As you turn the knob CW, the oscillator takes less time to complete one cycle, meaning it has a higher frequency (shorter period). \n",
       "pos": [
         44,
         0
@@ -139,7 +139,7 @@
       "model": "Notes",
       "params": [],
       "leftModuleId": 79,
-      "text": "9) Try setting the Oscillator's Frequency knob to about 9 o'clock.  \n\n10) Reset the Oscilloscope's TIME scale knob to its default position by double clicking on it (you can do this with any knob in VCV Rack).  \n\n11) Since we are know at a much more zoomed in TIME scale, the whole shape of the oscillation is not visible, but we can see the voltage move up and down.\n\n12) Set the TIME scale knob back to 9 o'clock and double click on the Oscillator Frequency knob to set it to its default.\n\n13) Try moving the patch cable to the other LFO outputs to observe the different *WAVESHAPES*.   ",
+      "text": "9) Try setting the Oscillator's Frequency knob to about 9 o'clock.  \n\n10) Reset the Oscilloscope's TIME scale knob to its default position by double clicking on it (you can do this with any knob in VCV Rack).  \n\n11) Since we are now at a much more zoomed in TIME scale, the whole shape of the oscillation is not visible, but we can see the voltage move up and down.\n\n12) Set the TIME scale knob back to 9 o'clock and double click on the Oscillator Frequency knob to set it to its default.\n\n13) Try moving the patch cable to the other LFO outputs to observe the different *WAVESHAPES*.   ",
       "pos": [
         73,
         0
@@ -267,7 +267,7 @@
       "params": [],
       "leftModuleId": 87,
       "rightModuleId": 88,
-      "text": "Notice that the INT/EXT light on the Scope has been set to EXT by clicking the corresponding button!   ",
+      "text": "   ",
       "pos": [
         44,
         3

@@ -176,7 +176,7 @@
       "model": "Notes",
       "params": [],
       "rightModuleId": 95,
-      "text": "1) Make sure the TIME knob on the Scope is set to 9 o'clock and the mode is set to EXT.\n\n2) Connect the LFO's sine wave output to the X-In on the scope.\n\n3) Mult the LFO's sine wave output into the input of the module labelled \"ATTENUATE\".  Do this by plugging a patch cable into the destination input first, and then dragging the patch cable to the LFO's sine wave output.\n\n4) Connect the output of ATTENUATE to Y-Input on the scope.\n\n5) What is the direct output of the LFO doing?  What is the output of the attenuator doing? Remember that the X-In trace is blue and the Y-In trace is red.",
+      "text": "1) Make sure the TIME knob on the Scope is set to 9 o'clock.\n\n2) Connect the LFO's sine wave output to the X-In on the scope.\n\n3) Mult the LFO's sine wave output into the input of the module labeled \"ATTENUATE\".  Do this by cmd- or ctrl-clicking the sine wave output to create a second patch cable which you can drag to the input of ATTENUATE.\n\n4) Connect the output of ATTENUATE to Y-In on the scope.\n\n5) What is the direct output of the LFO doing?  What is the output of the attenuator doing? Remember that the X-In trace is blue and the Y-In trace is red.",
       "pos": [
         0,
         0
@@ -190,7 +190,7 @@
       "params": [],
       "leftModuleId": 98,
       "rightModuleId": 101,
-      "text": "6) It seems like the attenuator is not outputing anything! \n\n7) Try slowly turning the attenuator knob clockwise by clicking on it and dragging up.\n\n8) As you do so, you should see the Red trace start to recreate the LFO waveshape.  Keep turning the attenuator knob until it is at noon.\n\n9) The two LFOs you now see have the same period and frequency, the same waveshape, but different *AMPLITUDES*.\n\n10) Amplitude is a fancy word for \"how high\" a signal gets.  \n\n11) An ATTENUATOR changes the amplitude of incoming voltage.  ",
+      "text": "6) It seems like the attenuator is not outputing anything! \n\n7) Try slowly turning the attenuator knob clockwise by clicking on it and dragging up.\n\n8) As you do so, you should see the red trace start to recreate the LFO waveshape.  Keep turning the attenuator knob until it is at noon.\n\n9) The two LFOs you now see have the same period and frequency, the same waveshape, but different *AMPLITUDES*.\n\n10) Amplitude is a fancy word for \"how high\" a signal gets.  \n\n11) An ATTENUATOR changes the amplitude of incoming voltage.  ",
       "pos": [
         47,
         0
@@ -253,8 +253,8 @@
       "model": "Notes",
       "params": [],
       "leftModuleId": 100,
-      "rightModuleId": 110,
-      "text": "12)  It scales the incoming voltages according to the knob position - in other words, it multiplies all incoming voltages by a number determined by the knob position.  \n\n12a) When the attenuator knob is fully counterclockwise, it multiplies all incoming voltages by 0, so the output is always 0V.\n\n12c) When the attenuator knob is at noon, it multiplies all incoming voltage by 0.5, so all output voltages are exactly half of the input voltage.\n\n12c) When the attenuator knob reaches fully clockwise, it multiplies all incoming voltages by 1, allowing them to pass through unaltered.       ",
+      "rightModuleId": 111,
+      "text": "12) It scales the incoming voltages according to the knob position - in other words, it multiplies all incoming voltages by a number determined by the knob position.  \n\n12a) When the attenuator knob is fully counterclockwise, it multiplies all incoming voltages by 0, so the output is always 0V.\n\n12c) When the attenuator knob is at noon, it multiplies all incoming voltage by 0.5, so all output voltages are exactly half of the input voltage.\n\n12c) When the attenuator knob reaches fully clockwise, it multiplies all incoming voltages by 1, allowing them to pass through unaltered.\n     ",
       "pos": [
         63,
         0
@@ -353,7 +353,7 @@
       "model": "Notes",
       "params": [],
       "rightModuleId": 103,
-      "text": "13) Notice that the Unipolar Offset is the blue trace  since it is feeding the X-input.  Also, notice that the output of the attenuator (which is processing the Offset's output) is visualized by the red trace, since it is feeding the Y-input.\n\n14) Notice at the top and bottom of the scope screen.  It shows the maximum and minimum voltage that each input has reached in one frame.  It also shows the \"peak-to-peak\" (pp) voltage, or the difference between the maximum and minimum.\n\n15) Since the attenuator is set it to exactly noon, the output of the attenuator should be exactly half of the input voltage (10V from the Offset module).  Indeed it is!           ",
+      "text": "13) Notice that the Unipolar Offset is the blue trace  since it is feeding the X-input.  Also, notice that the output of the attenuator (which is processing the Offset's output) is visualized by the red trace, since it is feeding the Y-input.\n\n14) Notice the numbers at the top and bottom of the scope screen. They show the maximum and minimum voltage that each input has reached in one frame.  It also shows the \"peak-to-peak\" (pp) voltage, or the difference between the maximum and minimum.\n\n15) Since the attenuator is set it to exactly noon, the output of the attenuator should be exactly half of the input voltage (10V from the Offset module).  Indeed it is!           ",
       "pos": [
         4,
         1
@@ -366,7 +366,7 @@
       "model": "Notes",
       "params": [],
       "leftModuleId": 104,
-      "text": "16) Try setting the attenuator knob to various positions and observing how the output of the attenuator becomes a different fraction of the input. \n\n17) Try setting the unipolar offset to a different value - you should also see the attenuator's red trace on the Scope change - why?\n\n18) The attenuator output changed because its input changed!  The fraction of the two values should have remained constant though.\n\n19) Go back and play with the attenuator  for the LFO again, and think about why you see two LFO's but at different amplitudes.  ",
+      "text": "16) Try setting the attenuator knob to various positions and observing how the output of the attenuator becomes a different fraction of the input. \n\n17) Try setting the unipolar offset to a different value - you should also see the attenuator's red trace on the Scope change - why?\n\n18) The attenuator output changed because its input changed!  The fraction of the two values should have remained constant though (as long as you did not change the attenuator knob position.\n\n19) Go back and play with the attenuator  for the LFO again, and think about why you see two LFO's but at different amplitudes.  ",
       "pos": [
         47,
         1
@@ -462,8 +462,20 @@
       "version": "1.0.0",
       "model": "Notes",
       "params": [],
-      "leftModuleId": 101,
       "text": "Scroll down two rows to see the completed patch!  ",
+      "pos": [
+        79,
+        1
+      ]
+    },
+    {
+      "id": 111,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 101,
+      "text": "The next row has been pre-patched to help illustrate how you can think of an attenuator as performing multiplication on an input signal.",
       "pos": [
         79,
         0

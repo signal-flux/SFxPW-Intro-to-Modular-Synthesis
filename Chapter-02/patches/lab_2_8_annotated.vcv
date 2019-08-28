@@ -48,7 +48,7 @@
       "version": "1.0.0",
       "model": "Notes",
       "params": [],
-      "text": "0) Configure your Audio-8 module to send audio to your listening device.\n\n1) The primary difference between the VCO-1 and LFO-1 modules is that the VCO-1 module's frequency range is much higher than the LFO's (remember, LFO stands for \"low frequency oscillator). As such, the VCO (or voltage-controlled oscillator) is more suitable for generating sound.  \n\n2) Connect the \"sine wave\" output of the VCO to the attenuator input. SLOWLY increase the attenuator's knob until you hear the oscillator.  Adjust the oscillator's pitch using the frequency knob to find a frequency which you find relatively pleasing.    ",
+      "text": "0) Configure your Audio-8 module to send audio to your listening device.\n\n1) The primary difference between the VCO-1 and LFO-1 modules is that the VCO-1 module's frequency range is much higher than the LFO's (remember, LFO stands for low-frequency oscillator). As such, the VCO (or voltage-controlled oscillator) is more suitable for generating sound.  \n\n2) Connect the sine wave output of the VCO to the attenuator input. SLOWLY increase the attenuator's knob until you hear the oscillator.  Adjust the oscillator's pitch using the frequency knob to find a frequency which you find relatively pleasing.    ",
       "pos": [
         0,
         0
@@ -62,7 +62,7 @@
       "params": [
         {
           "id": 0,
-          "value": 0.580500066
+          "value": 0.0
         }
       ],
       "leftModuleId": 190,
@@ -181,7 +181,7 @@
       "version": "1.0.0",
       "model": "Notes",
       "params": [],
-      "text": "3) Now move the cable from the sine wave output of the VCO to the triangle wave output. Observe the new waveshape in the oscilloscope.  How is the shape different?\n\n4) How is what you hear different? Take notes.  Even though the pitch is the same, can you hear any other \"tones\" on top of the original one?  Try switching back and forth. Though the two waveforms have the same amplitude and frequency (pitch), the character of the sound is the same.  This is known as TIMBRE.\n\n5) Repeat 3 and 4 for the other two waveshapes (sawtooth and square).  Why do you think each shape is given its name?     ",
+      "text": "3) Now move the cable from the sine wave output of the VCO to the triangle wave output. Observe the new waveshape in the oscilloscope.  How is the shape different?\n\n4) How is what you hear different? Take notes.  Even though the pitch is the same, can you hear any other \"tones\" on top of the original one?  Try switching back and forth. Though the two waveforms have the same amplitude and frequency (pitch), the character of the sound is different.  This is known as TIMBRE.\n\n5) Repeat 3 and 4 for the other two waveshapes (sawtooth and square).  Why do you think each shape is given its name?     ",
       "pos": [
         0,
         1
@@ -193,7 +193,7 @@
       "version": "1.0.0",
       "model": "Notes",
       "params": [],
-      "text": "6) Now disconnect the cable which sends the VCO-1 output to the attenuator.\n\n7) Connect the output of VCO-2 to the input of the attenuator. Notice that VCO-2 does not have individual waveform outputs.\n\n8) Try adjusting the knob on VCO-2 labeled \"WAVE.\"  Observe how the waveshape morphs from sine to triangle to sawtooth to square.  Listen to the timbre morph between the different waveforms.  This is a form of WAVETABLE SYNTHESIS.       ",
+      "text": "6) Now disconnect the cable which sends the VCO-1 output to the attenuator.\n\n7) Connect the output of VCO-2 to the input of the attenuator. Notice that VCO-2 does not have individual waveform outputs.\n\n8) Try adjusting the knob on VCO-2 labeled \"WAVE.\"  Observe how the waveshape morphs from sine to triangle to sawtooth to square.  Listen to the timbre morph between the different waveforms.  This is a form of WAVETABLE SYNTHESIS. We cover this in-depth right now, but it's interesting to listening to and a powerful technique.       ",
       "pos": [
         19,
         1

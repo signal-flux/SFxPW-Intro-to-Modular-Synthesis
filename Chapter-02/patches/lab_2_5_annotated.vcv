@@ -94,7 +94,7 @@
       "model": "Notes",
       "params": [],
       "rightModuleId": 160,
-      "text": "1) The LFO sine wave output is already connected to the second input of the \"8VERT\" module.  The corresponding output is patched to the X-input on the Scope.\n\n2) Play with the corresponding knob.  What do you think it is doing?\n\n3) 8Vert is made up of 8 separate attenuverters (8-Vert)! The knob is acting as an attenuverter for the input LFO. Set the knob fully CCW to confirm this.  \n\n4) Now try connecting the first output of 8Vert to the Y-input on the scope.  It should be displaying 0V (red trace).  What do you think will happen if you adjust the first knob on 8Vert?    ",
+      "text": "1) The LFO sine wave output is already connected to the second input of the \"8VERT\" module.  The corresponding output is patched to the X-input on the Scope.\n\n2) Play with the corresponding knob on 8Vert  What do you think it is doing?\n\n3) 8Vert is made up of 8 separate attenuverters (8-Vert)! The knob is acting as an attenuverter for the input LFO. Set the knob fully CCW to confirm this.  \n\n4) Now try connecting the first, topmost output of 8Vert to the Y-input on the scope.  It should be displaying 0V (red trace).  What do you think will happen if you adjust the first knob on 8Vert?    ",
       "pos": [
         0,
         0
@@ -203,7 +203,7 @@
       "model": "Notes",
       "params": [],
       "leftModuleId": 159,
-      "text": "5) You probably expected the output to remain at 0V because nothing was patched to the input.. but it did not!  Instead, it swung all the way between -10V and +10V, from CCW to CW.  It was almost as if +10V was being sent to the input, even though nothing was patched in to the input!\n\n6) This is because there was a voltage \"NORMALLED\" into the first input on 8Vert. A \"normalled\" voltage is one which is present by default, but as soon as you patch a cable into it, the new signal from the cable \"overwrites\" the normalled voltage.       ",
+      "text": "5) You probably expected the output to remain at 0V because nothing was patched to the input.. but it did not!  Instead, it swung all the way between -10V and +10V, from CCW to CW.  It was almost as if +10V was being sent to the input, even though nothing was patched in to the input!\n\n6) This is because there was a voltage \"NORMALLED\" into the first input on 8Vert. A \"normalled\" voltage is one which is present at a jack by default, but as soon as you patch a cable into the jack, the new signal from the cable \"breaks the normal\" and \"overwrites\" the normalled voltage.      ",
       "pos": [
         47,
         0
@@ -217,7 +217,7 @@
       "params": [],
       "leftModuleId": 162,
       "rightModuleId": 158,
-      "text": "6) Notice that there are little arrows below each input jack pointing towards the input jack below it.  \n\n7) These arrows represent that each input is normalled into the input below it.  This means that whatever signal is present at an input is also present at the input below, as long as no cable is plugged into the lower input to overwrite the normalling!\n\n8) Confirm this for yourself by connecting the output of the third attenuverter to one of the inputs on the lower  Scope and playing with the corresponding knob.\n\n10) Now connect the output of the last attenuverter to the other input on the lower scope.        ",
+      "text": "6) Notice that there are little arrows below each input jack on 8Vert pointing towards the input jack below it.  \n\n7) These arrows represent that each input is normalled into the input below it.  This means that whatever signal is present at an input is also present at the input below, as long as no cable is plugged into the lower input to break the normalling!\n\n8) Confirm this for yourself by connecting the output of the third attenuverter to the X-in on the lower Scope and playing with the corresponding knob on 8Vert.\n\n10) Now connect the output of the last attenuverter on 8Vert to the Y-in on the lower scope.        ",
       "pos": [
         47,
         1
@@ -231,7 +231,7 @@
       "params": [],
       "leftModuleId": 157,
       "rightModuleId": 163,
-      "text": "11) The LFO input cascaded all the way down to the final attenuverter!\n\n12) Now try patching the triangle wave output from the LFO into the third attenuverter's input.  Notice that it overwrote the previously present signal AND cascaded all the way down to the final attenuverter's input!        ",
+      "text": "11) The LFO input cascaded all the way down to the final attenuverter!\n\n12) Now try patching the triangle wave output from the LFO into the third attenuverter's input.  Notice that it broke the normal from the second input to the third input.  The triangle wave LFO overwrote the previously present signal (the sine wave LFO) AND the triangle wave cascaded all the way down to the final attenuverter's input!        ",
       "pos": [
         63,
         1
@@ -486,6 +486,22 @@
       "inputModuleId": 151,
       "inputId": 2,
       "color": "#c91847"
+    },
+    {
+      "id": 148,
+      "outputModuleId": 160,
+      "outputId": 0,
+      "inputModuleId": 161,
+      "inputId": 1,
+      "color": "#0986ad"
+    },
+    {
+      "id": 149,
+      "outputModuleId": 161,
+      "outputId": 1,
+      "inputModuleId": 159,
+      "inputId": 0,
+      "color": "#0986ad"
     }
   ]
 }

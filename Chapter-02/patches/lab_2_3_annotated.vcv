@@ -8,7 +8,7 @@
       "model": "Notes",
       "params": [],
       "rightModuleId": 129,
-      "text": "1) Connect the sine wave output of the LFO to X-in on the scope (blue trace on the display).  \n\n2) Mult the sine wave output of the LFO to the input of the INVERT module. Then send the output of the inverter to the Y-in of the scope (red trace on the display).\n\n3) What do you notice that is similar about the two signals?  What is different?\n\n4) Whenever the original signal goes up, the inverter signal goes down, and vice versa.\n\n5) The inverter is simply flipping the polarity (positive/negative) of the incoming voltage before sending it to the output!  ",
+      "text": "1) Connect the sine wave output of the LFO to X-in on the scope (blue trace on the display).  \n\n2) Mult the sine wave output of the LFO to the input of the INVERT module. Then send the output of the inverter to the Y-in of the scope (red trace on the display).\n\n3) What do you notice that is similar about the two signals?  What is different?\n\n4) Whenever the original signal goes up, the inverter signal goes down, and vice-versa.\n\n5) The inverter is simply flipping the polarity (positive/negative) of the incoming voltage before sending it to the output!  ",
       "pos": [
         0,
         0
@@ -186,7 +186,7 @@
       "model": "Notes",
       "params": [],
       "leftModuleId": 131,
-      "text": "6) Try setting the frequency knob to 9 o'clock and then reset the TIME knob on the Scope to its default position by double- clicking it.\n\n7) Observe how the LFO output and the inverted LFO output perfectly mirror each other on a much finer time scale.\n      ",
+      "text": "6) Try setting the frequency knob to 9 o'clock and then reset the TIME knob on the Scope to its default position by double- clicking it.\n\n7) Observe how the LFO output and the inverted LFO output perfectly mirror each other on a much finer time scale (aka more zoomed in).    ",
       "pos": [
         45,
         0

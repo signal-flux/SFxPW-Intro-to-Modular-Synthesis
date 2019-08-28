@@ -59,7 +59,7 @@
       ],
       "data": {
         "lissajous": 0,
-        "external": 0
+        "external": 1
       },
       "pos": [
         46,
@@ -107,7 +107,7 @@
       ],
       "data": {
         "lissajous": 0,
-        "external": 0
+        "external": 1
       },
       "pos": [
         46,
@@ -138,7 +138,7 @@
       "params": [],
       "leftModuleId": 51,
       "rightModuleId": 42,
-      "text": "1) Connect the Unipolar Offset output to the Scope's X-In.\n\n2) Try adjusting the Unipolar Offset's knob.  What happens on the Scope as the knob turns clockwise? And counterclockwise?  \n\n3) The blue line on the scope is called a trace.  The scope visualizes the current voltage fed into the X- and Y-inputs as two separate traces (red and blue respectively).\n\n4) The x-axis of the display is Time, while the y-axis of the display is voltage level. The horizontal line at the middle of the scope corresponds to a voltage level of 0V.  The top of the scope is +10V, and the bottom is -10V.",
+      "text": "1) Connect the Unipolar Offset output to the Scope's X-In.\n\n2) Try adjusting the Unipolar Offset's knob.  What happens on the Scope as the knob turns clockwise? And counterclockwise?  \n\n3) The blue line on the scope is called a trace.  The scope visualizes the current voltage fed into the X- and Y-inputs as two separate traces (blue and red respectively).\n\n4) The x-axis of the display is Time, while the y-axis of the display is voltage level. The horizontal line at the middle of the scope corresponds to a voltage level of 0V.  The top of the scope is +10V, and the bottom is -10V.",
       "pos": [
         16,
         0
@@ -185,7 +185,7 @@
       "model": "Notes",
       "params": [],
       "leftModuleId": 47,
-      "text": "5) Connect the Bipolar Offset's output to the Scope's Y-In.\n\n6) Notice that the knob is at noon, but the pink trace for the Y-In is at 0V.  How is this different from when the Unipolar Offset is at noon?\n\n7) Try adjusting the Bipolar Offset knob clockwise and counterclockwise.  What is the minimum and maximum voltage it can generate?\n\n8) The Bipolar Offset generates voltages from -5V to +5V, where as the Unipolar Offset generates voltages from 0V to +10V. \n\n\n      ",
+      "text": "5) Connect the Bipolar Offset's output to the Scope's Y-In.\n\n6) Notice that the knob is at noon, but the pink trace for the Y-In is at 0V.  How is this different from when the Unipolar Offset is at noon?\n\n7) Try adjusting the Bipolar Offset knob clockwise and counterclockwise.  What is the minimum and maximum voltage it can generate?  Hint: check the gray text above and below the display!\n\n8) The Bipolar Offset generates voltages from -5V to +5V, where as the Unipolar Offset generates voltages from 0V to +10V. \n\n\n      ",
       "pos": [
         73,
         0

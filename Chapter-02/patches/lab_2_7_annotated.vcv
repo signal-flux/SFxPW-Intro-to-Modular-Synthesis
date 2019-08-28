@@ -8,7 +8,7 @@
       "model": "Notes",
       "params": [],
       "rightModuleId": 169,
-      "text": "This is a very important lesson! Do not skip it, and please make sure you understand it thoroughly.\n\nIt will teach you how to use the \"Audio-8\" module to send audio from VCV rack to your speakers. it will also demonstrate how oscillators can be used to generate pitched sound.\n\nAlways exercise caution when sending signals to speakers -  always ensure that you have some sort of volume control.  This patch will give you an example of how to do so!  ",
+      "text": "This is a very important lesson! Do not skip it, and please make sure you understand it thoroughly.\n\nIt will teach you how to use the \"Audio-8\" module to send audio from VCV Rack to your speakers. It will also demonstrate how oscillators can be used to generate pitched sound.\n\nAlways exercise caution when sending signals to speakers -  always ensure that you have some sort of volume control.  This patch will give you an example of how to do so!  No one wants damaged hearing!",
       "pos": [
         0,
         0
@@ -150,7 +150,7 @@
       "params": [],
       "leftModuleId": 164,
       "rightModuleId": 171,
-      "text": "1) Make sure your LFO is set to \"Bipolar Mode\" by checking the position of the corresponding switch.\n\n2) Make sure the attenuator's knob is set fully CCW (minimum). \n\n3a) Click on the first row of the Audio-8 module's display and select the corresponding audio driver for your speakers (on Macs this will be called \"Core Audio.\" On Windows, it may be called \"WASAPI\" or \"DirectSound.\"\n\n3b) Click on the second row of the Audio-8 module's display and select the desired speaker device.\n\n3c) You can ignore the final row of numbers for now.",
+      "text": "1) Make sure your LFO is set to \"Bipolar Mode\" by checking the position of the corresponding switch.\n\n2) Make sure the attenuator's knob is set fully CCW (minimum). \n\n3a) Click on the first row of the Audio-8 module's display and select the corresponding audio driver for your speakers. On Macs this will be called \"Core Audio.\" On Windows, it may be called \"WASAPI\" or \"DirectSound.\"\n\n3b) Click on the second row of the Audio-8 module's display and select the desired speaker device (e.g. \"Built-in Output\" or \"Speakers\").\n\n3c) If you ever hear audio hiccups or glitches, you can increase the lower right number, 256 to 1024.",
       "pos": [
         16,
         0
@@ -164,7 +164,7 @@
       "params": [],
       "leftModuleId": 169,
       "rightModuleId": 174,
-      "text": "5) Now, whatever signals you send to the the inputs on Audio-8 labelled \"1-2\" will be sent to your left and right speakers respectively.  The voltage will push the speaker cone back and forth - high voltage will push the speaker cone out; 0V will let the speakers rest at middle; negative voltage will push the speaker cone out in the opposite direction.\n\n6) Connect the sawtooth wave output of the LFO to the input of the attenuator and X-in on Scope. \n\n7) Make sure the attenuator is fully CCW!\n\n8) Mult the output of the attenuator to both the 1 & 2 input of Audio-8 as well as the Y-in on Scope.    ",
+      "text": "5) Now, whatever signals you send to the the inputs on Audio-8 labelled \"1-2\" will be sent to your left and right speakers respectively.  The voltage will push the speaker cone back and forth - high voltage will push the speaker cone outwards; 0V will let the speakers rest; negative voltage will pull the speaker cone inwards.\n\n6) Mult the sawtooth wave output of the LFO to the input of the attenuator and X-in on Scope. \n\n7) Make sure the attenuator is fully CCW!\n\n8) Mult the output of the attenuator to both the 1 & 2 input of Audio-8 as well as the Y-in on Scope.    ",
       "pos": [
         32,
         0
@@ -190,7 +190,7 @@
       "model": "Notes",
       "params": [],
       "leftModuleId": 175,
-      "text": "13) Set the Scope to INT mode and turn the TIME knob to a much faster scale (turn it to about 3 o'clock).\n\n14) Observe how higher frequencies (more cycles per second) results in a higher pitched sound.  \n\n15) SLOWLY adjust the attenuator.  knob.  Notice that as the amplitude of the attenuator's output sawtooth wave increases, so does the volume. Why? \n\n16) Volume gets louder as amplitude increases because the speaker cone gets pushed back and forth further and further, resulting in sound waves in the air with greater amplitude, and thus greater motion in your ear drum!               ",
+      "text": "13) Set the Scope to INT mode and turn the TIME knob to a much faster scale (turn it to about 3 o'clock).\n\n14) Observe how higher frequencies (more cycles per second) results in a higher pitched sound.  \n\n15) SLOWLY adjust the attenuator knob. Two things happen: the amplitude of the red trace (attenuator output) increases on the Scope, and the audible sawtooth wave gets louder. Why does volume increase as amplitude increases? \n\n16) Volume gets louder as amplitude increases because the speaker cone gets pushed back and forth further and further, resulting in sound waves in the air with greater amplitude, and thus greater motion in your ear drum!               ",
       "pos": [
         76,
         1
@@ -262,7 +262,7 @@
         },
         {
           "id": 4,
-          "value": 8.01499176
+          "value": 14.3299952
         },
         {
           "id": 5,
@@ -280,7 +280,7 @@
       "rightModuleId": 173,
       "data": {
         "lissajous": 0,
-        "external": 1
+        "external": 0
       },
       "pos": [
         63,
@@ -316,7 +316,8 @@
       "data": {
         "audio": {
           "driver": 8,
-          "offset": 1121777016,
+          "deviceName": "Speakers (Realtek High Definition Audio)",
+          "offset": 0,
           "maxChannels": 8,
           "sampleRate": 44100,
           "blockSize": 256

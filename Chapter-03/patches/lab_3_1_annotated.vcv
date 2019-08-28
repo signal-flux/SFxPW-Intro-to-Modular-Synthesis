@@ -93,7 +93,8 @@
       "data": {
         "audio": {
           "driver": 6,
-          "offset": 1076289956,
+          "deviceName": "Speakers (Realtek High Definition Audio)",
+          "offset": 0,
           "maxChannels": 8,
           "sampleRate": 44100,
           "blockSize": 256
@@ -215,7 +216,7 @@
       "model": "Notes",
       "params": [],
       "rightModuleId": 109,
-      "text": "1) Mult the output of the Attenuate module to the 1/2 inputs of Audio-8 and configure your audio drivers.\n\n2) Connect the sine wave output of the VCO-1 module to the input marked \"in\" on the VCA module.\n\n3) Mult the output the output of the VCA to the X-in on the Scope and to the Attenuator input. Set the Attenuator knob to about noon. \n\n4) Patch the sine wave output of the LFO-1 module to the \"MULT\" modules \"In-A\".  The Mult module duplicates the input to the three adjacent outputs.  Connect one of those outputs to the VCA input marked \"CV\" (for \"control voltage\"), and another mult output to the Scope's Y-in.",
+      "text": "1) Mult the output of the Attenuate module to the 1/2 inputs of Audio-8 and configure your audio drivers.\n\n2) Connect the sine wave output of the VCO-1 module to the input marked \"IN\" on the VCA module.\n\n3) Mult the output of the VCA to the X-in on the Scope and to the Attenuator input. Reminder - black boxes around a jack indicate the output! Set the Attenuator knob to about noon. \n\n4) Patch the sine wave output of the LFO-1 module to the \"MULT\" modules \"In-A\".  The Mult module duplicates the input to the three adjacent outputs.  Connect one of those outputs to the VCA input marked \"CV\" (for \"control voltage\"), and another mult output to the Scope's Y-in.",
       "pos": [
         0,
         0
@@ -229,7 +230,7 @@
       "params": [],
       "leftModuleId": 108,
       "rightModuleId": 106,
-      "text": "5) What do you notice happening on the Scope?  On the VCA display?  And what do you hear?  Why do you hear that?   \n\n6) The VCA the amplitude takes the INput signal, determines a new amplitude for it based off of the voltage level of the CONTROL VOLTAGE (CV) signal, and then passes it to the output.  The higher the CV level, the greater the amplitude of the output  voltage.  \n\n7) The VCA is acting just like our attenuator modules, but rather than using a knob, it uses a voltage to determine the scaling factor and set the amplitude!  \n\n",
+      "text": "5) What do you notice happening on the Scope?  On the VCA display?  And what do you hear?  Why do you hear that?   \n\n6) The VCA is acting just like our attenuator modules, but rather than using a knob, it uses a voltage to determine the scaling factor and set the amplitude!\n\n7a) The VCA changes the amplitude of the \"IN\"put signal and sends the modified version of the IN signal to the output.  It determines the new amplitude based off of the magnitude of the CONTROL VOLTAGE (CV) signal.  The higher the CV level, the greater the amplitude of the output voltage.\n\n",
       "pos": [
         16,
         0
@@ -241,7 +242,8 @@
       "version": "1.0.0",
       "model": "Notes",
       "params": [],
-      "text": "8) When the control voltage is 0V, the input signal is multiplied by 0, so the output is also 0V, resulting in silence. When the control voltage input is 10V, the input signal is multiplied by 1, the original signal passes through unchanged.  \n\n9) Try using different waveform outputs from the LFO to control the VCA - you can do this by moving the patch cable from the sine wave output to the adjacent outputs.  Set the LFO to multiple different frequencies for each waveform and see how it changes what you hear and see each time!\n\n10) Try setting the frequency of the LFO to noon and the TIME scale on the scope to 9 o'clock.\nWhat's up with the Scope?      ",
+      "leftModuleId": 120,
+      "text": "8) When the control voltage is 0V, the input signal is multiplied by 0, so the output is also 0V, resulting in silence. When the control voltage input is 10V, the input signal is multiplied by 1, so the original signal passes through unchanged.  \n\n9) Try using different waveform outputs from the LFO to control the VCA - you can do this by moving the patch cable from the sine wave output to the adjacent outputs.  Set the LFO to multiple different frequencies for each waveform and see how it changes what you hear and see each time!\n\n10) Try setting the frequency of the LFO to noon and the TIME scale on the scope to 9 o'clock.\nWhat's up with the Scope?      ",
       "pos": [
         32,
         1
@@ -462,6 +464,19 @@
       "text": "Scroll down to see the completed patch!      ",
       "pos": [
         75,
+        1
+      ]
+    },
+    {
+      "id": 120,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 110,
+      "text": "7b) Since amplitude corresponds to volume for audio-rate signals, the VCA is acting as a \"volume modifier\" on the VCO at its input.  The LFO is acting as the \"volume control\" since it is patched to the VCA CV input. It is as if the LFO is increasing and decreasing the volume of the VCO as the LFO slowly rises and falls. The VCA is the crucial component which actually changes the amplitude of the VCO by checking the constantly checking the magnitude of the LFO.\n\n7c) As the control voltage LFO moves up and down (red trace on the scope), it tells the VCA to change the amplitude of the VCO-1 Input. The sine wave coming out of the VCA (blue trace on the scope) can be seen changing its amplitude according to the LFO. Watch this relationship and listen carefully!    ",
+      "pos": [
+        16,
         1
       ]
     }

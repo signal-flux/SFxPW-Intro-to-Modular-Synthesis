@@ -9,7 +9,7 @@
       "params": [
         {
           "id": 0,
-          "value": 0.0
+          "value": 1.0
         },
         {
           "id": 1,
@@ -50,7 +50,7 @@
       "model": "Notes",
       "params": [],
       "rightModuleId": 180,
-      "text": "1) Connect the sine wave output to the X-in of the Scope.\n\n2) Observe the LFO, doing its LFO thing...\n\n3) But in particular, observe the minimum (0V), maximum (10V) and \"peak-to-peak\" voltage (10V).\n\n4) Now, use your mouse to click the switch on the LFO labelled \"UNI/BI.\" \n\n5) What happened on the Scope?  What changed?  What stayed the same?  ",
+      "text": "1) Connect the sine wave output to the X-in of the Scope.\n\n2) Observe the LFO, doing its LFO thing...\n\n3) But in particular, observe the minimum (0V), maximum (10V) and \"peak-to-peak\" voltage (10V).\n\n4) Now, use your mouse to click the switch on the LFO labeled \"UNI/BI.\" \n\n5) What happened on the Scope?  What changed?  What stayed the same?  ",
       "pos": [
         0,
         0
