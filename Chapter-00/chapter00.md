@@ -22,6 +22,8 @@ First, it receives lots of radio waves for different stations at its antenna.  T
 
 Notice that there are two qualitatively different types of inputs on our radio: *control* *inputs* (*volume* and *station*) and *audio* *inputs* (the various radio waves picked up by the antenna).  We only had one type of output, the *audio* *output* produced by the speaker, however other devices or modules might have *control* *outputs*.  For instance, a digital thermometer might measure the temperature of a room and then send the *control data* to another device for usage - that slowly-changing temperature-reading would be a *control output*.  This will be important in the context of modular synthesis, since many modules will *only* produce control data (for instance to control the pitch of a sound-generating module).
 
+
+
 ## 0.1 Patching: Modules, Signals, Input, and Output
 
 In the context of modular synthesizers, an individual *module* is a device that accepts input signals and produces an output (or outputs) based off of the input signals.  Modules are installed into a single *rack* by connecting a power cable from the back of the module to the rack's power supply. The rack provides shared power to all modules and secures them together.  
@@ -36,7 +38,11 @@ In the context of modular synthesizers, an individual *module* is a device that 
 
 ![Module side view](./images/pw_module_side_view.jpg)
 
+
+
 ![Ribbon power cable](./images/pw_ribbon.PNG)
+
+
 
 
 
