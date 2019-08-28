@@ -38,11 +38,23 @@ You can also go to the page below and click download to get a .zip file containi
 
 If there is anything you are having trouble understanding in the labs, see if the notes below help! If you want more guidance, comment in the slack, or shoot Sam or Izzy a message!
 
-### LFOs
+### Oscillators
 
-A *low-frequency oscillator*, or LFO, generates a voltage that changes over time in a periodic (aka repetitive) fashion.  The pattern of how the voltage changes over time stays the same, and is called the *shape* of the oscillator.  The repetition of this pattern is known as an *oscillation*.  An oscillator just generates oscillations!   The height, or maximum level of these oscillations, is known as the *amplitude*.  The duration of time it takes to complete one cycle of this pattern is called its *period*.  The number of cycles it completes per second is called its *frequency*, and is measured in *Hz* (1Hz = 1 cycle completed per second).  An LFO then is just an oscillator that produces a voltage which changes in a pattern at a very slow rate - this makes it ideal as a *control voltage*, or *CV* source for controlling parameters of other modules! 
+Oscillators generate a voltage that changes over time in a periodic (aka repetitive) fashion.  The pattern of how the voltage changes over time stays the same, and is called the *waveshape* of the oscillator.  The repetition of this pattern is known as an *oscillation*.  An oscillator just generates oscillations!   The height, or distance between the *peak* and and *trough* (maximum and minimum level) of these oscillations, is known as the *amplitude*.  The duration of time it takes to complete one cycle of this pattern is called its *period*.  The number of cycles it completes per second is called its *frequency*, and is measured in *Hz* (1Hz = 1 cycle completed per second).  Since `period = seconds per cycle` and `frequency = cycles per second`, we can observe that `frequency = 1/period`: they have an inverse relationship.  The faster the higher the frequency, the shorter the period. Common waveforms include, sine waves, triangle waves, square waves, and sawtooth waves.
+
+### VCOs vs LFOs
+
+![Frequency and Amplitude](./images/amplitude-frequency.png)
+
+A *VCO* is a *Voltage-Controlled Oscillator*: it allows you to use a control voltage to change the frequency of the oscillator by sending control voltage to its *frequency-modulation* (*FM*) input or its *V/oct* input (we will talk about what the means next time).  Many VCOs also allow control-voltage to be applied to other parameters.  If it is fast enough, a VCO's output can be patched to a speaker (more on this below).  The frequency of the oscillation controls the perceived *pitch*, and the amplitude of the oscillation controls the perceived *volume*.  The waveshape of the oscillation determines the perceived *timbre*, or character of the sound.  Sine waves make the purest tones, while sawtooth waves make very harsh tones.  More on this later!
+
+An *LFO* is a *Low-Frequency Osicllator*: it is just an oscillator that produces a voltage which changes in a pattern at a very slow rate - this makes it ideal as a *control voltage*, or *CV* source for controlling parameters of other modules! Most LFOs are also voltage-controllable.  
 
 ### Unipolar vs Bipolar
+
+![Unipolar vs. Bipolar Waveforms](./images/unipolar-bipolar.png)
+
+
 
 *Unipolar* waveforms are always greater than or equal to `0V`, or always less than or equal to `0V`, but they can never be both positive and negative.  They have one direction (or pole) which they can move towards from 0V, either positive or negative, but not both.
 
@@ -82,13 +94,19 @@ Oscillators are simply modules which produce signals that go up and down in a re
 
 All tonal material - i.e. sound material that seems to have a pitch, is characterized by a repeating waveform which pushes air back and forth.  This is precisely what vibrating vocal chords do.  Similarly, the vibrating string of an acoustic guitar transfers its vibrations to the body of the guitar via the bridge, which then amplifies those vibrations in its cavity, and emits the vibrating sound waves out of the sound hole.
 
+![Sound as Vibration](./images/air-pressure.jpg)
+
 When we patch a repeating waveform voltage to a speaker, the voltage pushes a magnet back and forth precisely in sync with the repeating waveform pattern.  The magnet then pushes a speaker cone back and forth, which in turn pushes air back and forth.  The higher the voltage sent to the speaker, the further the magnet pushes the speaker cone from its resting position at `0V`.  The more negative the voltage, the further the magnet pulls the speaker cone in from its resting position.  The oscillating voltage waveform is *transduced* into an oscillating kinetic waveform - i.e. the motion of the speaker cone moving back and forth.  This kinetic waveform in turn is transduced into an acoustic waveform as the speaker cone pushes air - i.e. a waveform that travels through the air as compressions and rarefactions of air molecules.  This acoustic waveform eventually hits your ear drum
+
+![Transduction](./images/transduction.PNG)
 
 Your ear drum then gets pushed back and forth in sync with the original electrical waveform, and your inner ear transduces this motion back into an electrical signal which travels along nerves to your brain, which then, quite magically, you phenomenalize as the experience of sound.
 
 In order for sound to be audible, the air must be vibrating very fast.  For instance, if I high-five the air in front of you, you won't hear the sound of my hand pushing air towards you.  If I push my hand forwards and backwards as fast as I can, you still won't hear it.  If I clap once, you will hear a percussive burst which corresponds to a single wave of compressed air molecules traveling towards you, however you won't hear any pitched sound - this is because the intensity of the wave is strong enough to push your ear drums in very fast and generate a sharp electrical transient in your inner ear, but because it is not a repeating compression and rarefaction of air, you don't hear a pitch.  The harder I clap, the greater the intensity of the sound wave, and thus the louder the sound.  Explosions then are just like really loud claps!
 
 Think back to the experiment at the start of this section - at low frequencies, you just heard a click from the speaker cone moving position very sharply and pushing a column of air abruptly, similar to a clap.  However, once the frequency of the LFO became fast enough, these repetitive compressions of air became frequent enough to merge the clicks into a pitched tone.  As the frequency went higher and higher, the pitch went higher and higher.  Remember, *frequency* just means the number of times an oscillation repeats one cycle of its waveform per second, and it is measured in *Hertz* (1Hz = 1 repetion per second). 
+
+![Frequency and Amplitude](./images/amplitude-frequency.png)
 
 For humans, the point at which oscillations become audible as pitched sound is about 20Hz, or 20 cycles-per-second (i.e. if a click happens 20 times per second, you will hear it as a tone, rather than as a sequence of transients).  Oscillations below that rate cannot be heard as pitches, but they are certainly useful for controlling parameters of other modules, like volume, or even frequency of another oscillator!  Voltages which change slower than 20Hz are typically said to be *control voltages*, or *CV*, which change at *control rate*, due to their usefulness in controlling other parameters on your synthesizer!  Voltages which oscillate faster than 20Hz are typically said to be at *audio rate*.  The edge of human hearing is somewhere between 15kHz and 20kHz (*NB: 1kHz = 1000Hz*), depending on age and other hearing loss factors.  
 

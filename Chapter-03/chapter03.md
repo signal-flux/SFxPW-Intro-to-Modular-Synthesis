@@ -26,17 +26,40 @@ Here's a fun preview of lots of ways VCAs can be used in modular synthesis, made
 
 ### More on VCAs
 
-![VCA Block Diagram](./images/vca-block_VCA.png)
+![VCA Block Diagram](./images/vca-block.png)
 
 A *voltage-controlled amplifier*, or *VCA*, takes an input signal and sets a new amplitude for it based off of a different *control voltage* (or *CV*) input. In other words, it is just like an attenuator, but rather than using a knob to set the amplitude of the signal passing through it, it uses another voltage source to control the amplitude of the original input signal!  
 
 If you recall from the lesson on attenuverters, attenuation or amplification of a signal (i.e. decreasing or increasing its amplitude) is just performed by multiplying the signal by a number.  In the case of the attenuverter, when the knob was fully CW, it was as if this "control number" to multiply the original signal was `1`, and the original signal passed through unchanged at its original amplitude since multiplying any number by `1` leaves the original number unchanged.  Similarly, when the knob was at noon, it was as if the "control number" was `0`, meaning the output voltage was always `0V`, regardless of the input voltage, since anything times `0` is always still `0`.  Intermediate knob positions scaled the the input signal down proportionally.  
 
-Similarly, a VCA multiplies its input signal by another number determined by the control voltage.  In the case of **VCA-1**, the input signal is multiplied by `0` when the control voltage is `0V`, resulting in output of `0V` at all times, regardless of the input voltage.  The input voltage is multiplied by `1` when the control voltage is `10V`, resulting in the input signal passing through the VCA unchanged.  When the control voltage is `5V`, the input is multiplied by `0.5`, resulting in the amplitude of the output voltage being precisely half of the original voltage.  Other intermediate control voltages similarly scale the input voltage proportionally before sending it on to the output!  
+Similarly, a VCA multiplies its input signal by another number determined by the control voltage; this special number is called the "*scaling factor*."  In the case of **VCA-1**, the input signal is multiplied by `0` when the control voltage is `0V`, resulting in output of `0V` at all times, regardless of the input voltage.  The input voltage is multiplied by `1` when the control voltage is `10V`, resulting in the input signal passing through the VCA unchanged.  When the control voltage is `5V`, the input is multiplied by `0.5`, resulting in the amplitude of the output voltage being precisely half of the original voltage.  Other intermediate control voltages similarly scale the input voltage proportionally before sending it on to the output!  
 
-Not all VCAs will have this exact mapping, where a `10V` control voltage corresponds to multiplying the signal by `1`.  Some VCAs might use `5V` as the point where a signal passes through unaltered (i.e. is multiplied by `1`); in this case, `Vcv` would be divided by `5` rather than `10` before being multiplied by `Vin`.  
+Not all VCAs will have this exact mapping, where a `10V` control voltage corresponds to multiplying the signal by `1`.  Some VCAs might use `5V` as the point where a signal passes through unaltered (i.e. is multiplied by `1`).  The tables below illustrate this.
 
-Similarly, not all VCAs will treat negative control voltages the same as sending in `0V`.  Other VCAs might be able to multiply the input signal by negative numbers when negative control voltages are sent in, inverting it.  
+Similarly, not all VCAs will treat negative control voltages the same as sending in `0V`.  Some VCAs might be able to multiply the input signal by negative scaling factors when negative control voltages are sent in, inverting the main input signal.  These VCAs that can also invert the main input signal when the control voltage signal is negative are called *4-Quadrant VCAs*. VCAs which treat negative control voltages as 0V are called *2-Quadrant VCAs*.  We will talk about the musical usefulness of these types of VCAs another time!
+
+Here's a table which summarizes Typical Linear, 2-Quadrant VCA, with an input of +4V sent to the main input:
+
+| Control Voltage Input | Scaling Factor | Main Input | Output |
+| --------------------- | -------------- | ---------- | ------ |
+| +5.0V                 | x1.0           | +4V        | +4.0V  |
+| +2.5V                 | x0.5           | +4V        | +2.0V  |
+| +1.0V                 | x0.2           | +4V        | +0.8V  |
+| +0.5V                 | X0.1           | +4V        | +0.4V  |
+| 0.0V                  | x0.0           | +4V        | 0.0V   |
+| -5.0V                 | X0.0           | +4V        | 0.0V   |
+
+Here's a table which summarizes Typical Linear, 4-Quadrant VCA, with an input of +4V sent to the main input:
+
+| Control Voltage Input | Scaling Factor | Main Input | Output |
+| --------------------- | -------------- | ---------- | ------ |
+| +5.0V                 | x1.0           | +4V        | +4.0V  |
+| +2.5V                 | x0.5           | +4V        | +2.0V  |
+| 0.0V                  | x0.0           | +4V        | 0.0V   |
+| -2.5V                 | X-0.5          | +4V        | -2.0V  |
+| -5.0V                 | X-1.0          | +4V        | -4.0V  |
+
+
 
 ### Controlling Loudness
 
