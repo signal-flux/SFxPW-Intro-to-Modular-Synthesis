@@ -1,0 +1,287 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 138,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 147,
+      "text": "1) Connect the sine wave output of the LFO to X-in on the scope.  Then mult the sine wave output to the input of the \"ATTENUVERT\" module.  Patch the output of the attenuverter to the Y-in of the Scope.\n\n2) Notice that the output of the attenuverter is 0V while the knob is at its default position pointing towards the 0. What do you think will happen as you turn the knob clockwise?  Counter-clockwise?\n\n3) An attenuverter is used to scale AND invert signals, or just scale them.  The name is a portmanteau of \"attenuate\" and \"invert.\"   \n   ",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 139,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 1.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 144,
+      "pos": [
+        17,
+        3
+      ]
+    },
+    {
+      "id": 143,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 7.9549861
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 144,
+      "data": {
+        "lissajous": 0,
+        "external": 1
+      },
+      "pos": [
+        35,
+        3
+      ]
+    },
+    {
+      "id": 144,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "Attenuvert",
+      "params": [
+        {
+          "id": 0,
+          "value": -1.0
+        }
+      ],
+      "leftModuleId": 139,
+      "rightModuleId": 143,
+      "pos": [
+        27,
+        3
+      ]
+    },
+    {
+      "id": 145,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 149,
+      "text": "3a) An \"attenuverter\" acts identically to an attuator when you turn the knob from noon to fully clockwise.\n\n3b) An \"attenuverter\" inverts the input signal before attenuating as you turn the knob from noon to fully counterclockwise. When fully counterclockwise, the original signal is passed.\n\n3c) In terms of multiplication, you can think of an attenuverter as performing the following actions:\n\nMultiply by -1 when fully CCW.\nMultiply by 0 when at noon.\nMultiply by +1 when fully CW.\n\nScale proportionally at intermediate positions.      \n   ",
+      "pos": [
+        47,
+        0
+      ]
+    },
+    {
+      "id": 147,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 1.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 138,
+      "rightModuleId": 148,
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 148,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "Attenuvert",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 147,
+      "rightModuleId": 149,
+      "pos": [
+        26,
+        0
+      ]
+    },
+    {
+      "id": 149,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 7.9549861
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 148,
+      "rightModuleId": 145,
+      "data": {
+        "lissajous": 0,
+        "external": 1
+      },
+      "pos": [
+        34,
+        0
+      ]
+    },
+    {
+      "id": 150,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "text": "      Scroll down a few rows to see the completed patch.\n   ",
+      "pos": [
+        69,
+        0
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 136,
+      "outputModuleId": 139,
+      "outputId": 0,
+      "inputModuleId": 143,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 137,
+      "outputModuleId": 144,
+      "outputId": 0,
+      "inputModuleId": 143,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 138,
+      "outputModuleId": 139,
+      "outputId": 0,
+      "inputModuleId": 144,
+      "inputId": 0,
+      "color": "#c91847"
+    }
+  ]
+}

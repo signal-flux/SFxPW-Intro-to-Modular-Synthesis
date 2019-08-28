@@ -1,4 +1,4 @@
-# Chapter 00: Modular Thinking, Voltage, and Sound
+# 0: Modular Thinking, Voltage, and Sound
 
 *Welcome to Signal Flux's Introduction to Modular Synthesis!  We are excited to have you in this class with us.  This chapter jumps right in to what it means to think in terms of modular synthesis...*
 
@@ -114,7 +114,7 @@ In the next series of lessons, we will start building up our collection of flash
 | Chapter | Focus                                                        |
 | ------- | ------------------------------------------------------------ |
 | 01      | The basics of navigating VCV Rack; getting familiar with the concept of voltage; using an oscilloscope to visualize voltage. |
-| 02      | The core building block of synthesis, the voltage-controlled oscillator; the concepts of frequency and amplitude; understanding how audio is transmitted as voltage; using low-frequency oscillators (LFOs) as control voltage to affect the pitch of audio-rate voltage-controlled oscillators (VCOs). |
+| 02      | The core building block of synthesis, the voltage-controlled oscillator; the concepts of frequency and amplitude; understanding how audio is transmitted as voltage; using low-frequency oscillators (LFOs) as control voltage to affect the pitch of audio-rate voltage-controlled oscillators (VCOs); using attenuators to scale both control- and audio-rate voltages. |
 | 03      | Using voltage-controlled amplifiers to control the loudness of audio signals; amplitude. |
 | 04      | Creating an *event* - something which has a beginning, middle, and end, through the use of envelope generators (EGs); triggers, gates, and clocks: the drivers of modular time. |
 | 05      | Accurately controlling the pitch of oscillators using the volt-per-octave tuning standard, quantizers, and scales. |

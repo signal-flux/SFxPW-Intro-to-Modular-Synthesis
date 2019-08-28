@@ -1,0 +1,133 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 180,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 1.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 181,
+      "rightModuleId": 182,
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 181,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 180,
+      "text": "1) Connect the sine wave output to the X-in of the Scope.\n\n2) Observe the LFO, doing its LFO thing...\n\n3) But in particular, observe the minimum (0V), maximum (10V) and \"peak-to-peak\" voltage (10V).\n\n4) Now, use your mouse to click the switch on the LFO labelled \"UNI/BI.\" \n\n5) What happened on the Scope?  What changed?  What stayed the same?  ",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 182,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 7.98499489
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 180,
+      "rightModuleId": 183,
+      "data": {
+        "lissajous": 0,
+        "external": 1
+      },
+      "pos": [
+        26,
+        0
+      ]
+    },
+    {
+      "id": 183,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 182,
+      "text": "6) The LFO shifted its RANGE, but kept the same AMPLITUDE. The peak-to-peak voltage is still 10V, but the maximum and minimum are now +/-5V, respectively.\n\n7) The switch toggled the LFO from \"unipolar\" mode (always positive, so only one polarity), to \"bipolar\" mode (in which it goes both positive and negative, two polarities).",
+      "pos": [
+        39,
+        0
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 157,
+      "outputModuleId": 180,
+      "outputId": 0,
+      "inputModuleId": 182,
+      "inputId": 0,
+      "color": "#0986ad"
+    }
+  ]
+}

@@ -12,7 +12,7 @@ Welcome to Signal Flux and Pioneer Works *Introduction to Modular Synthesis* cla
 
 - [00: Introduction to Modular Thinking](./Chapter-00/chapter00.md)
 - [01: Introduction to VCV Rack and Generating Voltage](./Chapter-01/chapter01.md)
-- [02: Voltage-Controlled Oscillators](./Chapter-02/chapter02.md)
+- [02: Voltage-Controlled Oscillators, Attenuversion, and Control Voltage](./Chapter-02/chapter02.md)
 - [03: Voltage-Controlled Amplifiers](./Chapter-03/chapter03.md)
 - Additional Chapters will be added on a weekly basis!
 

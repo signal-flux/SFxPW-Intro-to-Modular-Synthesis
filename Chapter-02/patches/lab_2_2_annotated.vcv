@@ -1,0 +1,547 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 91,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.507999957
+        }
+      ],
+      "leftModuleId": 93,
+      "rightModuleId": 94,
+      "pos": [
+        24,
+        3
+      ]
+    },
+    {
+      "id": 93,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 1.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 91,
+      "pos": [
+        14,
+        3
+      ]
+    },
+    {
+      "id": 94,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 8.02999592
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 91,
+      "data": {
+        "lissajous": 0,
+        "external": 1
+      },
+      "pos": [
+        32,
+        3
+      ]
+    },
+    {
+      "id": 95,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 1.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 99,
+      "rightModuleId": 96,
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 96,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 95,
+      "rightModuleId": 98,
+      "pos": [
+        26,
+        0
+      ]
+    },
+    {
+      "id": 99,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 95,
+      "text": "1) Make sure the TIME knob on the Scope is set to 9 o'clock and the mode is set to EXT.\n\n2) Connect the LFO's sine wave output to the X-In on the scope.\n\n3) Mult the LFO's sine wave output into the input of the module labelled \"ATTENUATE\".  Do this by plugging a patch cable into the destination input first, and then dragging the patch cable to the LFO's sine wave output.\n\n4) Connect the output of ATTENUATE to Y-Input on the scope.\n\n5) What is the direct output of the LFO doing?  What is the output of the attenuator doing? Remember that the X-In trace is blue and the Y-In trace is red.",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 100,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 98,
+      "rightModuleId": 101,
+      "text": "6) It seems like the attenuator is not outputing anything! \n\n7) Try slowly turning the attenuator knob clockwise by clicking on it and dragging up.\n\n8) As you do so, you should see the Red trace start to recreate the LFO waveshape.  Keep turning the attenuator knob until it is at noon.\n\n9) The two LFOs you now see have the same period and frequency, the same waveshape, but different *AMPLITUDES*.\n\n10) Amplitude is a fancy word for \"how high\" a signal gets.  \n\n11) An ATTENUATOR changes the amplitude of incoming voltage.  ",
+      "pos": [
+        47,
+        0
+      ]
+    },
+    {
+      "id": 98,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 7.93999577
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 96,
+      "rightModuleId": 100,
+      "data": {
+        "lissajous": 0,
+        "external": 1
+      },
+      "pos": [
+        34,
+        0
+      ]
+    },
+    {
+      "id": 101,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 100,
+      "rightModuleId": 110,
+      "text": "12)  It scales the incoming voltages according to the knob position - in other words, it multiplies all incoming voltages by a number determined by the knob position.  \n\n12a) When the attenuator knob is fully counterclockwise, it multiplies all incoming voltages by 0, so the output is always 0V.\n\n12c) When the attenuator knob is at noon, it multiplies all incoming voltage by 0.5, so all output voltages are exactly half of the input voltage.\n\n12c) When the attenuator knob reaches fully clockwise, it multiplies all incoming voltages by 1, allowing them to pass through unaltered.       ",
+      "pos": [
+        63,
+        0
+      ]
+    },
+    {
+      "id": 102,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.5
+        }
+      ],
+      "leftModuleId": 103,
+      "rightModuleId": 104,
+      "pos": [
+        26,
+        1
+      ]
+    },
+    {
+      "id": 103,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "SimpleKnob",
+      "params": [
+        {
+          "id": 0,
+          "value": 10.0
+        }
+      ],
+      "leftModuleId": 105,
+      "rightModuleId": 102,
+      "pos": [
+        20,
+        1
+      ]
+    },
+    {
+      "id": 104,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 14.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 102,
+      "rightModuleId": 106,
+      "data": {
+        "lissajous": 0,
+        "external": 1
+      },
+      "pos": [
+        34,
+        1
+      ]
+    },
+    {
+      "id": 105,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 103,
+      "text": "13) Notice that the Unipolar Offset is the blue trace  since it is feeding the X-input.  Also, notice that the output of the attenuator (which is processing the Offset's output) is visualized by the red trace, since it is feeding the Y-input.\n\n14) Notice at the top and bottom of the scope screen.  It shows the maximum and minimum voltage that each input has reached in one frame.  It also shows the \"peak-to-peak\" (pp) voltage, or the difference between the maximum and minimum.\n\n15) Since the attenuator is set it to exactly noon, the output of the attenuator should be exactly half of the input voltage (10V from the Offset module).  Indeed it is!           ",
+      "pos": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": 106,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 104,
+      "text": "16) Try setting the attenuator knob to various positions and observing how the output of the attenuator becomes a different fraction of the input. \n\n17) Try setting the unipolar offset to a different value - you should also see the attenuator's red trace on the Scope change - why?\n\n18) The attenuator output changed because its input changed!  The fraction of the two values should have remained constant though.\n\n19) Go back and play with the attenuator  for the LFO again, and think about why you see two LFO's but at different amplitudes.  ",
+      "pos": [
+        47,
+        1
+      ]
+    },
+    {
+      "id": 107,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 14.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 108,
+      "data": {
+        "lissajous": 0,
+        "external": 1
+      },
+      "pos": [
+        32,
+        4
+      ]
+    },
+    {
+      "id": 108,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.5
+        }
+      ],
+      "leftModuleId": 109,
+      "rightModuleId": 107,
+      "pos": [
+        24,
+        4
+      ]
+    },
+    {
+      "id": 109,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "SimpleKnob",
+      "params": [
+        {
+          "id": 0,
+          "value": 10.0
+        }
+      ],
+      "rightModuleId": 108,
+      "pos": [
+        18,
+        4
+      ]
+    },
+    {
+      "id": 110,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 101,
+      "text": "Scroll down two rows to see the completed patch!  ",
+      "pos": [
+        79,
+        0
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 110,
+      "outputModuleId": 93,
+      "outputId": 0,
+      "inputModuleId": 94,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 116,
+      "outputModuleId": 91,
+      "outputId": 0,
+      "inputModuleId": 94,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 117,
+      "outputModuleId": 93,
+      "outputId": 0,
+      "inputModuleId": 91,
+      "inputId": 0,
+      "color": "#c91847"
+    },
+    {
+      "id": 121,
+      "outputModuleId": 102,
+      "outputId": 0,
+      "inputModuleId": 104,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 122,
+      "outputModuleId": 103,
+      "outputId": 0,
+      "inputModuleId": 102,
+      "inputId": 0,
+      "color": "#c91847"
+    },
+    {
+      "id": 123,
+      "outputModuleId": 103,
+      "outputId": 0,
+      "inputModuleId": 104,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 124,
+      "outputModuleId": 109,
+      "outputId": 0,
+      "inputModuleId": 107,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 125,
+      "outputModuleId": 108,
+      "outputId": 0,
+      "inputModuleId": 107,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 126,
+      "outputModuleId": 109,
+      "outputId": 0,
+      "inputModuleId": 108,
+      "inputId": 0,
+      "color": "#c91847"
+    }
+  ]
+}

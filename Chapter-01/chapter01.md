@@ -1,8 +1,6 @@
-# Chapter 1: Introduction to VCV Rack and Generating Voltage
+# 1: Introduction to VCV Rack and Generating Voltage
 
-This chapter will teach you how to use the oscilloscope as a tool for understanding signals, how a few fundamental building block modules generate and process signals, and help you become comfortable patching modules together in *[VCV Rack](https://vcvrack.com)*, an open-source digital environment which closely emulates Eurorack-format modular synthesis (including direct ports of many analog and digital Eurorack modules).  
-
-To start, we won't focus too much on the *musical* utility of the various ingredients for modular synthesis.  Instead, we will focus on understanding how they work abstractly so you can build intuition for what they are actually doing, and gain a basic understand of how voltage is turned into sound.  You have to walk before you can run!
+This chapter will teach you how to use the oscilloscope as a tool for understanding signals, how to think about voltage, and help you become comfortable patching modules together in *[VCV Rack](https://vcvrack.com)*, an open-source digital environment which closely emulates Eurorack-format modular synthesis (including direct ports of many analog and digital Eurorack modules).  
 
 While VCV Rack is a digital environment, we will continue to talk about the signals as analog voltages, since the environment is designed to emulate Eurorack modular synthesis.
 
@@ -10,11 +8,15 @@ In these first two labs, we will look at a critical tool for understanding *sign
 
 ## Labs
 
-So, let's begin!  Right-click (or alt/opt-click) on the links below; then click `Save as ..` to download the two VCV Rack labs.  Once download, double-click them in your file browser, or open them using VCV Rack's `File > Open` dialog.  The two labs will walk you step-by-step through the basics of viewing a voltage with an oscilloscope.
+So, let's begin!  Right-click (or alt/opt-click) on the links below; then click `Save as ..` to download the two VCV Rack labs.  Once downloaded, double-click them in your file browser, or open them using VCV Rack's `File > Open` dialog.  The two labs will walk you step-by-step through the basics of viewing a voltage with an oscilloscope.
 
 [Lab 1.1: Generating Voltages and Viewing with the Oscilloscope](./patches/lab_1_1_annotated.vcv) (`Right-click > Save as ...`)
 
 [Lab 1.2: Oscilloscope Timescales](lab_1_2_annotated.vcv) (`Right-click > Save as ...`)
+
+You can also download a .zip file containing all the labs for Chapter 1:
+
+[Chapter 1 Labs (zip)](./patches/ch01_vcv_labs.zip)
 
 ## Additional Notes on Lab 1.1 and 1.2
 

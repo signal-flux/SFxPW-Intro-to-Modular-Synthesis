@@ -8,7 +8,8 @@
 1. Install [VCV Rack](vcvrack.com) on your laptop computer.  Once installed, log-in by clicking the `Library` dropdown in the toolbar and using the credentials `itms@signalflux.org` and password `synthesis`.  Once logged in, press `Library > Update all`.
 2. Read [00 - Introduction to Modular Thinking](./Chapter-00/chapter00.md).  We will be going over all this (and more!) in our first class.  
 3. Review these very short web demos on [pitch](https://learningsynths.ableton.com/making-changes/amplitude), [amplitude](https://learningsynths.ableton.com/making-changes/pitch) and [playing with both](https://learningsynths.ableton.com/making-changes/play-with-amplitude-and-pitch).
-4. Remember to bring your laptop, headphones, and notetaking materials!
+4. Please download the Lab patches for [Chapter 01](./Chapter-01/patches/ch01_vcv_labs.zip), [Chapter 02](./Chapter-02/patches/ch02_vcv_labs.zip) and [Chapter 03](./Chapter-03/patches/ch03_vcv_labs.zip) - we will be doing these in class, so please have the files downloaded on your computer when you arrive.  Right- or opt-click the links and select `Save as ...` to save the .zip files.
+5. Remember to bring your laptop, headphones, and notetaking materials!
 
 
 
@@ -16,7 +17,7 @@
 
 ### Modular Thinking
 
-*This week, we will learn about the physics of sound, the fundamental concepts of modular synthesis like signal flow, patching, control voltage, and modulation, and get familiar with VCV Rack, an open-source modular Eurorack modular synthesis emulator.*
+*This week, we will learn about the physics of sound and the fundamental concepts of modular synthesis like signal flow, patching, control voltage, and modulation.  We will also get familiar with VCV Rack, an open-source modular Eurorack modular synthesis emulator.*
 
 ### Agenda
 
@@ -54,8 +55,8 @@ Pitch, Timbre, Loudness, Voltage, Signal, Input, Output, Control Voltage (CV), M
 | *Review*              | [Vocabulary]()                                               |
 |                       | [00: Introduction to Modular Thinking](./Chapter-00/chapter00.md) |
 |                       | [01: Introduction to VCV Rack and Generating Voltage](./Chapter-01/chapter01.md) |
-|                       | [02: Voltage-Controlled Oscillators](./Chapter-02/chapter02.md) |
-|                       | [03: Voltage Controlled Amplifiers](./Chapter-03/chapter03.md) |
+|                       | [02: Voltage-Controlled Oscillators, Attenuversion, and Control Voltage](./Chapter-02/chapter02.md) |
+|                       | [03: Voltage-Controlled Amplifiers](./Chapter-03/chapter03.md) |
 |                       |                                                              |
 | *Preview*             | [04: Creating an Event (Clocks, Triggers, Gates, and Envelopes)](./Chapter-04/chapter04.md) |
 |                       | [05: Creating a Melody (Sequences, Volt-per-octave, Quantizers)](./Chapter-05/chapter05.md) |

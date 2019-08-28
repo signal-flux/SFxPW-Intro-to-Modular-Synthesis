@@ -1,0 +1,295 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 77,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "text": "The LFO-1 module is a *low-frequency oscillator*; this means that it produces a voltage which rises and falls in a repetitive pattern at a constant rate. \n\nThere are a lot of knobs and switches on it.  For now, we will only focus on the knob labeled \"FREQ\" (frequency), and the bottom row of output jacks (NB: All output jacks from the VCV Rack \"Fundamental Library\" have black boxes around them.\n\nFollow the instructions on the notepads to complete the lab! ",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 78,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 1.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 80,
+      "rightModuleId": 81,
+      "pos": [
+        34,
+        0
+      ]
+    },
+    {
+      "id": 79,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 14.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 81,
+      "rightModuleId": 82,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        60,
+        0
+      ]
+    },
+    {
+      "id": 80,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 78,
+      "text": "1) Set the TIME scale knob on the Scope to about 9 o'clock. Also click on the \"INT/EXT\" button on the Scope to set the scope to EXT mode (don't worry about what this does - we will cover it another time).    \n\n2) Connect the SIN (short for \"sine wave\") output on the LFO to the X-In on the Scope.\n\n3) What do you see on the Scope? Observe how the LFO-1 is outputting a voltage which rises and falls in a repetitive pattern.  \n\n5) Each complete iteration of the pattern is called a *CYCLE*.\n\n6) The time it takes to complete one cycle is called the *PERIOD*. \n\n",
+      "pos": [
+        18,
+        0
+      ]
+    },
+    {
+      "id": 81,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 78,
+      "rightModuleId": 79,
+      "text": "7) The \"FREQUENCY\" of an oscillator is the number of cycles it completes in one second and is measured in Hertz (1 Hz = 1 cycle per second = 1 c.p.s.).\n\n8) Adjust the knob labeled \"FREQ\" - turn it clockwise (CW) by clicking hte knob and dragging up, CCW by clicking the knob and dragging down.  \n\n8) How does the shape change?\n\n9) As you turn the knob CCW, the oscillator takes longer to complete one cycle, meaning it has a lower frequency (longer period).  As you turn the knob CW, the oscillator takes less time to complete one cycle, meaning it has a higher frequency (shorter period). \n",
+      "pos": [
+        44,
+        0
+      ]
+    },
+    {
+      "id": 82,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 79,
+      "text": "9) Try setting the Oscillator's Frequency knob to about 9 o'clock.  \n\n10) Reset the Oscilloscope's TIME scale knob to its default position by double clicking on it (you can do this with any knob in VCV Rack).  \n\n11) Since we are know at a much more zoomed in TIME scale, the whole shape of the oscillation is not visible, but we can see the voltage move up and down.\n\n12) Set the TIME scale knob back to 9 o'clock and double click on the Oscillator Frequency knob to set it to its default.\n\n13) Try moving the patch cable to the other LFO outputs to observe the different *WAVESHAPES*.   ",
+      "pos": [
+        73,
+        0
+      ]
+    },
+    {
+      "id": 86,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "text": "18) Note that the ends of the patch cables have little LEDs in them that display the voltage level - higher voltage means brighter lights!  Who needs oscilloscopes...\n\n\nScroll down two rows to see what the completed patch should look like!   ",
+      "pos": [
+        44,
+        1
+      ]
+    },
+    {
+      "id": 87,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 1.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 90,
+      "pos": [
+        34,
+        3
+      ]
+    },
+    {
+      "id": 88,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 8.07500076
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 90,
+      "data": {
+        "lissajous": 0,
+        "external": 1
+      },
+      "pos": [
+        60,
+        3
+      ]
+    },
+    {
+      "id": 89,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "text": "14) Now that you have seen each of the waveshapes, connect the sine wave output to X-in and the sawtooth wave output to Y-in.\n\n15) Observe how both waveshapes take the same amount of time to complete - i.e. they have the same period and the same frequency. \n\n16) The relationship between the two stays constant no matter the frequency - they are always the same portion of the way through a single cycle.\n\n17) The \"percentage of a cycle\" that has been completed is known as the *PHASE*.",
+      "pos": [
+        18,
+        1
+      ]
+    },
+    {
+      "id": 90,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 87,
+      "rightModuleId": 88,
+      "text": "Notice that the INT/EXT light on the Scope has been set to EXT by clicking the corresponding button!   ",
+      "pos": [
+        44,
+        3
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 107,
+      "outputModuleId": 87,
+      "outputId": 0,
+      "inputModuleId": 88,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 106,
+      "outputModuleId": 87,
+      "outputId": 2,
+      "inputModuleId": 88,
+      "inputId": 1,
+      "color": "#c91847"
+    }
+  ]
+}

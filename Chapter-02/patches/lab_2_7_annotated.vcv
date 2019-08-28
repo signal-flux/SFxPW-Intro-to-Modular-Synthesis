@@ -1,0 +1,373 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 164,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 169,
+      "text": "This is a very important lesson! Do not skip it, and please make sure you understand it thoroughly.\n\nIt will teach you how to use the \"Audio-8\" module to send audio from VCV rack to your speakers. it will also demonstrate how oscillators can be used to generate pitched sound.\n\nAlways exercise caution when sending signals to speakers -  always ensure that you have some sort of volume control.  This patch will give you an example of how to do so!  ",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 165,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 167,
+      "data": {
+        "audio": {
+          "driver": 8,
+          "offset": 1121777016,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        67,
+        3
+      ]
+    },
+    {
+      "id": 166,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 7.56099939
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 167,
+      "pos": [
+        49,
+        3
+      ]
+    },
+    {
+      "id": 167,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 166,
+      "rightModuleId": 165,
+      "pos": [
+        59,
+        3
+      ]
+    },
+    {
+      "id": 168,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 14.0149937
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        64,
+        4
+      ]
+    },
+    {
+      "id": 169,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 164,
+      "rightModuleId": 171,
+      "text": "1) Make sure your LFO is set to \"Bipolar Mode\" by checking the position of the corresponding switch.\n\n2) Make sure the attenuator's knob is set fully CCW (minimum). \n\n3a) Click on the first row of the Audio-8 module's display and select the corresponding audio driver for your speakers (on Macs this will be called \"Core Audio.\" On Windows, it may be called \"WASAPI\" or \"DirectSound.\"\n\n3b) Click on the second row of the Audio-8 module's display and select the desired speaker device.\n\n3c) You can ignore the final row of numbers for now.",
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 171,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 169,
+      "rightModuleId": 174,
+      "text": "5) Now, whatever signals you send to the the inputs on Audio-8 labelled \"1-2\" will be sent to your left and right speakers respectively.  The voltage will push the speaker cone back and forth - high voltage will push the speaker cone out; 0V will let the speakers rest at middle; negative voltage will push the speaker cone out in the opposite direction.\n\n6) Connect the sawtooth wave output of the LFO to the input of the attenuator and X-in on Scope. \n\n7) Make sure the attenuator is fully CCW!\n\n8) Mult the output of the attenuator to both the 1 & 2 input of Audio-8 as well as the Y-in on Scope.    ",
+      "pos": [
+        32,
+        0
+      ]
+    },
+    {
+      "id": 172,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 177,
+      "text": "9) The red trace (Y-in, attenuator output) should be at 0 since the attenuator is fully closed, while the blue trace (X-input, LFO saw output) should show the LFO.\n\n10) Slowly turn the attenuator CW until you hear clicking from your speakers/headphones. Notice that the click coincides with when the sawtooth wave snaps back from its maximum to its minimum position; this causes the speaker cone to rapidly snap back, causing a pulse of air to travel towards your ear.\n\n12) Slowly (very slowly!) increase the frequency of the LFO using the FREQ knob.  Listen to the clicks. When do you stop hearing clicks and start hearing a pitched, continuous sound? ",
+      "pos": [
+        76,
+        0
+      ]
+    },
+    {
+      "id": 173,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 175,
+      "text": "13) Set the Scope to INT mode and turn the TIME knob to a much faster scale (turn it to about 3 o'clock).\n\n14) Observe how higher frequencies (more cycles per second) results in a higher pitched sound.  \n\n15) SLOWLY adjust the attenuator.  knob.  Notice that as the amplitude of the attenuator's output sawtooth wave increases, so does the volume. Why? \n\n16) Volume gets louder as amplitude increases because the speaker cone gets pushed back and forth further and further, resulting in sound waves in the air with greater amplitude, and thus greater motion in your ear drum!               ",
+      "pos": [
+        76,
+        1
+      ]
+    },
+    {
+      "id": 174,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 1.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 171,
+      "rightModuleId": 176,
+      "pos": [
+        48,
+        0
+      ]
+    },
+    {
+      "id": 175,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 8.01499176
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 173,
+      "data": {
+        "lissajous": 0,
+        "external": 1
+      },
+      "pos": [
+        63,
+        1
+      ]
+    },
+    {
+      "id": 176,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 174,
+      "rightModuleId": 177,
+      "pos": [
+        58,
+        0
+      ]
+    },
+    {
+      "id": 177,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 176,
+      "rightModuleId": 172,
+      "data": {
+        "audio": {
+          "driver": 8,
+          "offset": 1121777016,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        66,
+        0
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 149,
+      "outputModuleId": 167,
+      "outputId": 0,
+      "inputModuleId": 165,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 150,
+      "outputModuleId": 167,
+      "outputId": 0,
+      "inputModuleId": 165,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 152,
+      "outputModuleId": 167,
+      "outputId": 0,
+      "inputModuleId": 168,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 154,
+      "outputModuleId": 166,
+      "outputId": 2,
+      "inputModuleId": 167,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 155,
+      "outputModuleId": 166,
+      "outputId": 2,
+      "inputModuleId": 168,
+      "inputId": 0,
+      "color": "#c9b70e"
+    }
+  ]
+}

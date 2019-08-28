@@ -1,0 +1,523 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 193,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 212,
+      "rightModuleId": 218,
+      "text": "1) Connect the \"Sine\" output of VCO-1 to the input of the attenuator. Mult the attenuator output to the 1/2 inputs of Audio-8, and to the X-input on the scope..  Configure audio for your speakers, and slowly turn the volume up until you hear the oscillator's output.\n\n2) Patch the sine wave output of the left LFO to the adjacent attenuverter's input.\n\n3) Mult the attenuverter output to the Y-in on the adjacent scope and to the \"V/oct\" input on the VCO-1.\n\n4) The \"V/oct\" input controls the frequency (and thus pitch) of the VCO - we will talk more about the name \"V/oct\" next week!       ",
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 196,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 197,
+      "rightModuleId": 207,
+      "data": {
+        "audio": {
+          "driver": 7,
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 2048
+        }
+      },
+      "pos": [
+        83,
+        4
+      ]
+    },
+    {
+      "id": 197,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 210,
+      "rightModuleId": 196,
+      "pos": [
+        75,
+        4
+      ]
+    },
+    {
+      "id": 199,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -0.430998594
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 208,
+      "pos": [
+        33,
+        3
+      ]
+    },
+    {
+      "id": 207,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 16.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 196,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        93,
+        4
+      ]
+    },
+    {
+      "id": 208,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "Attenuvert",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 199,
+      "pos": [
+        43,
+        3
+      ]
+    },
+    {
+      "id": 210,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -14.9040003
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 197,
+      "pos": [
+        65,
+        4
+      ]
+    },
+    {
+      "id": 212,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 193,
+      "text": "This a very important lesson, so please follow it carefully!\n\n\nYou can scroll down a few rows to play with the completed patch if you prefer!       ",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 213,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 219,
+      "rightModuleId": 214,
+      "text": "5) So far nothing has changed... the attenuverter is only outputting 0V.\n\n6) Slowly turn the attenuverter clockwise until you start seeing the LFO (red trace, Y-in) rise up and down on the Scope and you can see & hear the frequency of the oscillator (blue trace) increase and decrease with in sync with the LFO.  Remember, increasing the frequency looks like the waveform \"compressing\" like a spring since it completes more cycles per second.  This is your first usage of control voltage!  You are using the LFO to MODULATE the frqeuency of the VCO!\n\n7) Try turning the attenuverter even further clockwise.  What happens to the LFO on the scope?  How about the VCO (blue trace)?             ",
+      "pos": [
+        50,
+        0
+      ]
+    },
+    {
+      "id": 214,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 213,
+      "rightModuleId": 216,
+      "text": "8) Double click the attenuverter knob to reset it to 0, its default position. Listen to the pitch the  VCO rests at when not modulated (you can adjust this pitch using the FREQ knob on the VCO); observe the VCO on the scope. \n\n9) Slowly turn the attenuverter CCW and observe the LFO start oscillating with NEGATIVE polarity.  Listen to the pitch of the VCO decrease from its resting frequency, and watch the waveform STRETCH out from its original size, rather than compress!\n\n10) Try moving the cable that connects the LFO output to the attenuverter input to each of the different waveshapes.  Listen to and observe how the form of pitch modulation changes.                 ",
+      "pos": [
+        66,
+        0
+      ]
+    },
+    {
+      "id": 216,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 214,
+      "rightModuleId": 217,
+      "text": "8) Double click the attenuverter knob to reset it to 0, its default position. Listen to the pitch the  VCO rests at when not modulated (you can adjust this pitch using the FREQ knob on the VCO); observe the VCO on the scope. \n\n9) Slowly turn the attenuverter CCW and observe the LFO start oscillating with NEGATIVE polarity.  Listen to the pitch of the VCO decrease from its resting frequency, and watch the waveform STRETCH out from its original size, rather than compress!\n\n10) Try moving the cable that connects the LFO output to the attenuverter input to each of the different waveshapes.  Listen to and observe how the form of pitch modulation changes.                 ",
+      "pos": [
+        82,
+        0
+      ]
+    },
+    {
+      "id": 217,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 216,
+      "text": "11) Try different settings for the speed of the LFO and the position of the attenuverter.  Repeat this step for each waveform!\n\n12) Now move the output of the attenuator from the V/oct input on the VCO to the adjacent input labeled  \"FM\" (for \"FREQUENCY MODULATION).  \n\n13) Why is there no effect on frequency?\n\n14) Because the knob labeled \"FM CV\" applies attenuation to the incoming signal at the FM jack before allowing it to take action!\n\n15) Slowly increase the FM CV knob until you hear the effect of the LFO on frequency.                  ",
+      "pos": [
+        98,
+        0
+      ]
+    },
+    {
+      "id": 218,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -0.430998594
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 193,
+      "rightModuleId": 219,
+      "pos": [
+        32,
+        0
+      ]
+    },
+    {
+      "id": 219,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "Attenuvert",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 218,
+      "rightModuleId": 213,
+      "pos": [
+        42,
+        0
+      ]
+    },
+    {
+      "id": 220,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -14.9040003
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 221,
+      "pos": [
+        65,
+        1
+      ]
+    },
+    {
+      "id": 221,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 220,
+      "rightModuleId": 222,
+      "pos": [
+        75,
+        1
+      ]
+    },
+    {
+      "id": 222,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 221,
+      "rightModuleId": 223,
+      "data": {
+        "audio": {
+          "driver": 7,
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 2048
+        }
+      },
+      "pos": [
+        83,
+        1
+      ]
+    },
+    {
+      "id": 223,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 16.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 222,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        93,
+        1
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 187,
+      "outputModuleId": 208,
+      "outputId": 0,
+      "inputModuleId": 207,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 190,
+      "outputModuleId": 197,
+      "outputId": 0,
+      "inputModuleId": 196,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 191,
+      "outputModuleId": 197,
+      "outputId": 0,
+      "inputModuleId": 196,
+      "inputId": 1,
+      "color": "#0986ad"
+    },
+    {
+      "id": 192,
+      "outputModuleId": 197,
+      "outputId": 0,
+      "inputModuleId": 207,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 189,
+      "outputModuleId": 210,
+      "outputId": 0,
+      "inputModuleId": 197,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 186,
+      "outputModuleId": 208,
+      "outputId": 0,
+      "inputModuleId": 210,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 194,
+      "outputModuleId": 199,
+      "outputId": 0,
+      "inputModuleId": 208,
+      "inputId": 0,
+      "color": "#c91847"
+    }
+  ]
+}

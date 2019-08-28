@@ -1,0 +1,473 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 111,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 129,
+      "text": "1) Connect the sine wave output of the LFO to X-in on the scope (blue trace on the display).  \n\n2) Mult the sine wave output of the LFO to the input of the INVERT module. Then send the output of the inverter to the Y-in of the scope (red trace on the display).\n\n3) What do you notice that is similar about the two signals?  What is different?\n\n4) Whenever the original signal goes up, the inverter signal goes down, and vice versa.\n\n5) The inverter is simply flipping the polarity (positive/negative) of the incoming voltage before sending it to the output!  ",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 112,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "Invert",
+      "params": [],
+      "leftModuleId": 115,
+      "rightModuleId": 117,
+      "pos": [
+        26,
+        3
+      ]
+    },
+    {
+      "id": 115,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -4.34600258
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 112,
+      "pos": [
+        16,
+        3
+      ]
+    },
+    {
+      "id": 117,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 14.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 112,
+      "data": {
+        "lissajous": 0,
+        "external": 1
+      },
+      "pos": [
+        32,
+        3
+      ]
+    },
+    {
+      "id": 119,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "Invert",
+      "params": [],
+      "leftModuleId": 126,
+      "rightModuleId": 120,
+      "pos": [
+        70,
+        3
+      ]
+    },
+    {
+      "id": 120,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 14.0349932
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 119,
+      "data": {
+        "lissajous": 0,
+        "external": 1
+      },
+      "pos": [
+        76,
+        3
+      ]
+    },
+    {
+      "id": 122,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 131,
+      "text": "6) Try setting the frequency knob to 9 o'clock and then reset the TIME knob on the Scope to its default position by double- clicking it.\n\n7) Observe how the LFO output and the inverted LFO output perfectly mirror each other on a much finer time scale.\n      ",
+      "pos": [
+        45,
+        0
+      ]
+    },
+    {
+      "id": 125,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 134,
+      "text": "8) Set up the same patch, but this time use the output of the Unipolar Offset to feed the X-in on the Scope as well as the inverter's input.  The inverter should again feed the Y-in on the Scope.     \n\n9) Try adjusting the Bipolar Offset's knob.  Observe how the inverter's output (red trace) is always the exact negative version of the inverter's input (so when the Offset module's output is negative, the inverter's output has the same magnitude but is positive).\n\nNB: Remember that the Bipolar Offset sends out -5V when fully CCW, 0V at noon, and +5V fully CCW!",
+      "pos": [
+        93,
+        0
+      ]
+    },
+    {
+      "id": 126,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "BipolarKnob",
+      "params": [
+        {
+          "id": 0,
+          "value": 2.72999954
+        }
+      ],
+      "rightModuleId": 119,
+      "pos": [
+        64,
+        3
+      ]
+    },
+    {
+      "id": 129,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -4.34600258
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 111,
+      "rightModuleId": 130,
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 130,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "Invert",
+      "params": [],
+      "leftModuleId": 129,
+      "rightModuleId": 131,
+      "pos": [
+        26,
+        0
+      ]
+    },
+    {
+      "id": 131,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 7.86499166
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 130,
+      "rightModuleId": 122,
+      "data": {
+        "lissajous": 0,
+        "external": 1
+      },
+      "pos": [
+        32,
+        0
+      ]
+    },
+    {
+      "id": 132,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "BipolarKnob",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 133,
+      "pos": [
+        68,
+        0
+      ]
+    },
+    {
+      "id": 133,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "Invert",
+      "params": [],
+      "leftModuleId": 132,
+      "rightModuleId": 134,
+      "pos": [
+        74,
+        0
+      ]
+    },
+    {
+      "id": 134,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 14.0349932
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 133,
+      "rightModuleId": 125,
+      "data": {
+        "lissajous": 0,
+        "external": 1
+      },
+      "pos": [
+        80,
+        0
+      ]
+    },
+    {
+      "id": 137,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "text": "Scroll down a few rows to see the completed patches!",
+      "pos": [
+        93,
+        1
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 127,
+      "outputModuleId": 115,
+      "outputId": 0,
+      "inputModuleId": 117,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 128,
+      "outputModuleId": 112,
+      "outputId": 0,
+      "inputModuleId": 117,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 129,
+      "outputModuleId": 115,
+      "outputId": 0,
+      "inputModuleId": 112,
+      "inputId": 0,
+      "color": "#c91847"
+    },
+    {
+      "id": 132,
+      "outputModuleId": 119,
+      "outputId": 0,
+      "inputModuleId": 120,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 133,
+      "outputModuleId": 126,
+      "outputId": 0,
+      "inputModuleId": 120,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 134,
+      "outputModuleId": 126,
+      "outputId": 0,
+      "inputModuleId": 119,
+      "inputId": 0,
+      "color": "#c91847"
+    }
+  ]
+}
