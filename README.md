@@ -16,7 +16,11 @@ Welcome to Signal Flux and Pioneer Works *Introduction to Modular Synthesis* cla
 - [03: Voltage-Controlled Amplifiers](./Chapter-03/chapter03.md)
 - Additional Chapters will be added on a weekly basis!
 
+
+
 ## Downloads
 
 [VCV Rack](vcvrack.com)
+
+[Slack](slack.com/downloads)
 
