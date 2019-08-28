@@ -34,7 +34,7 @@ You can also download a .zip file containing all the labs for Chapter 2:
 
 
 
-## Additional Notes on Labs 2.1-2.6
+## Additional Notes
 
 If there is anything you are having trouble understanding in the labs, see if the notes below help! If not, comment in the slack, or shoot Izzy or Sam a message!
 

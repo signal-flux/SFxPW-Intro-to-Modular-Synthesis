@@ -46,7 +46,7 @@
 
 [Click here for definitions](./glossary.md#week-1)
 
-Pitch, Timbre, Loudness, Voltage, Signal, Input, Output, Control Voltage (CV), Modulation, Audio-rate Voltage, Oscilloscope, Oscillator, Voltage-Controlled Oscillator (VCO), Low-Frequency Oscillator (LFO), Amplitude, Attenuator, Voltage-Controlled Amplifier (VCA), Hertz (Hz), Frequency, Inverter, Attenuverter, Unipolar Voltage, Bipolar Voltage, Signal Flow
+Pitch, Timbre, Loudness, Voltage, Signal, Input, Output, Control Voltage (CV), Modulation, Audio-rate Voltage, Oscilloscope, Oscillator, Voltage-Controlled Oscillator (VCO), Low-Frequency Oscillator (LFO), Amplitude, Attenuator, Voltage-Controlled Amplifier (VCA), Hertz (Hz), Frequency, Inverter, Attenuverter, Unipolar Voltage, Bipolar Voltage, Signal Flow, Modulation Depth
 
 ### Homework
 

@@ -1,0 +1,755 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 120,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.50549978
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 125,
+      "pos": [
+        39,
+        4
+      ]
+    },
+    {
+      "id": 121,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 0.108999826
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 123,
+      "rightModuleId": 122,
+      "pos": [
+        23,
+        3
+      ]
+    },
+    {
+      "id": 122,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "VCA-1",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        }
+      ],
+      "leftModuleId": 121,
+      "rightModuleId": 126,
+      "pos": [
+        33,
+        3
+      ]
+    },
+    {
+      "id": 123,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -4.8859973
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 121,
+      "pos": [
+        13,
+        3
+      ]
+    },
+    {
+      "id": 124,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 125,
+      "rightModuleId": 127,
+      "data": {
+        "audio": {
+          "driver": 6,
+          "offset": 1065353216,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        57,
+        4
+      ]
+    },
+    {
+      "id": 125,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0255000014
+        }
+      ],
+      "leftModuleId": 120,
+      "rightModuleId": 124,
+      "pos": [
+        49,
+        4
+      ]
+    },
+    {
+      "id": 126,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 7.87999773
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 122,
+      "rightModuleId": 130,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        36,
+        3
+      ]
+    },
+    {
+      "id": 127,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 15.9849997
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 124,
+      "rightModuleId": 129,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        67,
+        4
+      ]
+    },
+    {
+      "id": 129,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 127,
+      "text": "This Scope is showing the audio-rate VCO which we are listening to (blue trace).  It also shows the frequency-modulating sawtooth wave (red trace).  We can see its frequency change as it compresses and expands.  When the sine wave LFO reaches its peak, it fully opens the VCA, allowing the sawtooth LFO to pass through the Scope and modulate the frequency of the VCO. When the sine wave LFO is at its minimum, the VCA is fully closed, and no frequency modulation is applied to the audio-rate VCO.\n\n\nThe depth of modulation can be seen and heard as how compressed the waveform appears and how high the pitch goes, respectively. ",
+      "pos": [
+        80,
+        4
+      ]
+    },
+    {
+      "id": 130,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 126,
+      "text": "The blue trace here shows the sawtooth LFO (from the right LFO-1) after it passes through the VCA.  The VCA is opened and closed by the sine wave LFO from the left LFO-1.  \n\nAs the sine wave LFO reaches the highest point in its period, it fully opens the VCA, allowing the sawtooth wave to passes through at its original amplitude and sweep the VCO over the greatest pitch range.  When the sine wave reaches its minimum (0V), the VCA is fully closed, and no frequency modulation is applied to the VCO.     ",
+      "pos": [
+        49,
+        3
+      ]
+    },
+    {
+      "id": 131,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -4.8859973
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 139,
+      "rightModuleId": 132,
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 132,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 0.108999826
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 131,
+      "rightModuleId": 133,
+      "pos": [
+        26,
+        0
+      ]
+    },
+    {
+      "id": 133,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "VCA-1",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        }
+      ],
+      "leftModuleId": 132,
+      "rightModuleId": 134,
+      "pos": [
+        36,
+        0
+      ]
+    },
+    {
+      "id": 134,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 7.87999773
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 133,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        39,
+        0
+      ]
+    },
+    {
+      "id": 135,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.50549978
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 136,
+      "pos": [
+        42,
+        1
+      ]
+    },
+    {
+      "id": 136,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0255000014
+        }
+      ],
+      "leftModuleId": 135,
+      "rightModuleId": 137,
+      "pos": [
+        52,
+        1
+      ]
+    },
+    {
+      "id": 137,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 136,
+      "rightModuleId": 138,
+      "data": {
+        "audio": {
+          "driver": 6,
+          "offset": 1065353216,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        60,
+        1
+      ]
+    },
+    {
+      "id": 138,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 15.9849997
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 137,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        70,
+        1
+      ]
+    },
+    {
+      "id": 139,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 131,
+      "text": "1) The audio output has been setup for you.  VCO-1 Triangle > Attenuate > Audio-8.  Please select your audio driver.\n\n2) Incrase the volume of the Attenuator to a reasonable level so you can hear the VCO.\n\n3) Patch the sawtooth output of the right LFO-1 to the IN jack on the VCA.\n\n4) Mult the VCA output to the VCO-1 FM input, the X-in on the upper scope, and the Y-in on the lower scope. Since the VCA has a positive voltage NORMALLED to its CV input, our sawtooth wave is passing right through the VCA and modulating the VCO frequency.  You should be able to hear the pitch changing now in a sawtooth pattern!",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 140,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 141,
+      "text": "5) Now mult the left LFO-1's sine wave output to both the VCA CV input and the upper Scope's Y-input.  \n\n6) Now, the slower, right LFO-1's sine wave is opening and closing the VCA!  This means that the amplitude of the sawtooth wave output by the VCA is changing as the sine wave control voltage moves up and down.\n\n7) Since the amplitude of the sawtooth wave is changing, the maximum voltage it reaches every cycle changes; this maximum voltage is set by the sine wave!\n\n8) However, since the maximum voltage of the sawtooth wave also determines the maximum pitch the VCO reaches, we can hear the DEPTH of modulation changing!   ",
+      "pos": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 141,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 140,
+      "text": "9) MODULATION DEPTH means how far a parameter is moved from its normal position by control voltage.  \n\n10) When the VCA is closed, the output is 0V, so the VCO's frequency is not modulated at all.  As the VCA opens (controlled by the sine wave), the sawtooth wave that the VCA emits reaches a higher and higher voltage, causing the VCO-1 to deviate further and further from its normal pitch.\n\n10) The sine wave LFO and VCA then are controlling the modulation DEPTH of the sawtooth LFO as it is applied to the VCO!  That sentence is a mouthful, but take your time really understanding it! ",
+      "pos": [
+        16,
+        1
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 148,
+      "outputModuleId": 125,
+      "outputId": 0,
+      "inputModuleId": 124,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 149,
+      "outputModuleId": 125,
+      "outputId": 0,
+      "inputModuleId": 124,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 152,
+      "outputModuleId": 123,
+      "outputId": 0,
+      "inputModuleId": 126,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 153,
+      "outputModuleId": 122,
+      "outputId": 0,
+      "inputModuleId": 126,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 154,
+      "outputModuleId": 122,
+      "outputId": 0,
+      "inputModuleId": 120,
+      "inputId": 1,
+      "color": "#0986ad"
+    },
+    {
+      "id": 145,
+      "outputModuleId": 121,
+      "outputId": 2,
+      "inputModuleId": 122,
+      "inputId": 1,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 157,
+      "outputModuleId": 123,
+      "outputId": 0,
+      "inputModuleId": 122,
+      "inputId": 0,
+      "color": "#c91847"
+    },
+    {
+      "id": 156,
+      "outputModuleId": 120,
+      "outputId": 1,
+      "inputModuleId": 127,
+      "inputId": 0,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 150,
+      "outputModuleId": 120,
+      "outputId": 1,
+      "inputModuleId": 125,
+      "inputId": 0,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 158,
+      "outputModuleId": 122,
+      "outputId": 0,
+      "inputModuleId": 127,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 160,
+      "outputModuleId": 136,
+      "outputId": 0,
+      "inputModuleId": 137,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 161,
+      "outputModuleId": 136,
+      "outputId": 0,
+      "inputModuleId": 137,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 162,
+      "outputModuleId": 135,
+      "outputId": 1,
+      "inputModuleId": 136,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 163,
+      "outputModuleId": 135,
+      "outputId": 1,
+      "inputModuleId": 138,
+      "inputId": 0,
+      "color": "#0986ad"
+    }
+  ]
+}

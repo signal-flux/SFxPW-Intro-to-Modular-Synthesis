@@ -45,6 +45,7 @@
 | *Attenuverter*                        | Similar to an attenuator, but it can also invert voltages.  At noon, incoming voltage is fully attenuated.  Between noon and CW, attenuation is decreased just like on an attenuator (with no attenuation reached fully CW).  Between noon and CCW, the incoming voltage is inverted before it is attenuated; attenuation of the inverted voltage decreases as the knob moves from noon to fully CCW.  Original signal is passed to the output at its fully amplitude but inverted when the knob reaches CCW. |
 | *Unipolar Voltage*                    | A signal which is only positive or only negative, e.g. an LFO whose range is 0V to +8V; alternatively, 0V to -8V would also be unipolar.  *Uni*- means 'one' and *-polar* refers to polarity (positive or negative). |
 | *Bipolar Voltage*                     | A signal which can be both positive and negative, e.g. an LFO whose range is -5V to +5V.  *Bi*- means 'two' and *-polar* refers to polarity (positive or negative). |
+| *Modulation Depth*                    | The extent of a change in a parameter caused by modulation; how far a parameter under voltage control moves from its normal position. The farther the control voltage pushes the parameter, the greater the  modulation depth. |
 
 ## Week 3
 

@@ -1,0 +1,535 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 100,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "VCA-1",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        }
+      ],
+      "leftModuleId": 107,
+      "rightModuleId": 103,
+      "pos": [
+        55,
+        0
+      ]
+    },
+    {
+      "id": 101,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -4.26500034
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 106,
+      "rightModuleId": 107,
+      "pos": [
+        42,
+        0
+      ]
+    },
+    {
+      "id": 103,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 100,
+      "rightModuleId": 104,
+      "pos": [
+        58,
+        0
+      ]
+    },
+    {
+      "id": 104,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 103,
+      "data": {
+        "audio": {
+          "driver": 6,
+          "offset": 1076289956,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        66,
+        0
+      ]
+    },
+    {
+      "id": 105,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 14.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 119,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        62,
+        1
+      ]
+    },
+    {
+      "id": 106,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 109,
+      "rightModuleId": 101,
+      "pos": [
+        32,
+        0
+      ]
+    },
+    {
+      "id": 107,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-Mult",
+      "params": [],
+      "leftModuleId": 101,
+      "rightModuleId": 100,
+      "pos": [
+        52,
+        0
+      ]
+    },
+    {
+      "id": 108,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 109,
+      "text": "1) Mult the output of the Attenuate module to the 1/2 inputs of Audio-8 and configure your audio drivers.\n\n2) Connect the sine wave output of the VCO-1 module to the input marked \"in\" on the VCA module.\n\n3) Mult the output the output of the VCA to the X-in on the Scope and to the Attenuator input. Set the Attenuator knob to about noon. \n\n4) Patch the sine wave output of the LFO-1 module to the \"MULT\" modules \"In-A\".  The Mult module duplicates the input to the three adjacent outputs.  Connect one of those outputs to the VCA input marked \"CV\" (for \"control voltage\"), and another mult output to the Scope's Y-in.",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 109,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 108,
+      "rightModuleId": 106,
+      "text": "5) What do you notice happening on the Scope?  On the VCA display?  And what do you hear?  Why do you hear that?   \n\n6) The VCA the amplitude takes the INput signal, determines a new amplitude for it based off of the voltage level of the CONTROL VOLTAGE (CV) signal, and then passes it to the output.  The higher the CV level, the greater the amplitude of the output  voltage.  \n\n7) The VCA is acting just like our attenuator modules, but rather than using a knob, it uses a voltage to determine the scaling factor and set the amplitude!  \n\n",
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 110,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "text": "8) When the control voltage is 0V, the input signal is multiplied by 0, so the output is also 0V, resulting in silence. When the control voltage input is 10V, the input signal is multiplied by 1, the original signal passes through unchanged.  \n\n9) Try using different waveform outputs from the LFO to control the VCA - you can do this by moving the patch cable from the sine wave output to the adjacent outputs.  Set the LFO to multiple different frequencies for each waveform and see how it changes what you hear and see each time!\n\n10) Try setting the frequency of the LFO to noon and the TIME scale on the scope to 9 o'clock.\nWhat's up with the Scope?      ",
+      "pos": [
+        32,
+        1
+      ]
+    },
+    {
+      "id": 112,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 113,
+      "pos": [
+        22,
+        3
+      ]
+    },
+    {
+      "id": 113,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -4.26500034
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 112,
+      "rightModuleId": 114,
+      "pos": [
+        32,
+        3
+      ]
+    },
+    {
+      "id": 114,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-Mult",
+      "params": [],
+      "leftModuleId": 113,
+      "rightModuleId": 116,
+      "pos": [
+        42,
+        3
+      ]
+    },
+    {
+      "id": 115,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 116,
+      "rightModuleId": 117,
+      "pos": [
+        48,
+        3
+      ]
+    },
+    {
+      "id": 116,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "VCA-1",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        }
+      ],
+      "leftModuleId": 114,
+      "rightModuleId": 115,
+      "pos": [
+        45,
+        3
+      ]
+    },
+    {
+      "id": 117,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 115,
+      "data": {
+        "audio": {
+          "driver": 6,
+          "offset": 1076289956,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        56,
+        3
+      ]
+    },
+    {
+      "id": 118,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 14.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        53,
+        4
+      ]
+    },
+    {
+      "id": 119,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 105,
+      "text": "Scroll down to see the completed patch!      ",
+      "pos": [
+        75,
+        1
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 137,
+      "outputModuleId": 115,
+      "outputId": 0,
+      "inputModuleId": 117,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 138,
+      "outputModuleId": 115,
+      "outputId": 0,
+      "inputModuleId": 117,
+      "inputId": 1,
+      "color": "#0986ad"
+    },
+    {
+      "id": 139,
+      "outputModuleId": 116,
+      "outputId": 0,
+      "inputModuleId": 115,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 140,
+      "outputModuleId": 116,
+      "outputId": 0,
+      "inputModuleId": 118,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 141,
+      "outputModuleId": 114,
+      "outputId": 0,
+      "inputModuleId": 118,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 142,
+      "outputModuleId": 114,
+      "outputId": 1,
+      "inputModuleId": 116,
+      "inputId": 0,
+      "color": "#c91847"
+    },
+    {
+      "id": 143,
+      "outputModuleId": 113,
+      "outputId": 0,
+      "inputModuleId": 114,
+      "inputId": 0,
+      "color": "#c91847"
+    },
+    {
+      "id": 144,
+      "outputModuleId": 112,
+      "outputId": 0,
+      "inputModuleId": 116,
+      "inputId": 1,
+      "color": "#0986ad"
+    }
+  ]
+}

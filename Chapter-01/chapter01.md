@@ -6,6 +6,10 @@ While VCV Rack is a digital environment, we will continue to talk about the sign
 
 In these first two labs, we will look at a critical tool for understanding *signals*: the *oscilloscope*.  An oscilloscope allows you to visualize the voltage level of a signal in order to understand how the signal is actually changing over time.  Understanding how a signal changes over time is critical to understanding how the signal is affecting any of the other modules it might be connected to.  We will also look at two simple signal generator modules which output a constant voltages.  The magnitude or *level* of the constant voltage can be set by a knob.
 
+When you are ready, move on to the [next chapter](../Chapter-02/chapter02.md)!
+
+
+
 ## Labs
 
 So, let's begin!  Right-click (or alt/opt-click) on the links below; then click `Save as ..` to download the two VCV Rack labs.  Once downloaded, double-click them in your file browser, or open them using VCV Rack's `File > Open` dialog.  The two labs will walk you step-by-step through the basics of viewing a voltage with an oscilloscope.
@@ -18,7 +22,7 @@ You can also download a .zip file containing all the labs for Chapter 1:
 
 [Chapter 1 Labs (zip)](./patches/ch01_vcv_labs.zip)
 
-## Additional Notes on Lab 1.1 and 1.2
+## Additional Notes
 
 We say that the voltages output by the two modules are *constant* because they stays at the same level, so long as we do not change the knob positions. These constant voltages are known as *DC offsets*, or just *offsets*.  We will discuss why they are called this later in more detail, but for now, it is enough to consider that adjusting the knob just seems to *offset* the voltage up and down. We say that the **Unipolar Offset** generates *unipolar* voltage because it only outputs positive voltage, while the **Bipolar Offset** output is *bipolar* because it outputs both positive and negative voltage.
 
