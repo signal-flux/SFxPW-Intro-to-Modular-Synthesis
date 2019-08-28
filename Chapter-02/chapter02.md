@@ -10,25 +10,25 @@ When you are ready, move on to the [next chapter](../Chapter-03/chapter03.md)!
 
 Right-click (or alt/opt-click) on the links below; then click `Save as ..` to download the two VCV Rack labs.  Make sure you are logged in to the class VCV Rack account before you begin: use credentials `itms@gmail.com` (password: `synthesis`) and hit `Library > Update plugins` before you begin.  Once you are logged in and have downloaded the labs/updated your plugins, double-click the first lab in your file browser, or open it using VCV Rack's `File > Open` dialog.  
 
-[Lab 2.1: Oscillation, Frequency, Period, and Waveshape](./patches/lab_2_1_annotated)
+[Lab 2.1: Oscillation, Frequency, Period, and Waveshape](https://raw.githubusercontent.com/signal-flux/SFxPW-Intro-to-Modular-Synthesis/master/Chapter-02/patches/lab_2_1_annotated.vcv)
 
-[Lab 2.2: Attenuators and Amplitude](./patches/lab_2_2_annotated.vcv)
+[Lab 2.2: Attenuators and Amplitude](https://raw.githubusercontent.com/signal-flux/SFxPW-Intro-to-Modular-Synthesis/master/Chapter-02/patches/lab_2_2_annotated.vcv)
 
-[Lab 2.3: Inverters](./patches/lab_2_3_annotated.vcv)
+[Lab 2.3: Inverters](https://raw.githubusercontent.com/signal-flux/SFxPW-Intro-to-Modular-Synthesis/master/Chapter-02/patches/lab_2_3_annotated.vcv)
 
-[Lab 2.4: Attenuverters](./patches/lab_2_4_annotated.vcv)
+[Lab 2.4: Attenuverters](https://raw.githubusercontent.com/signal-flux/SFxPW-Intro-to-Modular-Synthesis/master/Chapter-02/patches/lab_2_4_annotated.vcv)
 
-[Lab 2.5: Normalling](./patches/lab_2_5_annotated.vcv)
+[Lab 2.5: Normalling](https://raw.githubusercontent.com/signal-flux/SFxPW-Intro-to-Modular-Synthesis/master/Chapter-02/patches/lab_2_5_annotated.vcv)
 
-[Lab 2.6: Unipolar vs. Bipolar Oscillation](./patches/lab_2_6_annotated.vcv)
+[Lab 2.6: Unipolar vs. Bipolar Oscillation](https://raw.githubusercontent.com/signal-flux/SFxPW-Intro-to-Modular-Synthesis/master/Chapter-02/patches/lab_2_6_annotated.vcv)
 
-[Lab 2.7: Getting Sound from VCV Rack - Oscillators, Pitch, and Frequency](./patches/lab_2_7_annotated.vcv) - ***do not skip this one!***
+[Lab 2.7: Getting Sound from VCV Rack - Oscillators, Pitch, and Frequency](https://raw.githubusercontent.com/signal-flux/SFxPW-Intro-to-Modular-Synthesis/master/Chapter-02/patches/lab_2_7_annotated.vcv)- ***do not skip this one!***
 
-[Lab 2.8: Oscillator Waveshape and Timbre](./patches/lab_2_8_annotated.vcv)
+[Lab 2.8: Oscillator Waveshape and Timbre](https://raw.githubusercontent.com/signal-flux/SFxPW-Intro-to-Modular-Synthesis/master/Chapter-02/patches/lab_2_8_annotated.vcv)
 
-[Lab 2.9: LFOs, VCOs, Frequency Modulation, and Control Voltage](./patches/lab_2_9_annotated.vcv)
+[Lab 2.9: LFOs, VCOs, Frequency Modulation, and Control Voltage](https://raw.githubusercontent.com/signal-flux/SFxPW-Intro-to-Modular-Synthesis/master/Chapter-02/patches/lab_2_9_annotated.vcv)
 
-You can also download a .zip file containing all the labs for Chapter 2:
+You can also go to the page below and click download to get a .zip file containing all the labs for Chapter 2:
 
 [Chapter 2 Labs (zip)](./patches/ch02_vcv_labs.zip)
 
