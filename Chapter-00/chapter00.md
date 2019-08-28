@@ -115,7 +115,7 @@ In the next series of lessons, we will start building up our collection of flash
 | ------- | ------------------------------------------------------------ |
 | 01      | The basics of navigating VCV Rack; getting familiar with the concept of voltage; using an oscilloscope to visualize voltage. |
 | 02      | The core building block of synthesis, the voltage-controlled oscillator; the concepts of frequency and amplitude; understanding how audio is transmitted as voltage; using low-frequency oscillators (LFOs) as control voltage to affect the pitch of audio-rate voltage-controlled oscillators (VCOs); using attenuators to scale both control- and audio-rate voltages. |
-| 03      | Using voltage-controlled amplifiers to control the loudness of audio signals; amplitude. |
+| 03      | Using voltage-controlled amplifiers to control the loudness of audio signals; using voltage-controlled amplifiers to control the modulation depth of a CV signal; amplitude. |
 | 04      | Creating an *event* - something which has a beginning, middle, and end, through the use of envelope generators (EGs); triggers, gates, and clocks: the drivers of modular time. |
 | 05      | Accurately controlling the pitch of oscillators using the volt-per-octave tuning standard, quantizers, and scales. |
 | 06      | Using mixers to combine audio signals; using mixers to combine control voltage signals. |
