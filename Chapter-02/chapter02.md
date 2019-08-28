@@ -40,6 +40,8 @@ If there is anything you are having trouble understanding in the labs, see if th
 
 ### Oscillators
 
+![Waveforms](./images/waveforms.png)
+
 Oscillators generate a voltage that changes over time in a periodic (aka repetitive) fashion.  The pattern of how the voltage changes over time stays the same, and is called the *waveshape* of the oscillator.  The repetition of this pattern is known as an *oscillation*.  An oscillator just generates oscillations!   The height, or distance between the *peak* and and *trough* (maximum and minimum level) of these oscillations, is known as the *amplitude*.  The duration of time it takes to complete one cycle of this pattern is called its *period*.  The number of cycles it completes per second is called its *frequency*, and is measured in *Hz* (1Hz = 1 cycle completed per second).  Since `period = seconds per cycle` and `frequency = cycles per second`, we can observe that `frequency = 1/period`: they have an inverse relationship.  The faster the higher the frequency, the shorter the period. Common waveforms include, sine waves, triangle waves, square waves, and sawtooth waves.
 
 ### VCOs vs LFOs
