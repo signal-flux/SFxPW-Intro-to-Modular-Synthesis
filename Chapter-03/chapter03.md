@@ -26,6 +26,8 @@ Here's a fun preview of lots of ways VCAs can be used in modular synthesis, made
 
 ### More on VCAs
 
+![VCA Block Diagram](./images/vca-block_VCA.png)
+
 A *voltage-controlled amplifier*, or *VCA*, takes an input signal and sets a new amplitude for it based off of a different *control voltage* (or *CV*) input. In other words, it is just like an attenuator, but rather than using a knob to set the amplitude of the signal passing through it, it uses another voltage source to control the amplitude of the original input signal!  
 
 If you recall from the lesson on attenuverters, attenuation or amplification of a signal (i.e. decreasing or increasing its amplitude) is just performed by multiplying the signal by a number.  In the case of the attenuverter, when the knob was fully CW, it was as if this "control number" to multiply the original signal was `1`, and the original signal passed through unchanged at its original amplitude since multiplying any number by `1` leaves the original number unchanged.  Similarly, when the knob was at noon, it was as if the "control number" was `0`, meaning the output voltage was always `0V`, regardless of the input voltage, since anything times `0` is always still `0`.  Intermediate knob positions scaled the the input signal down proportionally.  
@@ -38,11 +40,15 @@ Similarly, not all VCAs will treat negative control voltages the same as sending
 
 ### Controlling Loudness
 
-Recall from the previous lessons that when an audio rate signal is patched to a speaker, its amplitude determines its loudness.  Suppose you patch a VCO to the input of a VCA.  When the output of the VCA is patched to the speaker, and an LFO is used as the control voltage for opening and closing the VCA, we hear the VCO's volume fade in and out according to the LFO's voltage!  As the LFO output voltage gets greater, the VCO gets louder as its amplitude increases.  As the LFO falls back to `0V`, the VCO gets quieter as the amplitude of the VCO after it passes through the VCA decreases back to `0V`.  
+![VCA controlled by LFO](./images/vca-diagram-tremolo.jpg)
+
+Recall from the previous lessons that when an audio rate signal is patched to a speaker, its amplitude determines its loudness.  Suppose you patch a VCO to the input of a VCA.  When the output of the VCA is patched to the speaker, and an LFO is used as the control voltage for opening and closing the VCA, we hear the VCO's volume fade in and out according to the LFO's voltage!  As the LFO output voltage gets greater, the VCO gets louder as its amplitude increases.  As the LFO falls back to `0V`, the VCO (after passing through the VCA) gets quieter since the control voltage LFO into the VCA is decreasing.  
 
 VCAs then are crucial for being able to create a "note", or really any sonic event besides a drone!  If we do not want an audio signal to be playing at all times, we can simply patch it through a VCA.  Whenever we went a sonic event to happen, all we need to do is open the VCA using control voltage!   In future lessons, we will look at using envelope generators to create control voltage signals which open and close a VCA on command using trigger pulses, rather than using an LFO to endlessly open and close the VCA in a cycle.  Using a stream of triggers to fire off an envelope generator which opens a VCA processing an an audiorate oscillator then will be how we create streams of note events, just like a guitarist plucking a string repeatedly!  We will need other tools to set the pitch of the oscillator, just like the guitarist must use their other hand to set the length of the string, and thus pitch of the note played.
 
 ### Controlling Modulation Depth
+
+![Modulation Depth VCAs](./images/mod-depth.png)
 
 VCAs can also be used to process control voltage before the control voltage is sent on to a destination parameter.  By setting the amplitude of the control voltage passing through it, a VCA allows you to dynamically change the *modulation depth* without having to use an attenuator knob and your hand!  It allows you to use one voltage (the VCA CV input) to set the amplitude of another control voltage (the VCA input) before it is passed to the output.  As such, it allows you to automatically change *over time* how much modulation occurs in a patch.  This enables you to do an enormous number of creative things which we will explore in the coming weeks!  Mylar Melodies video (linked above) does a great job of demonstrating some of them.  
 

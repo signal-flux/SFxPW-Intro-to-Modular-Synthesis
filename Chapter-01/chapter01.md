@@ -4,7 +4,7 @@ This chapter will teach you how to use the oscilloscope as a tool for understand
 
 While VCV Rack is a digital environment, we will continue to talk about the signals as analog voltages, since the environment is designed to emulate Eurorack modular synthesis.
 
-In these first two labs, we will look at a critical tool for understanding *signals*: the *oscilloscope*.  An oscilloscope allows you to visualize the voltage level of a signal in order to understand how the signal is actually changing over time.  Understanding how a signal changes over time is critical to understanding how the signal is affecting any of the other modules it might be connected to.  We will also look at two simple signal generator modules which output a constant voltages.  The magnitude or *level* of the constant voltage can be set by a knob.
+In these first two labs, we will look at a critical tool for understanding *signals*: the *oscilloscope*.  An oscilloscope allows you to visualize the voltage level of a signal in order to understand how the signal is actually changing over time.  Understanding how a signal changes over time is critical to understanding how the signal is affecting any of the other modules it might be connected to.  We will also look at two simple signal generator modules which output constant voltages.  The magnitude or *level* of the constant voltage can be set by a knob.
 
 When you are ready, move on to the [next chapter](../Chapter-02/chapter02.md)!
 
@@ -30,13 +30,17 @@ If there is anything you are having trouble understanding in the labs, see if th
 
 We say that the voltages output by the two modules are *constant* because they stays at the same level, so long as we do not change the knob positions. These constant voltages are known as *DC offsets*, or just *offsets*.  We will discuss why they are called this later in more detail, but for now, it is enough to consider that adjusting the knob just seems to *offset* the voltage up and down. We say that the **Unipolar Offset** generates *unipolar* voltage because it only outputs positive voltage, while the **Bipolar Offset** output is *bipolar* because it outputs both positive and negative voltage.
 
-What about **Scope**? What does it do? As indicated by the root word "scope", oscilloscopes visualize voltages that change over time.  The X-axis of the oscilloscope screen is time, while the Y-axis is the voltage level.  The top half of the screen corresponds to positive input voltages, and the bottom half of the screen corresponds to negative voltages.  Each trace represents the level of the input voltage - the higher the trace, the higher the input voltage!
+### Oscilloscopes
 
-### Scopes
+![Oscilloscope](./images/oscope.jpg)
 
-When the input voltage is not changing, **Scope** will just display a flat line at the height of the input voltage.  When a voltage increases, the line tracing the voltage moves up.  Similarly, if the input voltage decreases, the level of the line moves down.
+What about a **Scope**? What does it do? As indicated by the root word "scope", oscilloscopes visualize voltages that change over time.  The X-axis of the oscilloscope screen is time, while the Y-axis is the voltage level.  The top half of the screen corresponds to positive input voltages, and the bottom half of the screen corresponds to negative voltages.  Each trace represents the level of the input voltage - the higher the trace, the higher the input voltage!
 
-When the input voltage changes, older values are displayed on the left of the screen, and newer values are displayed on the right.  In other words, **Scope** will write the incoming voltage values onto the screen from left to right.  Once it reaches the right edge of the screen, it will either erase the whole screen and start over on the left side, or it will just reset to the left side and begin writing from left to right, leaving the old values in place until it overwrites them.
+[Here's a nice video](https://www.youtube.com/watch?v=u4zyptPLlJI) from Sparkfun which goes over an analog oscilloscope!
+
+When the input voltage is not changing, the **Scope** will just display a flat line at the height of the input voltage.  When a voltage increases, the line tracing the voltage moves up.  Similarly, if the input voltage decreases, the level of the line moves down.
+
+When the input voltage changes, older values are displayed on the left of the screen, and newer values are displayed on the right.  In other words, the **Scope** will write the incoming voltage values onto the screen from left to right.  Once it reaches the right edge of the screen, it will either erase the whole screen and start over on the left side, or it will just reset to the left side and begin writing from left to right, leaving the old values in place until it overwrites them.
 
 ### Scope TIME scales
 
@@ -44,9 +48,11 @@ The **Scope**'s `Time` knob determines the scaling of the X-axis in the oscillos
 
 Alternatively, you can think of the `Time` knob as determining how frequently the **Scope** completes a single frame.  The greater the value of `Time`, the greater the frequency at which it completes a frame (which is the same as saying it takes less time to complete a single frame).  
 
-`Time` allows you to zoom in and out along the X-axis, giving you better understanding of how voltages are changing in the microscopic, mesoscopic, and macroscopic scales.  If you imagine a time line of history with important events marked on it, this knob determines if the scale of the timeline you are observing is geological eras, millenia, centuries, months, weeks, days, hours, minutes or seconds!  The more zoomed in you are, the easier it will be to see very quick changes, but the harder it will be to see changes across longer time scales. Try repeating the steps above with this in midn.
+`Time` allows you to zoom in and out along the X-axis, giving you better understanding of how voltages are changing in the microscopic, mesoscopic, and macroscopic scales.  If you imagine a time line of history with important events marked on it, this knob determines if the scale of the timeline you are observing is geological eras, millenia, centuries, months, weeks, days, hours, minutes or seconds!  The more zoomed in you are, the easier it will be to see very quick changes, but the harder it will be to see changes across longer time scales. Try repeating the steps above with this in mind.
 
 We will cover the other parameters of a **Scope** in subsequent lessons.
+
+### VCV Rack Cable LEDs
 
 In addition to using the oscilloscope to view the level of a voltage, VCV Rack conveniently displays a color at either end of a cable to visualize the voltage, as indicated by step (3) above.  When the color is green, it indicates the cable is carrying a positive voltage.  When it is red, indicates the cable is carrying a negative voltage.  The brightness of the color corresponds to the magnitude.
 

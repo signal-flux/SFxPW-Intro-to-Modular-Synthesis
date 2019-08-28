@@ -2,7 +2,7 @@
 
 This chapter will introduce you to several core building blocks of modular synthesis: the *voltage-controlled oscillator*, or *VCO* for short; the *low-frequency oscillator*, a close sibling of the VCO; and the *attenuator*, *inverter*, and *attenuverter*.
 
-To start, we won't focus too much on the *musical* utility of the various ingredients for modular synthesis.  Instead, we will focus on understanding how they work abstractly so you can build intuition for what they are actually doing, and gain a basic understand of how voltage is turned into sound.  You have to walk before you can run!
+To start, we won't focus too much on the *musical* utility of the various ingredients for modular synthesis.  Instead, we will focus on understanding how they work abstractly so you can build intuition for what they are actually doing, and gain a basic understand of how voltage is turned into sound.  You need to know your ABCs before winning a Pulitzer Prize!
 
 When you are ready, move on to the [next chapter](../Chapter-03/chapter03.md)!
 
@@ -36,7 +36,7 @@ You can also go to the page below and click download to get a .zip file containi
 
 ## Additional Notes
 
-If there is anything you are having trouble understanding in the labs, see if the notes below help! If you want more guidance, comment in the slack, or shoot Izzy or Sam a message!
+If there is anything you are having trouble understanding in the labs, see if the notes below help! If you want more guidance, comment in the slack, or shoot Sam or Izzy a message!
 
 ### LFOs
 
@@ -72,7 +72,7 @@ Attenuverters allow you to change both the amplitude and polarity of an input si
 
 ### Normalling
 
-For some modules, it is as if there is a "default" voltage sent into some of a jack even when nothing is plugged in.  As soon as you plug something into the jack, the default voltage gets ignored and the input voltage that was just connected takes over.  However until then, when nothing is plugged in, this default voltage is treated as the input.  
+For some modules, it is as if there is a "default" voltage sent into a jack even when nothing is plugged in.  As soon as you plug something into the jack, the default voltage gets ignored and the input voltage that was just connected takes over.  However until then, when nothing is plugged in, this default voltage is treated as the input.  
 
 This is known as *normalling*.  This default voltage is said to be *normalled* into the input jack.  Plugging a cable into the jack *breaks the normalled connection* - sometimes we will simplify this by just saying that it *breaks the normal*.  When the normal is broken by a cable, the default normalled voltage just gets replaced with whatever is being sent into the jack via the new cable.
 
