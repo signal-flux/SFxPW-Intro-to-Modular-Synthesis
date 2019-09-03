@@ -58,14 +58,10 @@ Pitch, Timbre, Loudness, Voltage, Signal, Input, Output, Control Voltage (CV), M
 |                       | [2: Voltage-Controlled Oscillators, Attenuversion, and Control Voltage](./Chapter-02/chapter02.md) |
 |                       | [3: Voltage-Controlled Amplifiers](./Chapter-03/chapter03.md) |
 |                       |                                                              |
-| *Preview*             | [4: Creating an Event (Clocks, Triggers, Gates, and Envelopes)](./Chapter-04/chapter04.md) |
-|                       | [5: Creating a Melody (Sequences, Volt-per-octave, Quantizers)](./Chapter-05/chapter05.md) |
-|                       |                                                              |
 | *Suggested Listening* | Blawan - *Wet Will Always Dry* (2018) - [[*Direct Download*](https://www.dropbox.com/sh/tfi694y0woky5q6/AACL5mXmbMi_ysIDs3Vl6BiHa?dl=0), [*Spotify*](https://open.spotify.com/album/0tAeHP4BXGplGcD6rdYXjy?si=8quFgbnMQbO3RkgIuDttPQ)] |
-|                       | Bernard Parmegiani - *La Création Du Monde* (1984) - [[*Direct Download*](),[*Spotify*]()] |
-|                       | Laurie Spiegel - *The Expanding Universe* (1980) - [[*Direct Download*](),[*Spotify*]()] |
+|                       | Golden Retriever - *Seer* (2014) - [[*Direct Download*](https://www.dropbox.com/sh/uyns2lekqq0bkqy/AACYN7TySx8I5ULtoiQ3UwRva?dl=0), [*Spotify*](https://open.spotify.com/album/5Jfbs3LoaxLpRPIr8bNRlT?si=zvs52SmcTgqzSI64IYt-gA)] |
+|                       | Laurie Spiegel - *The Expanding Universe* (1980) - [[*Direct Download*](https://www.dropbox.com/sh/dj3k06iecvet0x7/AADFZ8ILLy15hx-3d0GwHPAva?dl=0), [*Spotify*](https://open.spotify.com/album/2rD0SKiBImTKNhRtRVLsdU?si=LtdM5kpdS6G_2FB7_W7MaA)] |
 |                       | [Suzanne Ciani on Modular Synthesis (YouTube)](https://www.youtube.com/watch?v=QRx-YdqHLus&t=250s) |
-|                       |                                                              |
 
 
 
