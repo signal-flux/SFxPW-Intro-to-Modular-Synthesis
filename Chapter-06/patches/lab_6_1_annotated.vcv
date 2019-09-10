@@ -1,0 +1,847 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 273,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Octave",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 278,
+      "rightModuleId": 275,
+      "pos": [
+        32,
+        0
+      ]
+    },
+    {
+      "id": 275,
+      "plugin": "ML_modules",
+      "version": "1.0.2",
+      "model": "Sum8",
+      "params": [],
+      "leftModuleId": 273,
+      "rightModuleId": 277,
+      "pos": [
+        35,
+        0
+      ]
+    },
+    {
+      "id": 276,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 6.427001
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 295,
+      "rightModuleId": 300,
+      "pos": [
+        16,
+        2
+      ]
+    },
+    {
+      "id": 277,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 14.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 275,
+      "rightModuleId": 288,
+      "data": {
+        "lissajous": 0,
+        "external": 1
+      },
+      "pos": [
+        38,
+        0
+      ]
+    },
+    {
+      "id": 278,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Octave",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 287,
+      "rightModuleId": 273,
+      "pos": [
+        29,
+        0
+      ]
+    },
+    {
+      "id": 279,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "BipolarKnob",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 294,
+      "rightModuleId": 283,
+      "pos": [
+        26,
+        1
+      ]
+    },
+    {
+      "id": 280,
+      "plugin": "ML_modules",
+      "version": "1.0.2",
+      "model": "Sum8",
+      "params": [],
+      "leftModuleId": 283,
+      "rightModuleId": 281,
+      "pos": [
+        35,
+        1
+      ]
+    },
+    {
+      "id": 281,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 14.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 280,
+      "data": {
+        "lissajous": 0,
+        "external": 1
+      },
+      "pos": [
+        38,
+        1
+      ]
+    },
+    {
+      "id": 282,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Octave",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 300,
+      "rightModuleId": 285,
+      "pos": [
+        32,
+        2
+      ]
+    },
+    {
+      "id": 283,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Octave",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 279,
+      "rightModuleId": 280,
+      "pos": [
+        32,
+        1
+      ]
+    },
+    {
+      "id": 285,
+      "plugin": "ML_modules",
+      "version": "1.0.2",
+      "model": "Sum8",
+      "params": [],
+      "leftModuleId": 282,
+      "rightModuleId": 286,
+      "pos": [
+        35,
+        2
+      ]
+    },
+    {
+      "id": 286,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 14.0150013
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 285,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        38,
+        2
+      ]
+    },
+    {
+      "id": 287,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 278,
+      "text": "This chapter will introduce you to a crucial building block of synthesis - the mixer.  Mixer's allow us to combine modulation sources and layer audio sources.  This lab will focus on using mixers for control voltage first. \n\nWe learned before that VCA's were used for scaling singals, in other words, multiplying signals together to change their amplitude.  \n\nMixers are used for mathematically adding two signals together. \n\n1) Mult one output of an adjacent Oct to the X-input on the scope and to the input of the \"Sum\" mixer. Click the various circles on the Oct. Observe the Oct output move up and down in 1V increments according to the chosen circle.",
+      "pos": [
+        13,
+        0
+      ]
+    },
+    {
+      "id": 288,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 277,
+      "rightModuleId": 289,
+      "text": "2) Patch the output of the Sum mixer to the Y-input on the scope.  It should be exactly identical to the output of Oct.  This is because the mixer adds up the input voltages to calculate the output voltage.  Since we only have one input, there is nothing else to add, so the output is the same as the input.  \n\n3) Now patch the second Oct's output to one of the mixer's inputs.  Click around the circles of that Oct.  What do you observe?\n\n4) The X-input (blue trace) stays in place, since it is being fed by the first Oct, which is not changing.  The Y-input (red trace) is moving up and down according to which circle you click on the second Oct.  The voltage that the red line is at should be the sum of the voltages from the first two Octs!",
+      "pos": [
+        51,
+        0
+      ]
+    },
+    {
+      "id": 289,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 288,
+      "text": "5) Now try clicking various circles in the first oct.  You should see both lines move around by the same amount.  This is because whatever amount the first Oct (blue line) changes by, the sum must also move the same amount!  \n\nCheck for yourself that no matter what combination of Oct positions you use, the output of the mixer is always the sum of the two. \n\nScroll to the right to see a completed version of the patch. ",
+      "pos": [
+        67,
+        0
+      ]
+    },
+    {
+      "id": 290,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Octave",
+      "params": [
+        {
+          "id": 0,
+          "value": 3.0
+        }
+      ],
+      "leftModuleId": 291,
+      "rightModuleId": 292,
+      "pos": [
+        141,
+        0
+      ]
+    },
+    {
+      "id": 291,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Octave",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        }
+      ],
+      "rightModuleId": 290,
+      "pos": [
+        138,
+        0
+      ]
+    },
+    {
+      "id": 292,
+      "plugin": "ML_modules",
+      "version": "1.0.2",
+      "model": "Sum8",
+      "params": [],
+      "leftModuleId": 290,
+      "rightModuleId": 293,
+      "pos": [
+        144,
+        0
+      ]
+    },
+    {
+      "id": 293,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 14.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 292,
+      "data": {
+        "lissajous": 0,
+        "external": 1
+      },
+      "pos": [
+        147,
+        0
+      ]
+    },
+    {
+      "id": 294,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 279,
+      "text": "6) Try the same patch but with a bipolar offset and an oct.  Observe how adjusting the bipolar offset knob pushes the summed output up or down.  Now, we finally can understand why the unipolar/bipolar offset modules are named as such: when you add them to another signal, they \"offset\" the signal's position vertically!\n\nScroll to the right for a completed version of this patch.",
+      "pos": [
+        10,
+        1
+      ]
+    },
+    {
+      "id": 295,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 276,
+      "text": "7) Mult the LFO's sine wave output to the X-input on the scope and one of the mixer's inputs. Patch one of Oct's outputs to one of the mixer's inputs. Patch the mixer's output to the Scope's Y-input.\n\n8) Try clicking different circle's on Oct.  Observe how the entire LFO shifts up and down in one volt increments.  The amplitude of the LFO is not changing, but it's voltage offset is - i.e. the min and max are being offset up and down together.\n\n9) Try adding in the Bipolar Offset.  Adjust its knob, and observe the summed signal moving up and down according to the offset!\n\nScroll to the right for a completed version of the lab. ",
+      "pos": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 296,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 14.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 297,
+      "data": {
+        "lissajous": 0,
+        "external": 1
+      },
+      "pos": [
+        147,
+        1
+      ]
+    },
+    {
+      "id": 297,
+      "plugin": "ML_modules",
+      "version": "1.0.2",
+      "model": "Sum8",
+      "params": [],
+      "leftModuleId": 298,
+      "rightModuleId": 296,
+      "pos": [
+        144,
+        1
+      ]
+    },
+    {
+      "id": 298,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Octave",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        }
+      ],
+      "leftModuleId": 299,
+      "rightModuleId": 297,
+      "pos": [
+        141,
+        1
+      ]
+    },
+    {
+      "id": 299,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "BipolarKnob",
+      "params": [
+        {
+          "id": 0,
+          "value": -2.46000266
+        }
+      ],
+      "rightModuleId": 298,
+      "pos": [
+        135,
+        1
+      ]
+    },
+    {
+      "id": 300,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "BipolarKnob",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 276,
+      "rightModuleId": 282,
+      "pos": [
+        26,
+        2
+      ]
+    },
+    {
+      "id": 301,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "BipolarKnob",
+      "params": [
+        {
+          "id": 0,
+          "value": -5.0
+        }
+      ],
+      "leftModuleId": 305,
+      "rightModuleId": 302,
+      "pos": [
+        135,
+        2
+      ]
+    },
+    {
+      "id": 302,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Octave",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        }
+      ],
+      "leftModuleId": 301,
+      "rightModuleId": 303,
+      "pos": [
+        141,
+        2
+      ]
+    },
+    {
+      "id": 303,
+      "plugin": "ML_modules",
+      "version": "1.0.2",
+      "model": "Sum8",
+      "params": [],
+      "leftModuleId": 302,
+      "rightModuleId": 304,
+      "pos": [
+        144,
+        2
+      ]
+    },
+    {
+      "id": 304,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 14.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 303,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        147,
+        2
+      ]
+    },
+    {
+      "id": 305,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 6.1030035
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 301,
+      "pos": [
+        125,
+        2
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 60,
+      "outputModuleId": 291,
+      "outputId": 0,
+      "inputModuleId": 293,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 61,
+      "outputModuleId": 291,
+      "outputId": 0,
+      "inputModuleId": 292,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 62,
+      "outputModuleId": 290,
+      "outputId": 0,
+      "inputModuleId": 292,
+      "inputId": 1,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 63,
+      "outputModuleId": 292,
+      "outputId": 0,
+      "inputModuleId": 293,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 65,
+      "outputModuleId": 298,
+      "outputId": 0,
+      "inputModuleId": 297,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 66,
+      "outputModuleId": 299,
+      "outputId": 0,
+      "inputModuleId": 296,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 67,
+      "outputModuleId": 299,
+      "outputId": 0,
+      "inputModuleId": 297,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 68,
+      "outputModuleId": 297,
+      "outputId": 0,
+      "inputModuleId": 296,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 71,
+      "outputModuleId": 305,
+      "outputId": 0,
+      "inputModuleId": 304,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 72,
+      "outputModuleId": 301,
+      "outputId": 0,
+      "inputModuleId": 303,
+      "inputId": 2,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 73,
+      "outputModuleId": 302,
+      "outputId": 0,
+      "inputModuleId": 303,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 74,
+      "outputModuleId": 305,
+      "outputId": 0,
+      "inputModuleId": 303,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 75,
+      "outputModuleId": 303,
+      "outputId": 0,
+      "inputModuleId": 304,
+      "inputId": 1,
+      "color": "#c91847"
+    }
+  ]
+}

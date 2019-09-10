@@ -1,0 +1,741 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 351,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -16.650034
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 353,
+      "pos": [
+        17,
+        3
+      ]
+    },
+    {
+      "id": 352,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -4.65004158
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 354,
+      "pos": [
+        17,
+        4
+      ]
+    },
+    {
+      "id": 353,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -9.63048744
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 351,
+      "pos": [
+        27,
+        3
+      ]
+    },
+    {
+      "id": 354,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -0.786907136
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 352,
+      "pos": [
+        27,
+        4
+      ]
+    },
+    {
+      "id": 355,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-VCM",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.472499996
+        },
+        {
+          "id": 1,
+          "value": 0.614999771
+        },
+        {
+          "id": 2,
+          "value": 0.474000096
+        },
+        {
+          "id": 3,
+          "value": 0.565999985
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 357,
+      "data": {
+        "disableOutputLimit": false
+      },
+      "pos": [
+        42,
+        3
+      ]
+    },
+    {
+      "id": 357,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 355,
+      "data": {
+        "audio": {
+          "driver": 6,
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        52,
+        3
+      ]
+    },
+    {
+      "id": 359,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 363,
+      "text": "This lab will teach you how to use a voltage controlled mixer, which combines attenuators, VCAs, and mixers into a single module.  These are powerful tools for controlling how different sounds are layered together.\n\n1) Connect the triangle wave output of each VCO to a different input channel on the jack; use the jacks labeled \"IN\" (as opposed to the control voltage jacks - more on those later).  Mult the output of the mixer to your to the left/right and right speakers on Audio-8  and set your sound card accordingly.\n\n2) Slowly increase the volume of each \"channel\" of the mixer by turning the corresponding knob clockwise.  Listen to each oscillator as they are introduced to the mix one-by-one. ",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 360,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 365,
+      "text": "3) Try playing with the knob labeled MIX.  What do you think it does?  \n\n4) The MIX knob controls the final volume of the output, while the \"Channel\" knobs (Ch1, Ch2, Ch3, Ch4) control the volume of each individual input independently.  \n\n5) Add an LFO to the patch.  Connect one of its outputs to the \"CV\" input in the final knob's row.  What do you think that CV input is controlling?\n\n6) Add more LFO's to the patch set them to all have different frequencies.  Use each LFO to control one of the input channels' volume independently by connecting the LFO's output to the corresponding CV input on the mixer. Adjust the LFOs to slow frequencies to create a pulsating, droning chord.",
+      "pos": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 362,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "text": "See if you can create a block diagram for what happens inside the voltage-controlled mixer.  The lab notes have the solution!\n\nScroll down to see a completed version of the patch (including extra LFOs which have been added to modulate the level of each individual oscillator).  Turn the Audio-8 module above off and turn the one below on to hear the drone.  Don't forget to change the mixer's final volume! It is currently fully silenced.\n\nNB: I specially tuned the oscillators to frequencies which I think go well together - try adjusting them to your own set of frequencies!",
+      "pos": [
+        44,
+        1
+      ]
+    },
+    {
+      "id": 363,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -16.650034
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 359,
+      "rightModuleId": 364,
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 364,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -9.63048744
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 363,
+      "pos": [
+        26,
+        0
+      ]
+    },
+    {
+      "id": 365,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -4.65004158
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 360,
+      "rightModuleId": 366,
+      "pos": [
+        16,
+        1
+      ]
+    },
+    {
+      "id": 366,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -0.786907136
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 365,
+      "pos": [
+        26,
+        1
+      ]
+    },
+    {
+      "id": 367,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-VCM",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.472499996
+        },
+        {
+          "id": 1,
+          "value": 0.614999771
+        },
+        {
+          "id": 2,
+          "value": 0.474000096
+        },
+        {
+          "id": 3,
+          "value": 0.565999985
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 368,
+      "data": {
+        "disableOutputLimit": false
+      },
+      "pos": [
+        40,
+        0
+      ]
+    },
+    {
+      "id": 368,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 367,
+      "data": {
+        "audio": {
+          "driver": 7,
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        50,
+        0
+      ]
+    },
+    {
+      "id": 369,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -3.80599976
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 370,
+      "pos": [
+        69,
+        3
+      ]
+    },
+    {
+      "id": 370,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -2.05100203
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 369,
+      "pos": [
+        79,
+        3
+      ]
+    },
+    {
+      "id": 371,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -3.45500016
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 372,
+      "pos": [
+        69,
+        4
+      ]
+    },
+    {
+      "id": 372,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -4.02199697
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 371,
+      "pos": [
+        79,
+        4
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 90,
+      "outputModuleId": 355,
+      "outputId": 0,
+      "inputModuleId": 357,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 91,
+      "outputModuleId": 355,
+      "outputId": 0,
+      "inputModuleId": 357,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 92,
+      "outputModuleId": 351,
+      "outputId": 1,
+      "inputModuleId": 355,
+      "inputId": 0,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 93,
+      "outputModuleId": 353,
+      "outputId": 1,
+      "inputModuleId": 355,
+      "inputId": 2,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 94,
+      "outputModuleId": 352,
+      "outputId": 1,
+      "inputModuleId": 355,
+      "inputId": 4,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 95,
+      "outputModuleId": 354,
+      "outputId": 1,
+      "inputModuleId": 355,
+      "inputId": 6,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 98,
+      "outputModuleId": 369,
+      "outputId": 0,
+      "inputModuleId": 355,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 99,
+      "outputModuleId": 370,
+      "outputId": 1,
+      "inputModuleId": 355,
+      "inputId": 3,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 100,
+      "outputModuleId": 371,
+      "outputId": 0,
+      "inputModuleId": 355,
+      "inputId": 5,
+      "color": "#c91847"
+    },
+    {
+      "id": 101,
+      "outputModuleId": 372,
+      "outputId": 0,
+      "inputModuleId": 355,
+      "inputId": 7,
+      "color": "#c9b70e"
+    }
+  ]
+}

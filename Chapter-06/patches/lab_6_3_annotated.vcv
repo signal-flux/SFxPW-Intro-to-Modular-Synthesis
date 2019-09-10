@@ -1,0 +1,647 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 329,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -35.3159981
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 335,
+      "rightModuleId": 331,
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 330,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -23.8139915
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 340,
+      "rightModuleId": 332,
+      "pos": [
+        16,
+        1
+      ]
+    },
+    {
+      "id": 331,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 329,
+      "pos": [
+        26,
+        0
+      ]
+    },
+    {
+      "id": 332,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 330,
+      "pos": [
+        26,
+        1
+      ]
+    },
+    {
+      "id": 333,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-UMix",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 334,
+      "data": {
+        "sum": true,
+        "cv_mode": false
+      },
+      "pos": [
+        57,
+        0
+      ]
+    },
+    {
+      "id": 334,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 333,
+      "data": {
+        "audio": {
+          "driver": 7,
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        60,
+        0
+      ]
+    },
+    {
+      "id": 335,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 329,
+      "text": "To control amplitude independently, we need to use attenuators (or VCAs) before they reach the mixer.  \n\n1) Patch an output of each oscillator to an attenuator.  Then patch the output of each attenuator to an input on the mixer.  Set each attenuator around noon.  \n\n2) Patch the output of the mixer to your left and right speakers (inputs 1/2 on the Audio-8) and set your sound card on Audio-8 accordingly.\n\n3) Slowly increase the final level output attenuator on the mixer until you can hear the oscillators at a comfortable volume.\n\n4) Adjust the level of each oscillator independently using its attenuator.\n",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 336,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -12.7979918
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 337,
+      "pos": [
+        37,
+        1
+      ]
+    },
+    {
+      "id": 337,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 336,
+      "pos": [
+        47,
+        1
+      ]
+    },
+    {
+      "id": 338,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -27.5399876
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 339,
+      "pos": [
+        37,
+        0
+      ]
+    },
+    {
+      "id": 339,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 338,
+      "pos": [
+        47,
+        0
+      ]
+    },
+    {
+      "id": 340,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 330,
+      "text": "5) Try tuning all the oscillators to the exact same frequency.  It may help to use one oscillator as the base, silencing the others, and then working on each oscillators pitch one at a time.\n\n6) Try setting them to four distinct  pitches which you think sound pleasing together.  You just made a \"CHORD\"!\n\nScroll to the right to see a completed version of the patch.\n\nSince it is so common to want to set the volume (or amplitude) of different signals independently, many mixers will have attenuators (and even VCAs) built in for each individual input! Move on to the next lab to see this in action.",
+      "pos": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 341,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -18.6300049
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 342,
+      "pos": [
+        125,
+        0
+      ]
+    },
+    {
+      "id": 342,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 341,
+      "pos": [
+        135,
+        0
+      ]
+    },
+    {
+      "id": 343,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -31.1040115
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 344,
+      "pos": [
+        125,
+        1
+      ]
+    },
+    {
+      "id": 344,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 343,
+      "pos": [
+        135,
+        1
+      ]
+    },
+    {
+      "id": 345,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-UMix",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 346,
+      "data": {
+        "sum": true,
+        "cv_mode": false
+      },
+      "pos": [
+        177,
+        0
+      ]
+    },
+    {
+      "id": 346,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 345,
+      "data": {
+        "audio": {
+          "driver": 7,
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        180,
+        0
+      ]
+    },
+    {
+      "id": 347,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -11.5020037
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 348,
+      "pos": [
+        147,
+        0
+      ]
+    },
+    {
+      "id": 348,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 347,
+      "pos": [
+        157,
+        0
+      ]
+    },
+    {
+      "id": 349,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -26.2440033
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 350,
+      "pos": [
+        147,
+        1
+      ]
+    },
+    {
+      "id": 350,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 349,
+      "pos": [
+        157,
+        1
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 82,
+      "outputModuleId": 341,
+      "outputId": 0,
+      "inputModuleId": 342,
+      "inputId": 0,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 83,
+      "outputModuleId": 342,
+      "outputId": 0,
+      "inputModuleId": 345,
+      "inputId": 0,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 84,
+      "outputModuleId": 347,
+      "outputId": 0,
+      "inputModuleId": 348,
+      "inputId": 0,
+      "color": "#c91847"
+    },
+    {
+      "id": 85,
+      "outputModuleId": 348,
+      "outputId": 0,
+      "inputModuleId": 345,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 86,
+      "outputModuleId": 343,
+      "outputId": 0,
+      "inputModuleId": 344,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 87,
+      "outputModuleId": 344,
+      "outputId": 0,
+      "inputModuleId": 345,
+      "inputId": 2,
+      "color": "#0986ad"
+    },
+    {
+      "id": 88,
+      "outputModuleId": 349,
+      "outputId": 0,
+      "inputModuleId": 350,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 89,
+      "outputModuleId": 350,
+      "outputId": 0,
+      "inputModuleId": 345,
+      "inputId": 3,
+      "color": "#c9b70e"
+    }
+  ]
+}

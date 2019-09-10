@@ -1,0 +1,589 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 306,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 307,
+      "text": "Now let's try using mixers with audio-rate signals instead of control signals.  It turns out when you audio audio signals, you can hear both simultaneously.  For the first time, we will finally be able to layer sound and hear multiple sound sources at once!\n\n1) Patch an output of the first VCO to an input on the mixer. Connect the mixer's output to the input of the attenuator.Connect the attenuator's output to your Left/right speakers or headphones (inputs 1 and 2 on Audio-8) - set your sound card accordingly on Audio-8. Slowly adjust the attenuator until you can hear the the oscillator at a comfortable volume.\n\n",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 307,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -29.1599922
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 306,
+      "rightModuleId": 308,
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 308,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -10.3680067
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 307,
+      "rightModuleId": 309,
+      "pos": [
+        26,
+        0
+      ]
+    },
+    {
+      "id": 309,
+      "plugin": "ML_modules",
+      "version": "1.0.2",
+      "model": "Sum8",
+      "params": [],
+      "leftModuleId": 308,
+      "rightModuleId": 310,
+      "pos": [
+        36,
+        0
+      ]
+    },
+    {
+      "id": 310,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 309,
+      "rightModuleId": 311,
+      "pos": [
+        39,
+        0
+      ]
+    },
+    {
+      "id": 311,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 310,
+      "data": {
+        "audio": {
+          "driver": 7,
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        47,
+        0
+      ]
+    },
+    {
+      "id": 312,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 317,
+      "text": "3) Now patch an output of the second oscillator into the mixer.  Use a different waveshape than the first oscillator. \n\n4) You should now be able to hear both oscillators.  Adjust the frequency of one of them using either its coarse knob (large, labeled FREQ) or its fine (small) knob.  Try to listen to that oscillator changing its pitch while the other oscillator stays constant. \n\n5) Try to tune the two oscilllators to the  exact same frequency!  When they get close to each other, use the FINE knobs to make very small adjustments until you hear no \"beating\" or pulsing.\n\n6) Use the attenuator knob to control the final volume of the \"MIX\" of the two oscillators.    ",
+      "pos": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 313,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 320,
+      "text": "What if we wanted to control the amplitude - aka volume - of these two oscillators independently?  How could we do that?  Remember, the attenuator in this patch is controlling the volume of the final output, but we want to control the volume of the VCO inputs separately...\n\nGo do the next lab to find out!",
+      "pos": [
+        55,
+        1
+      ]
+    },
+    {
+      "id": 317,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -29.1599922
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 312,
+      "rightModuleId": 318,
+      "pos": [
+        16,
+        1
+      ]
+    },
+    {
+      "id": 318,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -10.3680067
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 317,
+      "rightModuleId": 319,
+      "pos": [
+        26,
+        1
+      ]
+    },
+    {
+      "id": 319,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-UMix",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 318,
+      "rightModuleId": 320,
+      "data": {
+        "sum": true,
+        "cv_mode": false
+      },
+      "pos": [
+        36,
+        1
+      ]
+    },
+    {
+      "id": 320,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 319,
+      "rightModuleId": 313,
+      "text": "7) Since it is so common to want to control the final amplitude of a mixed output, many mixers will have an attenuator built into the output!\n This removes the need for a bulky, extra attenuator.  \n\n8) Disconnect the \"ATTENUATE\" module above from your speakers.  \n\n9) Try recreating the above patch using the two oscillators in this row and the mixer with the built in attenuator on its output.  Use the attenuator to adjust the final volume of your mix.      \n\nYou can scroll below to see a completed version of this patch.",
+      "pos": [
+        39,
+        1
+      ]
+    },
+    {
+      "id": 321,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -29.1599922
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 322,
+      "pos": [
+        16,
+        3
+      ]
+    },
+    {
+      "id": 322,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -10.3680067
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 321,
+      "rightModuleId": 323,
+      "pos": [
+        26,
+        3
+      ]
+    },
+    {
+      "id": 323,
+      "plugin": "ML_modules",
+      "version": "1.0.2",
+      "model": "Sum8",
+      "params": [],
+      "leftModuleId": 322,
+      "rightModuleId": 324,
+      "pos": [
+        36,
+        3
+      ]
+    },
+    {
+      "id": 324,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 323,
+      "rightModuleId": 325,
+      "pos": [
+        39,
+        3
+      ]
+    },
+    {
+      "id": 325,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 324,
+      "data": {
+        "audio": {
+          "driver": 7,
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        47,
+        3
+      ]
+    },
+    {
+      "id": 326,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -29.1599922
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 327,
+      "pos": [
+        16,
+        4
+      ]
+    },
+    {
+      "id": 327,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -10.3680067
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 326,
+      "rightModuleId": 328,
+      "pos": [
+        26,
+        4
+      ]
+    },
+    {
+      "id": 328,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-UMix",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 327,
+      "data": {
+        "sum": true,
+        "cv_mode": false
+      },
+      "pos": [
+        36,
+        4
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 76,
+      "outputModuleId": 321,
+      "outputId": 0,
+      "inputModuleId": 323,
+      "inputId": 0,
+      "color": "#c91847"
+    },
+    {
+      "id": 77,
+      "outputModuleId": 322,
+      "outputId": 1,
+      "inputModuleId": 323,
+      "inputId": 1,
+      "color": "#0986ad"
+    },
+    {
+      "id": 78,
+      "outputModuleId": 326,
+      "outputId": 0,
+      "inputModuleId": 328,
+      "inputId": 0,
+      "color": "#c91847"
+    },
+    {
+      "id": 79,
+      "outputModuleId": 326,
+      "outputId": 1,
+      "inputModuleId": 328,
+      "inputId": 2,
+      "color": "#0986ad"
+    },
+    {
+      "id": 80,
+      "outputModuleId": 328,
+      "outputId": 0,
+      "inputModuleId": 325,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 81,
+      "outputModuleId": 328,
+      "outputId": 0,
+      "inputModuleId": 325,
+      "inputId": 1,
+      "color": "#c9b70e"
+    }
+  ]
+}
