@@ -1,0 +1,1007 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 208,
+      "plugin": "Alikins",
+      "version": "1.0.1",
+      "model": "MomentaryOnButtons",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 0.0
+        },
+        {
+          "id": 9,
+          "value": 0.0
+        },
+        {
+          "id": 10,
+          "value": 0.0
+        },
+        {
+          "id": 11,
+          "value": 0.0
+        },
+        {
+          "id": 12,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 214,
+      "rightModuleId": 215,
+      "pos": [
+        26,
+        0
+      ]
+    },
+    {
+      "id": 209,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 6.71999788
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 215,
+      "rightModuleId": 210,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        52,
+        0
+      ]
+    },
+    {
+      "id": 210,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -37.4220085
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.495000094
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 209,
+      "rightModuleId": 211,
+      "pos": [
+        65,
+        0
+      ]
+    },
+    {
+      "id": 211,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 210,
+      "rightModuleId": 212,
+      "pos": [
+        75,
+        0
+      ]
+    },
+    {
+      "id": 212,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 211,
+      "rightModuleId": 223,
+      "data": {
+        "audio": {
+          "driver": 6,
+          "offset": 1112930987,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        83,
+        0
+      ]
+    },
+    {
+      "id": 214,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 1.03602266
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 216,
+      "rightModuleId": 208,
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 215,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "SEQ3",
+      "params": [
+        {
+          "id": 0,
+          "value": 2.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 8.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 0.0
+        },
+        {
+          "id": 9,
+          "value": 0.0
+        },
+        {
+          "id": 10,
+          "value": 0.0
+        },
+        {
+          "id": 11,
+          "value": 0.0
+        },
+        {
+          "id": 12,
+          "value": 0.0
+        },
+        {
+          "id": 13,
+          "value": 0.0
+        },
+        {
+          "id": 14,
+          "value": 0.0
+        },
+        {
+          "id": 15,
+          "value": 0.0
+        },
+        {
+          "id": 16,
+          "value": 0.0
+        },
+        {
+          "id": 17,
+          "value": 0.0
+        },
+        {
+          "id": 18,
+          "value": 0.0
+        },
+        {
+          "id": 19,
+          "value": 0.0
+        },
+        {
+          "id": 20,
+          "value": 0.0
+        },
+        {
+          "id": 21,
+          "value": 0.0
+        },
+        {
+          "id": 22,
+          "value": 0.0
+        },
+        {
+          "id": 23,
+          "value": 0.0
+        },
+        {
+          "id": 24,
+          "value": 0.0
+        },
+        {
+          "id": 25,
+          "value": 0.0
+        },
+        {
+          "id": 26,
+          "value": 0.0
+        },
+        {
+          "id": 27,
+          "value": 0.0
+        },
+        {
+          "id": 28,
+          "value": 0.0
+        },
+        {
+          "id": 29,
+          "value": 0.0
+        },
+        {
+          "id": 30,
+          "value": 0.0
+        },
+        {
+          "id": 31,
+          "value": 0.0
+        },
+        {
+          "id": 32,
+          "value": 0.0
+        },
+        {
+          "id": 33,
+          "value": 0.0
+        },
+        {
+          "id": 34,
+          "value": 0.0
+        },
+        {
+          "id": 35,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 208,
+      "rightModuleId": 209,
+      "data": {
+        "running": true,
+        "gates": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "pos": [
+        30,
+        0
+      ]
+    },
+    {
+      "id": 216,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 214,
+      "text": "This lab will introduce you to the concept of a \"sequencer.\" A sequencer stores a list of voltages in distinct steps.  E.g.:\nStep 1: 2V\nStep 2: 1.3V\nStep 3: 4.4V\nStep 4: 0.7V\n\nA sequencer only outputs the voltage corresponding to a single step at any point in time.  The step whose voltage is currently being output by the sequencer is known as the \"active\" step. \n\nWhen a sequencer advances through the steps of a sequence, the resulting voltage can be used to control a parameter in a very specific pattern.  By setting the voltages for each step in a sequence, you can control exactly what happens at each stage in the pattern. ",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 217,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 218,
+      "text": "A sequencer may even be able to store and output more than one sequence at at a time.\n\nSEQ-3 may look like an overwhelming module at first, but for now, we will only focus on a few parts of it.  This is a good strategy to use in general when something seems overwhelming!  We are just going to look at its first row of knobs.\n\nThe first row of knobs corresponds to a sequence with 8 steps in it - each knob corresponds to one step, and each knob sets the voltage level for the corresponding step. The second and third row of knobs correspond to the 8 steps of two other sequences.  Each step then can be thought of as a column, while each sequence can be thought of as a row. Let's begin trying to use it!",
+      "pos": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 218,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 217,
+      "rightModuleId": 219,
+      "text": "1) Connect one of the button's outputs to the \"EXT CLOCK\" input of SEQ-3.  Whenever the \"EXT CLOCK\" input receives a trigger/gate pulse, the sequencer will advance to the next step.  As long as you are not pressing the button, it is sending out 0V, so the SEQ-3 is stuck on a single step.  However, each time you press a button, the sequencer advanecs its active step one space to the right (or loops back around when it reaches the end of a row).  Observe the green LEDs at the bottom of SEQ-3 illuminate, indicating which step just became active.  Try pressing the button until you see the sequence loop back around to the start.",
+      "pos": [
+        16,
+        1
+      ]
+    },
+    {
+      "id": 219,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 218,
+      "rightModuleId": 220,
+      "text": "  2) Connect the \"ROW 1\" output to the X-in on the Scope.  The \"ROW-1\" output sends out the voltage determined by the Row 1 knob in the active step's column. \n\n3) Set the knobs in Row 1 so that each step is slightly greater (further clockwise) than the previous step.  \n\n4) Now press your red button to send pulses to the \"EXT CLOCK\" input and advance the sequencer step-by-step again.  This time, observe how the voltage on the scope changes to match each step and form a rectilinear (right-angled) staircase pattern.\n\n5) Adjust the volume of VCO-1 using the attenuator until it is at a comfortable volume (don't forget to set your audio card on Audio-8).",
+      "pos": [
+        32,
+        1
+      ]
+    },
+    {
+      "id": 220,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 219,
+      "rightModuleId": 221,
+      "text": "6) Try multing the output of ROW 1 to the FM input of VCO-1. Set the FM CV attenuverter to around noon.  \n\n7) Press the red button repeatedly to advance through your sequence step-by-step.  Listen to the oscillator change pitch as each new step is sent to VCO-1's FM (frequency modulation) input.\n\n8) It is quite annoying having to press the button over and over repeatedly.  How can we automate this behavior?\n\n9) Instead of manually sending gates, let's send a steady stream of gates, aka a CLOCK to the EXT CLK (external clock) input on SEQ-3.  We can use LFO-1's square wave output as a clock stream.  Move the cable from the button's output to the square wave output of LFO-1.   \n\n ",
+      "pos": [
+        48,
+        1
+      ]
+    },
+    {
+      "id": 221,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 220,
+      "rightModuleId": 222,
+      "text": "10) Now you should hear the sequencer automatically advancing through each step one-by-one, and you should hear the pitch of the oscillator changing each time it receives a new voltage from SEQ-3's Row-1 output.  \n\n11) Try changing some of the knob positions in Row-1, and pay attention to how the pitch sequence of notes changes.  Remember, changing a knob won't have any affect until the sequencer actually returns to the corresponding step!\n\n12) Try playing with the speed of your clock stream.  Maybe even add another LFO to control the frequency of the first LFO's clock stream!\n\n13) Try disconnecting LFO-1's square wave output from SEQ-3's EXT CLK input.  Why is the sequencer still running (aka advancing)?",
+      "pos": [
+        64,
+        1
+      ]
+    },
+    {
+      "id": 222,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 221,
+      "text": "14) When nothing is connected to the external clock (EXT CLK) input, the sequencer uses an internal clock to advance through its steps.  The rate of this clock is set by the \"CLOCK\" knob.  Try playing with that knob to hear the sequence speed up and slow down.  The jack directly below the CLOCK knob is a CV input - you can send control voltage into it to modulate the internal clock speed of the sequencer!  You likely will want to attenuate your control voltage before sending it into the CLOCK CV input so that you can control precisely how much it speeds up and slows down.\n\n15) The \"STEPS\" knob controls when the sequence reaches the \"end\" and loops back to the beginning.  Fully CW, it loops back after 8 steps.  Turn it CCW to see and hear it reset to the first step after fewer steps!",
+      "pos": [
+        80,
+        1
+      ]
+    },
+    {
+      "id": 223,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 212,
+      "text": "Scroll down for a completed patch!",
+      "pos": [
+        93,
+        0
+      ]
+    },
+    {
+      "id": 224,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 1.03602266
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 226,
+      "pos": [
+        4,
+        3
+      ]
+    },
+    {
+      "id": 225,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "SEQ3",
+      "params": [
+        {
+          "id": 0,
+          "value": 2.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 8.0
+        },
+        {
+          "id": 4,
+          "value": 1.7249999
+        },
+        {
+          "id": 5,
+          "value": 5.38500071
+        },
+        {
+          "id": 6,
+          "value": 3.37500048
+        },
+        {
+          "id": 7,
+          "value": 5.87999964
+        },
+        {
+          "id": 8,
+          "value": 2.71499991
+        },
+        {
+          "id": 9,
+          "value": 5.04000044
+        },
+        {
+          "id": 10,
+          "value": 1.81499994
+        },
+        {
+          "id": 11,
+          "value": 3.09000206
+        },
+        {
+          "id": 12,
+          "value": 0.0
+        },
+        {
+          "id": 13,
+          "value": 0.0
+        },
+        {
+          "id": 14,
+          "value": 0.0
+        },
+        {
+          "id": 15,
+          "value": 0.0
+        },
+        {
+          "id": 16,
+          "value": 0.0
+        },
+        {
+          "id": 17,
+          "value": 0.0
+        },
+        {
+          "id": 18,
+          "value": 0.0
+        },
+        {
+          "id": 19,
+          "value": 0.0
+        },
+        {
+          "id": 20,
+          "value": 0.0
+        },
+        {
+          "id": 21,
+          "value": 0.0
+        },
+        {
+          "id": 22,
+          "value": 0.0
+        },
+        {
+          "id": 23,
+          "value": 0.0
+        },
+        {
+          "id": 24,
+          "value": 0.0
+        },
+        {
+          "id": 25,
+          "value": 0.0
+        },
+        {
+          "id": 26,
+          "value": 0.0
+        },
+        {
+          "id": 27,
+          "value": 0.0
+        },
+        {
+          "id": 28,
+          "value": 0.0
+        },
+        {
+          "id": 29,
+          "value": 0.0
+        },
+        {
+          "id": 30,
+          "value": 0.0
+        },
+        {
+          "id": 31,
+          "value": 0.0
+        },
+        {
+          "id": 32,
+          "value": 0.0
+        },
+        {
+          "id": 33,
+          "value": 0.0
+        },
+        {
+          "id": 34,
+          "value": 0.0
+        },
+        {
+          "id": 35,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 226,
+      "rightModuleId": 230,
+      "data": {
+        "running": true,
+        "gates": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "pos": [
+        18,
+        3
+      ]
+    },
+    {
+      "id": 226,
+      "plugin": "Alikins",
+      "version": "1.0.1",
+      "model": "MomentaryOnButtons",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 0.0
+        },
+        {
+          "id": 9,
+          "value": 0.0
+        },
+        {
+          "id": 10,
+          "value": 0.0
+        },
+        {
+          "id": 11,
+          "value": 0.0
+        },
+        {
+          "id": 12,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 224,
+      "rightModuleId": 225,
+      "pos": [
+        14,
+        3
+      ]
+    },
+    {
+      "id": 227,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -37.4220085
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.495000094
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 230,
+      "rightModuleId": 228,
+      "pos": [
+        53,
+        3
+      ]
+    },
+    {
+      "id": 228,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 227,
+      "rightModuleId": 229,
+      "pos": [
+        63,
+        3
+      ]
+    },
+    {
+      "id": 229,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 228,
+      "data": {
+        "audio": {
+          "driver": 7,
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        71,
+        3
+      ]
+    },
+    {
+      "id": 230,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 6.71999788
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 225,
+      "rightModuleId": 227,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        40,
+        3
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 228,
+      "outputModuleId": 211,
+      "outputId": 0,
+      "inputModuleId": 212,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 229,
+      "outputModuleId": 211,
+      "outputId": 0,
+      "inputModuleId": 212,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 230,
+      "outputModuleId": 210,
+      "outputId": 0,
+      "inputModuleId": 211,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 232,
+      "outputModuleId": 224,
+      "outputId": 3,
+      "inputModuleId": 225,
+      "inputId": 1,
+      "color": "#0986ad"
+    },
+    {
+      "id": 233,
+      "outputModuleId": 225,
+      "outputId": 1,
+      "inputModuleId": 230,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 234,
+      "outputModuleId": 225,
+      "outputId": 1,
+      "inputModuleId": 227,
+      "inputId": 1,
+      "color": "#0986ad"
+    },
+    {
+      "id": 235,
+      "outputModuleId": 227,
+      "outputId": 0,
+      "inputModuleId": 228,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 236,
+      "outputModuleId": 228,
+      "outputId": 0,
+      "inputModuleId": 229,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 237,
+      "outputModuleId": 228,
+      "outputId": 0,
+      "inputModuleId": 229,
+      "inputId": 1,
+      "color": "#c9b70e"
+    }
+  ]
+}

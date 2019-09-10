@@ -1,0 +1,1245 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 242,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 244,
+      "text": "This lab is very important, so please do not skip it!\n\nWe are going to put together everything we have learned so far.  \n\nOur goal is to create a \"melodic sequence of notes\" where we can control what note is played at each step in the sequence, as well as dynamically transform the sequence.  In the previous example, the LFO was automatically ramping up and down through the allowed notes.  This time, we want to be more precise about what notes are actually played.  \n\nWe also do not want our oscillator continuously playing, we want each note to have its own beginning, middle and end.  Let's think about the tools we will need to use to accomplish this.",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 243,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "SEQ3",
+      "params": [
+        {
+          "id": 0,
+          "value": 2.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 8.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 0.0
+        },
+        {
+          "id": 9,
+          "value": 0.0
+        },
+        {
+          "id": 10,
+          "value": 0.0
+        },
+        {
+          "id": 11,
+          "value": 0.0
+        },
+        {
+          "id": 12,
+          "value": 0.0
+        },
+        {
+          "id": 13,
+          "value": 0.0
+        },
+        {
+          "id": 14,
+          "value": 0.0
+        },
+        {
+          "id": 15,
+          "value": 0.0
+        },
+        {
+          "id": 16,
+          "value": 0.0
+        },
+        {
+          "id": 17,
+          "value": 0.0
+        },
+        {
+          "id": 18,
+          "value": 0.0
+        },
+        {
+          "id": 19,
+          "value": 0.0
+        },
+        {
+          "id": 20,
+          "value": 0.0
+        },
+        {
+          "id": 21,
+          "value": 0.0
+        },
+        {
+          "id": 22,
+          "value": 0.0
+        },
+        {
+          "id": 23,
+          "value": 0.0
+        },
+        {
+          "id": 24,
+          "value": 0.0
+        },
+        {
+          "id": 25,
+          "value": 0.0
+        },
+        {
+          "id": 26,
+          "value": 0.0
+        },
+        {
+          "id": 27,
+          "value": 0.0
+        },
+        {
+          "id": 28,
+          "value": 0.0
+        },
+        {
+          "id": 29,
+          "value": 0.0
+        },
+        {
+          "id": 30,
+          "value": 0.0
+        },
+        {
+          "id": 31,
+          "value": 0.0
+        },
+        {
+          "id": 32,
+          "value": 0.0
+        },
+        {
+          "id": 33,
+          "value": 0.0
+        },
+        {
+          "id": 34,
+          "value": 0.0
+        },
+        {
+          "id": 35,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 244,
+      "rightModuleId": 252,
+      "data": {
+        "running": true,
+        "gates": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "pos": [
+        26,
+        0
+      ]
+    },
+    {
+      "id": 244,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 1.67499936
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.46863997
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 242,
+      "rightModuleId": 243,
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 245,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-ADSR",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0284999162
+        },
+        {
+          "id": 1,
+          "value": 0.22472991
+        },
+        {
+          "id": 2,
+          "value": 0.503499985
+        },
+        {
+          "id": 3,
+          "value": 0.196500048
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 247,
+      "rightModuleId": 246,
+      "pos": [
+        74,
+        0
+      ]
+    },
+    {
+      "id": 246,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCA-1",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        }
+      ],
+      "leftModuleId": 245,
+      "rightModuleId": 249,
+      "pos": [
+        77,
+        0
+      ]
+    },
+    {
+      "id": 247,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -31.2660179
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 251,
+      "rightModuleId": 245,
+      "pos": [
+        64,
+        0
+      ]
+    },
+    {
+      "id": 249,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0825000405
+        }
+      ],
+      "leftModuleId": 246,
+      "rightModuleId": 250,
+      "pos": [
+        80,
+        0
+      ]
+    },
+    {
+      "id": 250,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 249,
+      "rightModuleId": 260,
+      "data": {
+        "audio": {
+          "driver": 6,
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        88,
+        0
+      ]
+    },
+    {
+      "id": 251,
+      "plugin": "ML_modules",
+      "version": "1.0.2",
+      "model": "Quantum",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 0.0
+        },
+        {
+          "id": 9,
+          "value": 0.0
+        },
+        {
+          "id": 10,
+          "value": 0.0
+        },
+        {
+          "id": 11,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 252,
+      "rightModuleId": 247,
+      "data": {
+        "scale": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mode": 1,
+        "transpose_select": 1,
+        "toggle_mode": 0
+      },
+      "pos": [
+        56,
+        0
+      ]
+    },
+    {
+      "id": 252,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 243,
+      "rightModuleId": 251,
+      "pos": [
+        48,
+        0
+      ]
+    },
+    {
+      "id": 253,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 254,
+      "text": "If we want each note to have a beginning, middle, and end, we will need two things - a Voltage- Controlled Amplifier (VCA) to set the volume of the oscillator, and an envelope generator (EG) to open and close the VCA (aka turn its volume up and down).\n\nIn order for an envelope generator to work though, it expects gate signals to tell it when to start (enter its attack phase), how long to stay sustained, and when to end (enter the release phase).\n\nIf we want to specify a \"list of pitches\" for each note to play in order, we will want to use a sequencer.",
+      "pos": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 254,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 253,
+      "rightModuleId": 255,
+      "text": "Since we want each step in the sequence to correspond to its own \"note\" with a beginning, middle, and end, we want the sequencer and the envelope generator to somehow be synchronized.  In order to do this, we will use one gate stream to drive both of them.\n\nSince we want our pitches to be harmonically related to each other, we will need to quantize the output of the sequencer before sending it to the V/oct input of the VCO.  We will also use an attenuator to dynamically set the range of our sequence before reaching the quantizer, allowing us to transform which notes are played (but keeping them within the same scale set by the quantizer).\n\nLet's get started!",
+      "pos": [
+        16,
+        1
+      ]
+    },
+    {
+      "id": 255,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 254,
+      "rightModuleId": 256,
+      "text": "1) First, let's set up our audio pathway. Patch the VCO's triangle wave output (sine waves are getting boring) into the VCA's main input.  Patch the output of the VCA into the attenuator's input.  Set your sound card, and adjust the attenuator until you can hear the VCO at a comfortable volume.\n\n2) Now, let's set up our envelope generator so that we can make sure each note has a beginning, middle, and end. Patch the square wave output of the LFO-1 into the Gate input of the ADSR EG.  The square wave output of the ADSR is acting as a clock source (steady stream of gates) which activates the envelope generator.  \n\n3) Patch the output of the envelope generator to the control voltage (CV) input of the VCA.",
+      "pos": [
+        32,
+        1
+      ]
+    },
+    {
+      "id": 256,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 255,
+      "rightModuleId": 257,
+      "text": "4) Adjust the LFO's frequency to control the rate of notes.\n Adjust the attack, decay, sustain, and release parameters! Play with the LFO's pulse width to contorl the length of the EG's sustain phase.\n\n5) Now, it's time to set up the pitch control for the VCO!  Since we want each new envelope to correspond to a new pitch, we need our sequencer to be synchronized to our envelopes.  That means we need the same clock stream going to both the sequencer AND the envelope generator. How can you make sure this happens?\n\n6) Mult the square wave output of LFO-1 to the \"EXT CLOCK\" input of the sequencer.  Now, each time the square wave output issues a new clock pulse, the sequencer will advance one step and the envelope generator will create one envelope.   ",
+      "pos": [
+        48,
+        1
+      ]
+    },
+    {
+      "id": 257,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 256,
+      "rightModuleId": 258,
+      "text": "7) We want the sequencer to control the pitch of our VCOllator, so let's send the Row-1 output of the sequencer to the oscillator's V/oct input.  Set the knobs in that row however you like.  It's very hard to get them into a \"harmonic\" sequence!\n\n8) Disconnect the Row-1 output from the VCO's V/oct input.  Instead, send the Row-1 output to the quantizer's input.  Send the quantizer's output to the V/oct input on VCO-1.  Activate 3-5 notes on the quantizer. \n\n9) Try adjusting the steps in your sequence and the speed of the LFO.\n\n10) When the knobs in our sequence are further CW than noon, the notes played by the oscillator are REALLY high.  Let's try attenuating our sequence before sending it to the quantizer.",
+      "pos": [
+        64,
+        1
+      ]
+    },
+    {
+      "id": 258,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 257,
+      "rightModuleId": 259,
+      "text": "11) Disconnect the sequencer's Row-1 output from the quantizer's input.  Patch the Row-1 output to the attenuator's input.  Patch the attenuator's output to the quantizer's input. \n\n12) Slowly increase the attenuator to 9 o'clock, then to noon.  The attenuator is making the voltages coming out of the sequencer smaller before they reach the quantizer.  The quantizer changes each step in this new, attenuated sequence to the closest voltage corresponding to an allowed note.  Using the attenuator then, we can change our entire sequence, but the quantizer will make sure the resulting sequence still only plays back notes from our allowed scale.  Each step may be a different note depending on how much the attenuator has changed position.  ",
+      "pos": [
+        80,
+        1
+      ]
+    },
+    {
+      "id": 259,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 258,
+      "text": "13) Try multing the output of the sequencer to the X-input on the scope.  Also mult the output of hte attenuator to the Y-input on the scope. \n\n14) Adjust the attenuator position.  Observe how the attenuator always outputs a version of the sequence which follows the same trajectory as the original sequence, but at lower amplitudes.  Since each step is now at a different voltage level, it may be closer to a different note in our allowed set of notes!\n\nScroll down for a completed patch! Try making your own block diagram of this patch.\n \nIt's time to explore.  Try replacing the attenuator with an attenuverter. What happens when you turn the attenuverter knob CCW?",
+      "pos": [
+        96,
+        1
+      ]
+    },
+    {
+      "id": 260,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 7.1850009
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 250,
+      "data": {
+        "lissajous": 0,
+        "external": 1
+      },
+      "pos": [
+        98,
+        0
+      ]
+    },
+    {
+      "id": 261,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "text": "Try setting the envelope generator to short attack, decay, and release lengths, and a relatively high sustain level. Play with the pulse width of the clock to control the length of each note.  Then set the pulse width to its minimum.  Patch the output of the second row of the sequencer to the pulse-width modulation (PWM) input on the LFO.  Now you can use the knobs in the second row of the sequence to dynamically control the length of each note in the sequence! \n\nTry adding an LFO and using it to control the frequency of your clock (i.e. the LFO driving the sequencer and EG). ",
+      "pos": [
+        96,
+        2
+      ]
+    },
+    {
+      "id": 262,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 2.86299849
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.311349988
+        },
+        {
+          "id": 6,
+          "value": 1.0
+        }
+      ],
+      "rightModuleId": 263,
+      "pos": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": 263,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "SEQ3",
+      "params": [
+        {
+          "id": 0,
+          "value": 2.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 8.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 1.31999993
+        },
+        {
+          "id": 6,
+          "value": 3.07500052
+        },
+        {
+          "id": 7,
+          "value": 5.73000145
+        },
+        {
+          "id": 8,
+          "value": 2.65500045
+        },
+        {
+          "id": 9,
+          "value": 6.80999708
+        },
+        {
+          "id": 10,
+          "value": 1.99499989
+        },
+        {
+          "id": 11,
+          "value": 2.53500032
+        },
+        {
+          "id": 12,
+          "value": 0.0
+        },
+        {
+          "id": 13,
+          "value": 1.67999971
+        },
+        {
+          "id": 14,
+          "value": 4.90499973
+        },
+        {
+          "id": 15,
+          "value": 3.75000024
+        },
+        {
+          "id": 16,
+          "value": 1.61999977
+        },
+        {
+          "id": 17,
+          "value": 9.40500069
+        },
+        {
+          "id": 18,
+          "value": 1.36500013
+        },
+        {
+          "id": 19,
+          "value": 0.0
+        },
+        {
+          "id": 20,
+          "value": 0.0
+        },
+        {
+          "id": 21,
+          "value": 0.0
+        },
+        {
+          "id": 22,
+          "value": 0.0
+        },
+        {
+          "id": 23,
+          "value": 0.0
+        },
+        {
+          "id": 24,
+          "value": 0.0
+        },
+        {
+          "id": 25,
+          "value": 0.0
+        },
+        {
+          "id": 26,
+          "value": 0.0
+        },
+        {
+          "id": 27,
+          "value": 0.0
+        },
+        {
+          "id": 28,
+          "value": 0.0
+        },
+        {
+          "id": 29,
+          "value": 0.0
+        },
+        {
+          "id": 30,
+          "value": 0.0
+        },
+        {
+          "id": 31,
+          "value": 0.0
+        },
+        {
+          "id": 32,
+          "value": 0.0
+        },
+        {
+          "id": 33,
+          "value": 0.0
+        },
+        {
+          "id": 34,
+          "value": 0.0
+        },
+        {
+          "id": 35,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 262,
+      "rightModuleId": 264,
+      "data": {
+        "running": true,
+        "gates": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "pos": [
+        13,
+        4
+      ]
+    },
+    {
+      "id": 264,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.501000285
+        }
+      ],
+      "leftModuleId": 263,
+      "rightModuleId": 265,
+      "pos": [
+        35,
+        4
+      ]
+    },
+    {
+      "id": 265,
+      "plugin": "ML_modules",
+      "version": "1.0.2",
+      "model": "Quantum",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 0.0
+        },
+        {
+          "id": 9,
+          "value": 0.0
+        },
+        {
+          "id": 10,
+          "value": 0.0
+        },
+        {
+          "id": 11,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 264,
+      "rightModuleId": 266,
+      "data": {
+        "scale": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mode": 1,
+        "transpose_select": 1,
+        "toggle_mode": 0
+      },
+      "pos": [
+        43,
+        4
+      ]
+    },
+    {
+      "id": 266,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -34.5059967
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 265,
+      "rightModuleId": 267,
+      "pos": [
+        51,
+        4
+      ]
+    },
+    {
+      "id": 267,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-ADSR",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.143730015
+        },
+        {
+          "id": 2,
+          "value": 0.53799963
+        },
+        {
+          "id": 3,
+          "value": 0.103230037
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 266,
+      "rightModuleId": 268,
+      "pos": [
+        61,
+        4
+      ]
+    },
+    {
+      "id": 268,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCA-1",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        }
+      ],
+      "leftModuleId": 267,
+      "rightModuleId": 269,
+      "pos": [
+        64,
+        4
+      ]
+    },
+    {
+      "id": 269,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 268,
+      "rightModuleId": 270,
+      "pos": [
+        67,
+        4
+      ]
+    },
+    {
+      "id": 270,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 269,
+      "rightModuleId": 271,
+      "data": {
+        "audio": {
+          "driver": 7,
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        75,
+        4
+      ]
+    },
+    {
+      "id": 271,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 14.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 270,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        85,
+        4
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 24,
+      "outputModuleId": 249,
+      "outputId": 0,
+      "inputModuleId": 250,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 23,
+      "outputModuleId": 249,
+      "outputId": 0,
+      "inputModuleId": 250,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 38,
+      "outputModuleId": 269,
+      "outputId": 0,
+      "inputModuleId": 270,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 39,
+      "outputModuleId": 269,
+      "outputId": 0,
+      "inputModuleId": 270,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 40,
+      "outputModuleId": 268,
+      "outputId": 0,
+      "inputModuleId": 269,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 41,
+      "outputModuleId": 266,
+      "outputId": 1,
+      "inputModuleId": 268,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 43,
+      "outputModuleId": 267,
+      "outputId": 0,
+      "inputModuleId": 268,
+      "inputId": 0,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 46,
+      "outputModuleId": 263,
+      "outputId": 1,
+      "inputModuleId": 264,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 50,
+      "outputModuleId": 262,
+      "outputId": 3,
+      "inputModuleId": 263,
+      "inputId": 1,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 51,
+      "outputModuleId": 262,
+      "outputId": 3,
+      "inputModuleId": 267,
+      "inputId": 0,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 48,
+      "outputModuleId": 264,
+      "outputId": 0,
+      "inputModuleId": 265,
+      "inputId": 0,
+      "color": "#c91847"
+    },
+    {
+      "id": 47,
+      "outputModuleId": 263,
+      "outputId": 1,
+      "inputModuleId": 271,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 52,
+      "outputModuleId": 265,
+      "outputId": 0,
+      "inputModuleId": 266,
+      "inputId": 0,
+      "color": "#c91847"
+    },
+    {
+      "id": 53,
+      "outputModuleId": 264,
+      "outputId": 0,
+      "inputModuleId": 271,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 55,
+      "outputModuleId": 263,
+      "outputId": 2,
+      "inputModuleId": 262,
+      "inputId": 3,
+      "color": "#c9b70e"
+    }
+  ]
+}

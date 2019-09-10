@@ -1,0 +1,427 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 218,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -12.3763094
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 231,
+      "rightModuleId": 233,
+      "pos": [
+        27,
+        0
+      ]
+    },
+    {
+      "id": 220,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 233,
+      "rightModuleId": 222,
+      "pos": [
+        50,
+        0
+      ]
+    },
+    {
+      "id": 222,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 220,
+      "rightModuleId": 242,
+      "data": {
+        "audio": {
+          "driver": 7,
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        58,
+        0
+      ]
+    },
+    {
+      "id": 226,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 239,
+      "rightModuleId": 231,
+      "text": "This lab will introduce you to the concept of the octave, and using voltage to change the frequency of an oscillator in a precise manner using the \"1 volt-per-octave\" (V/oct) tuning standard.\n\nWe've talked about the relationship between frequency and pitch - we know that higher frequency means higher pitch, and vice versa.  We've looked at controlling pitch with LFOs, sequences, and envelopes, but we haven't done so in a particularly precise fashion - we've more or less let the oscillator go to whatever pitch it goes to!  How do we gain more precise control over frequency and pitch?  \n\nTo answer this question, we need to understand how different frequencies relate to each other.",
+      "pos": [
+        8,
+        0
+      ]
+    },
+    {
+      "id": 231,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Octave",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 226,
+      "rightModuleId": 218,
+      "pos": [
+        24,
+        0
+      ]
+    },
+    {
+      "id": 233,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 16.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 218,
+      "rightModuleId": 220,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        37,
+        0
+      ]
+    },
+    {
+      "id": 236,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 237,
+      "text": " When one frequency is exactly double another frequency - e.g. 100Hz and 200Hz, or 60Hz and 120Hz - the two frequencies are said to be \"an octave apart.\"  The higher frequency is \"an octave above\" the lower frequency.\n\nIf two frequencies form an octave, then they will almost always sound good together because of the way the frequencies form a mathematically simple ratio (2:1).\n\n In fact, if you look at the notes on a piano, every C is exactly double the frequency of the C below it!  Similarly every C# is exactly double the frequency of the C# below it, and so on.  Frequencies that form an octave work so well when played together that we even say they are the \"same\" note just in different registers! Time to hear and see this in action!",
+      "pos": [
+        8,
+        1
+      ]
+    },
+    {
+      "id": 237,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 236,
+      "rightModuleId": 243,
+      "text": "1) There are two oscillators in this lab.  Both are multed to their corresponding scope's X-input, and to an attenuator.  One of the VCO's is sent (via the attenuator) the left speaker/headphone, while the other is sent to the right speaker/headphone.\n\n2) Adjust each attenuator so that you can hear the two oscillators at a comfortable volume.  I have tuned them to be the exact same frequency, so you should just hear them together as a single tone.\n\n3) Use the \"FINE\" knob on one of them to make very small (fine) adjustments to the frequency of that oscillator.  Listen as you hear the two oscillators first detune and begin \"beating\" (pulsing); eventually they separate into two distinct pitches once the frequencies are far enough apart. ",
+      "pos": [
+        24,
+        1
+      ]
+    },
+    {
+      "id": 238,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -12.3763094
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 241,
+      "pos": [
+        89,
+        0
+      ]
+    },
+    {
+      "id": 239,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 226,
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 240,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 243,
+      "rightModuleId": 244,
+      "text": "7) Sending in exactly +1V to an oscillators \"V/oct\" input will precisely double that oscillator's frequency.  It does not increase the oscillator's frequency by a fixed amount (e.g. increasing it by 150Hz). Sending in +1V always doubles the oscillator's frequency from whatever it was at before, thus setting it to an octave above its previous value.\n\n8) Conveniently, the module labeled \"Oct\" (for octave) outputs voltage in 1 volt increments.  Try multing the output of Oct to the \"V/OCT\" input on the adjacent oscillator and the Y-In on the adjacent scope.\n\n9) The output of Oct is currently 0V, so the frequency of the adjacent oscillator did not change at all.  \n\n10) Try clicking each of the unfilled circles on Oct.  What happens?",
+      "pos": [
+        56,
+        1
+      ]
+    },
+    {
+      "id": 241,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 242,
+      "rightModuleId": 238,
+      "pos": [
+        81,
+        0
+      ]
+    },
+    {
+      "id": 242,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 16.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 222,
+      "rightModuleId": 241,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        68,
+        0
+      ]
+    },
+    {
+      "id": 243,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 237,
+      "rightModuleId": 240,
+      "text": "4) Slowly drag the Fine tuning knob back to noon and listen as the two oscillators come back \"into tune\" as the second oscillator comes back to exactly the same pitch as the first.  Get it as close as you can to noon.\n\n5) How many cycles of each oscillator's waveform can you see on its scope? Write that number down.   \n\n6) If we want to set one oscillator to be exactly one octave above the other, we would need to be able to precisely double its frequency.  We could try adjusting the main (coarse) FREQ knob until we see twice as many waveform cycles on the scope, however that would be quite challenging!  Instead, we will use the \"1 volt-per-octave\" tuning standard to achieve this... ",
+      "pos": [
+        40,
+        1
+      ]
+    },
+    {
+      "id": 244,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 240,
+      "rightModuleId": 245,
+      "text": "11) Finish with Oct set to the first green circle.  You should see the output of the Oct at exactly +1V on the Scope.  Additionally, you should see that the oscillator has doubled its frequency as compared to its original frequency - check by counting the number of cycles completed on the scopes.\n\n12) Now adjust the Fine knob on the corresponding oscillator - listen to the oscillators become \"out of tune\" as the frequencies are no longer in a perfect 2:1 ratio.  Slowly reset the oscillators to noon so their frequencies return to an octave apart.  Repeat this a few times so you can get a good sense of the \"beating\" and \"dissonance\" sound that occur when they are out of tune, and the \"harmony\" that occurs when they go back into tune.",
+      "pos": [
+        72,
+        1
+      ]
+    },
+    {
+      "id": 245,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 244,
+      "text": "13) Each circle on Oct corresponds to an additional 1V increment (or decrement), so sending the voltage to the oscillator moves it up (or down) an octave each time you move to a different circle!\n\nThe name \"one volt-per-octave\" is coined to indicate that changing the voltage at the V/oct input by exactly one volt will always change the frequency by exactly an octave.  \n\nIn the next lab, we will look at how to use the V/oct (volt-per-octave) tuning standard to set oscillators to other musically interesting ratios (or \"INTERVALS\") using quantizers and scales. ",
+      "pos": [
+        88,
+        1
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 6,
+      "outputModuleId": 220,
+      "outputId": 0,
+      "inputModuleId": 222,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 34,
+      "outputModuleId": 218,
+      "outputId": 0,
+      "inputModuleId": 220,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 35,
+      "outputModuleId": 218,
+      "outputId": 0,
+      "inputModuleId": 233,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 36,
+      "outputModuleId": 241,
+      "outputId": 0,
+      "inputModuleId": 222,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 37,
+      "outputModuleId": 238,
+      "outputId": 0,
+      "inputModuleId": 241,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 41,
+      "outputModuleId": 238,
+      "outputId": 0,
+      "inputModuleId": 242,
+      "inputId": 0,
+      "color": "#0986ad"
+    }
+  ]
+}

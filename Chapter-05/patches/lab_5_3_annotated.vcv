@@ -1,0 +1,747 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 216,
+      "plugin": "ML_modules",
+      "version": "1.0.2",
+      "model": "Quantum",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 0.0
+        },
+        {
+          "id": 9,
+          "value": 0.0
+        },
+        {
+          "id": 10,
+          "value": 0.0
+        },
+        {
+          "id": 11,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 219,
+      "rightModuleId": 221,
+      "data": {
+        "scale": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mode": 1,
+        "transpose_select": 1,
+        "toggle_mode": 0
+      },
+      "pos": [
+        34,
+        0
+      ]
+    },
+    {
+      "id": 217,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -2.61799717
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 225,
+      "rightModuleId": 219,
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 218,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -27.054018
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 221,
+      "rightModuleId": 220,
+      "pos": [
+        55,
+        0
+      ]
+    },
+    {
+      "id": 219,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 217,
+      "rightModuleId": 216,
+      "pos": [
+        26,
+        0
+      ]
+    },
+    {
+      "id": 220,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.115499973
+        }
+      ],
+      "leftModuleId": 218,
+      "rightModuleId": 222,
+      "pos": [
+        65,
+        0
+      ]
+    },
+    {
+      "id": 221,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 6.82499599
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 216,
+      "rightModuleId": 218,
+      "data": {
+        "lissajous": 0,
+        "external": 1
+      },
+      "pos": [
+        42,
+        0
+      ]
+    },
+    {
+      "id": 222,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 220,
+      "rightModuleId": 234,
+      "data": {
+        "audio": {
+          "driver": 7,
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        73,
+        0
+      ]
+    },
+    {
+      "id": 225,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 217,
+      "text": "This lab will further explore the concept of V/oct tuning of oscillator frequency.  It will also explore musical intervals, scales, and using quantizer modules to precisely generate voltage suitable for oscillator V/oct inputs.\n\nAn \"interval\" is just a ratio of two frequencies.  So, an octave, which is two frequencies in a ratio of 2:1 is an interval!  In some ways, it is the most important, near-universal interval. Any two keys on a piano form an interval, since the two keys both correspond to frequencies (aka pitches).  \n\nOn a piano, within one octave - e.g. between C1 and C2, there are 12 possible distinct notes before the cycle of notes begins repeat an octave above.\n\n",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 226,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 227,
+      "text": "In other music traditions, there may be many mroe - or fewer! - allowed notes within an octave.  \n\nA \"scale\" is a collection of intervals which are musically or sonically interseting together - though there are commonly used scales, you could also choose whatever frequency ratios you want to be your own custom scale!\n\nWe already saw that a V/oct signal could be used to shift an oscillator's frequency by a very specific interval - the octave (aka doubling the frequency of the oscillator).\n\nSince each interval corresponds to a different frequency ratio, the V/oct input on a module can be used to set an oscillator to a specific interval above its base frequency. ",
+      "pos": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 227,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 226,
+      "rightModuleId": 228,
+      "text": "Just like +1V corresponded to an octave above the base frequency and +2V corresponded to two octaves above the base frequency, different voltage levels correspond to different intervals, like the perfect fifth (e.g. C to G on a piano, or D to A) or major third (e.g. C to E on a piano). Since scales are just collections of intervals, if we could make sure tha twe only send the V/oct input on an oscillator voltages that correspond to intervals within a scale, we would be able to make our oscillator play back notes within a tonal scale!\n\nFortunately, you do not need to know the voltage levels for any other intervals besides octaves!  Modules will handle that for you... let's take a look!",
+      "pos": [
+        16,
+        1
+      ]
+    },
+    {
+      "id": 228,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 227,
+      "rightModuleId": 229,
+      "text": "1) Adjust the attenuator so you can hear the VCO being sent to the speakers at a comfortable volume.\n\n2) Set the LFO into bipolar mode using the UNI/BI switch.  Mult the LFO's sine wave output into the X-input on the Scope and Quantum's In jack.  \n\n3) Additionally mult the sine wave output to the the VCO-1's V/oct input.  What do you hear? Remove that patch cable after you feel satisfied that you have a good sense for how the oscillator's pitch sweeps up and down with a sine wave patched directly to the V/oct input.\n\n4) Mult the output of Quantum to the Y-input on the Scope and to the VCO's V/oct input.  What do you see quantum doing to the LFO signal on the scope?  How do you hear it affect the VCO?",
+      "pos": [
+        32,
+        1
+      ]
+    },
+    {
+      "id": 229,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 228,
+      "rightModuleId": 232,
+      "text": "5) The output of Quantum looks like a \"staircased\" version of the LFO!  And we can now hear the VCO following the level of the LFO, but instead of following it smoothly, it does so in steps.  \n\n6) Quantum is a \"QUANTIZER.\" Quantizers allow the user to specify certain intervals compared to a \"root\" or \"fundamental\" note (aka a scale).  The quantizer than takes an input voltage and outputs the closest V/oct voltage that matches an interval from the scale (or, any octave above that).\n\n7) Notice that the buttons on Quantum look like a keyboard!  The bottom note is our \"root\" note, and always corresponds to 0V.  Since it is the only one illuminated, the only allowed intervals are the octaves of the root - 0V, +1V, +2V, etc.",
+      "pos": [
+        48,
+        1
+      ]
+    },
+    {
+      "id": 232,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 229,
+      "rightModuleId": 233,
+      "text": "8) You can see the output of quantum snap to those 1V intervals and stay there until the LFO moves high enough or low enough to be closer to a different allowed voltage. Try slowing the LFO down to hear it move up and down the different octaves more slowly.\n\n9) Now try pressing the 4th white key above the root key (the white key in line with the \"trigger\" jack). You should now hear more notes and see more divisions on the Scope.  It sounds like the LFO is moving through notes \"faster\" now - why?\n\n10) Because an additional interval (and its octaves) are now allowed, the LFO reaches a new allowed voltage before it reaches the octave each time, so in the same voltage range that the LFO travels over, there are more allowed notes!",
+      "pos": [
+        64,
+        1
+      ]
+    },
+    {
+      "id": 233,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 232,
+      "text": "11) Right now we have no control over the range of notes the LFO travels over - aka where the highest and lowest notes are.  Those voltage levels are determined by the amplitude of the LFO.  Let's use an attenuator to address that!\n\n12) Disconnect the LFO from the quantizer and the scope.  Patch the LFO into the attenuator.  Patch the attenuator's output into the quantizer's input and the X-input on the scope. Let's switch the LFO back into unipolar mode. Why is the VCO staying at a constant pitch?  Shouldn't it be moving up and down?\n\n13) The attenuator is setting the LFO's amplitude to 0 before it reaches the quantizer.  Slowly increase the attenuator (turn it CW) until you can see the LFO on the scope and hear the quantized pitches.",
+      "pos": [
+        80,
+        1
+      ]
+    },
+    {
+      "id": 234,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 222,
+      "text": "14) Try coming up with your own collection of 3-5 notes on the quantizer that you thing sound good together!\n\n15) Play with the LFO frequency - how does it affect the VCO's pitch transitions?\n\n16) Try using different LFO waveshapes to feed the quantizer.  What changes?\n\nIn the next lab, we will put together what we have learned about quantizers, clocks, envelope generators, sequencers, VCAs, and oscillators to make a melodic sequence of notes!\n\nScroll down for a completed look at this lab.",
+      "pos": [
+        83,
+        0
+      ]
+    },
+    {
+      "id": 235,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -2.61799717
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 236,
+      "pos": [
+        10,
+        3
+      ]
+    },
+    {
+      "id": 236,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.238500059
+        }
+      ],
+      "leftModuleId": 235,
+      "rightModuleId": 237,
+      "pos": [
+        20,
+        3
+      ]
+    },
+    {
+      "id": 237,
+      "plugin": "ML_modules",
+      "version": "1.0.2",
+      "model": "Quantum",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 0.0
+        },
+        {
+          "id": 9,
+          "value": 0.0
+        },
+        {
+          "id": 10,
+          "value": 0.0
+        },
+        {
+          "id": 11,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 236,
+      "rightModuleId": 238,
+      "data": {
+        "scale": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "mode": 1,
+        "transpose_select": 1,
+        "toggle_mode": 0
+      },
+      "pos": [
+        28,
+        3
+      ]
+    },
+    {
+      "id": 238,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 6.82499599
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 237,
+      "rightModuleId": 239,
+      "data": {
+        "lissajous": 0,
+        "external": 1
+      },
+      "pos": [
+        36,
+        3
+      ]
+    },
+    {
+      "id": 239,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -27.054018
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 238,
+      "rightModuleId": 240,
+      "pos": [
+        49,
+        3
+      ]
+    },
+    {
+      "id": 240,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 239,
+      "rightModuleId": 241,
+      "pos": [
+        59,
+        3
+      ]
+    },
+    {
+      "id": 241,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 240,
+      "data": {
+        "audio": {
+          "driver": 7,
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        67,
+        3
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 2,
+      "outputModuleId": 220,
+      "outputId": 0,
+      "inputModuleId": 222,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 3,
+      "outputModuleId": 220,
+      "outputId": 0,
+      "inputModuleId": 222,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 10,
+      "outputModuleId": 218,
+      "outputId": 0,
+      "inputModuleId": 220,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 13,
+      "outputModuleId": 235,
+      "outputId": 2,
+      "inputModuleId": 236,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 14,
+      "outputModuleId": 236,
+      "outputId": 0,
+      "inputModuleId": 238,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 15,
+      "outputModuleId": 236,
+      "outputId": 0,
+      "inputModuleId": 237,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 16,
+      "outputModuleId": 237,
+      "outputId": 0,
+      "inputModuleId": 238,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 17,
+      "outputModuleId": 237,
+      "outputId": 0,
+      "inputModuleId": 239,
+      "inputId": 0,
+      "color": "#c91847"
+    },
+    {
+      "id": 18,
+      "outputModuleId": 239,
+      "outputId": 0,
+      "inputModuleId": 240,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 19,
+      "outputModuleId": 240,
+      "outputId": 0,
+      "inputModuleId": 241,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 20,
+      "outputModuleId": 240,
+      "outputId": 0,
+      "inputModuleId": 241,
+      "inputId": 1,
+      "color": "#c9b70e"
+    }
+  ]
+}
