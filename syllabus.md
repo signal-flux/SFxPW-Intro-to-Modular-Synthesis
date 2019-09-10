@@ -121,8 +121,8 @@ Trigger, Gate, Triggers, Rising-Edge, Trigger/Gate Threshold, Gates, Pulse-Width
 | *Review*    | [Chapter 04: Gates, Triggers, Clocks, and Envelope Generators](./Chapter-04/chapter04.md) |
 |             | [Chapter 05: Sequences, Quantizers, Scales and Volt-per-octave, Quantizers)](./Chapter-05/chapter05.md) |
 |             | [Chapter 06: Mixers](./Chapter-06/chapter06.md)              |
-|             | [Patch Analysis](./assignments/Patch-Analysis/patch-analysis.md) |
-|             | [Module Breakdown](./assignments/module-breakdown.md)        |
+|             | [Patch Analysis](./Assignments/Patch-Analysis/patch-analysis.md) |
+|             | [Module Breakdown](./Assignments/module-breakdown.md)        |
 |             | Powerpoint [[.pptx](./powerpoints/week2_powerpoint.pptx), [.pdf](./powerpoints/week2_powerpoint.pdf)] |
 |             |                                                              |
 | *Suggested* | [Try out some "Exploration Ideas"](./assignments/exploration-ideas.md) |
