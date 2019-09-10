@@ -1,0 +1,274 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 153,
+      "plugin": "Alikins",
+      "version": "1.0.1",
+      "model": "MomentaryOnButtons",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 0.0
+        },
+        {
+          "id": 9,
+          "value": 0.0
+        },
+        {
+          "id": 10,
+          "value": 0.0
+        },
+        {
+          "id": 11,
+          "value": 0.0
+        },
+        {
+          "id": 12,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 160,
+      "rightModuleId": 154,
+      "pos": [
+        32,
+        0
+      ]
+    },
+    {
+      "id": 154,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 14.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 153,
+      "rightModuleId": 156,
+      "data": {
+        "lissajous": 0,
+        "external": 1
+      },
+      "pos": [
+        36,
+        0
+      ]
+    },
+    {
+      "id": 156,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "VCO2",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -24.6239891
+        },
+        {
+          "id": 3,
+          "value": 1.5
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 154,
+      "rightModuleId": 157,
+      "pos": [
+        49,
+        0
+      ]
+    },
+    {
+      "id": 157,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 156,
+      "rightModuleId": 158,
+      "pos": [
+        55,
+        0
+      ]
+    },
+    {
+      "id": 158,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 157,
+      "data": {
+        "audio": {
+          "driver": 6,
+          "deviceName": "Speakers (Realtek High Definition Audio)",
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        63,
+        0
+      ]
+    },
+    {
+      "id": 159,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 160,
+      "text": "This series of labs will teach you about the main units for controlling the timing of events: gates/triggers and clocks.  By the end, you will be generating short melodic sequences!",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 160,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 159,
+      "rightModuleId": 153,
+      "text": "1) Connect the first output of \"Buttons\" to the X-in on Scope.\n\n2) Try pressing the corresponding red button.  What do you observe happening on the Scope? \n\n3) When you are not pressing the button, the corresponding output sends out 0V.  However as soon as you press the button, the output immediately jumps to +5V. As soon as you release, the voltage falls back to 0V.\n\n4) A \"GATE\" is a voltage which rests at 0V and then jumps to a high voltage level (depending on the module, it may be +5V, +8V, or even +10V).\n  ",
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 161,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 162,
+      "text": "5) Slowly increase the volume of VCO-2 by increasing the output attenuator connected to the Audio-8 module.  \n\n6) Try connecting one gate output from Buttons to the FM input on VCO-2.  Press the corresponding button.  What do you expect to happen? Nothing happend. Why? \n\n7) Remember, whenever you see a knob labeled e.g. \"FM CV\", that knob is acting as an attenuverter for the incoming CV signal.  Turn that knob clockwise so that the FM input signal is not fully attenuated before being applied to frequency.\n\n8) Now, when you press the corresponding button, you should hear the VCO jump in pitch! ",
+      "pos": [
+        16,
+        1
+      ]
+    },
+    {
+      "id": 162,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 161,
+      "text": "In this example, we used a gate to change the pitch of an oscillator - not necessarily the most interesting technique, as it only allows you to momentarily switch between two states.\n\nHowever, as you will see in the next sections, gates are useful not as direct modulation for audio parameters, but rather as \"on/off\" or \"go\" messages which tell modules to start and stop actions, advance to a subsequent step, switch states, etc. ",
+      "pos": [
+        32,
+        1
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 183,
+      "outputModuleId": 157,
+      "outputId": 0,
+      "inputModuleId": 158,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 184,
+      "outputModuleId": 157,
+      "outputId": 0,
+      "inputModuleId": 158,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 188,
+      "outputModuleId": 156,
+      "outputId": 0,
+      "inputModuleId": 157,
+      "inputId": 0,
+      "color": "#c9b70e"
+    }
+  ]
+}

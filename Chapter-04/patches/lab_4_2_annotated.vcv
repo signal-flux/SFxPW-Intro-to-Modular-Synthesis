@@ -1,0 +1,792 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 176,
+      "plugin": "Alikins",
+      "version": "1.0.1",
+      "model": "MomentaryOnButtons",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 0.0
+        },
+        {
+          "id": 9,
+          "value": 0.0
+        },
+        {
+          "id": 10,
+          "value": 0.0
+        },
+        {
+          "id": 11,
+          "value": 0.0
+        },
+        {
+          "id": 12,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 184,
+      "rightModuleId": 177,
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 177,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-ADSR",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0675000027
+        },
+        {
+          "id": 1,
+          "value": 0.202230006
+        },
+        {
+          "id": 2,
+          "value": 0.698500693
+        },
+        {
+          "id": 3,
+          "value": 0.140729949
+        },
+        {
+          "id": 4,
+          "value": 1.0
+        }
+      ],
+      "leftModuleId": 176,
+      "rightModuleId": 178,
+      "pos": [
+        20,
+        0
+      ]
+    },
+    {
+      "id": 178,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 7.38500166
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 177,
+      "rightModuleId": 188,
+      "data": {
+        "lissajous": 0,
+        "external": 1
+      },
+      "pos": [
+        23,
+        0
+      ]
+    },
+    {
+      "id": 181,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 186,
+      "rightModuleId": 182,
+      "pos": [
+        62,
+        0
+      ]
+    },
+    {
+      "id": 182,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 181,
+      "data": {
+        "audio": {
+          "driver": 6,
+          "deviceName": "Speakers (Realtek High Definition Audio)",
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        70,
+        0
+      ]
+    },
+    {
+      "id": 183,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "VCA-1",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 188,
+      "rightModuleId": 186,
+      "pos": [
+        46,
+        0
+      ]
+    },
+    {
+      "id": 185,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 189,
+      "text": "4) The \"ADSR\", or Attack-Sustain-Decay-Release module, is an ENVELOPE GENERATOR, or EG module.  Envelope generators create control voltage signals which are useful for creating an event which has a beginning, middle, and end.  They expect gates (or triggers, which we will talk about soon) to signal to the EG when to begin its sequence of steps. Envelope generators start at 0V, rise to a maximum, and then fall back to 0V.  \n\nADSR EGs have four phases: attack, decay, sustain, release. The \"ATTACK\" phase begins when the EG's gate input goes high: the EG then slopes from 0V to a maximum voltage.This is followed by the DECAY phase, where the EG slopes from its maximum down towards its SUSTAIN level.",
+      "pos": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 186,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 13.1550026
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 183,
+      "rightModuleId": 181,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        49,
+        0
+      ]
+    },
+    {
+      "id": 188,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 178,
+      "rightModuleId": 183,
+      "pos": [
+        36,
+        0
+      ]
+    },
+    {
+      "id": 184,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 176,
+      "text": "1) Mult the output of one of the buttons to the X-in on the scope (blue trace) and the \"Gate\" input on the \"ADSR\" module.  Connect the output of the ADSR module to Y-in of the scope (red trace). Observe that both the gate output from the button and the output signal from the ADSR are resting at 0V.\n\n2) Press and hold the corresponding button.  What happened on the scope?      \n\n3) You should have seen the gate \"go high\" as long as you held the button.  Meanwhile, the output of the ADSR module should have sloped from 0V up to its peak, then decayed down to a resting level which it stayed at as long as you held the button, and then decayed back to 0V as soon as you released the button.  Try this several times to ensure you are able to observe each segment!",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 189,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 185,
+      "rightModuleId": 190,
+      "text": "The ADSR EG then stays at its sustain level as long as the gate input is held high.  As soon as the gate input goes low, the ADSR EG enters its RELEASE phase and falls from its sustain level back down to 0V.\n\nThe length of the attack phase, the length of the decay phase, the sustain level, and the length of the release phase can all usually be controlled by knobs.  Sometimes, they can be controlled by CV as well!  The sustain phase's length cannot be controlled by a knob or CV because it is determined by the amount of time that the input gate is held high.  The amount of time the input gate is held high is known as the PULSE-WIDTH.\n\nTry pressing the button several times and observing each stage. \n\n",
+      "pos": [
+        16,
+        1
+      ]
+    },
+    {
+      "id": 190,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 189,
+      "rightModuleId": 192,
+      "text": "6) Increase the final output attenuator slowly so you can hear the VCO being sent to your speakers.\n\n7) Mult the output of the ADSR to the second scope's Y-in and to the CV input on the VCA (remember VCA's use CV to change the amplitude of its primary input).  You should hear the audio cut out.  Why?\n\n8) The audio cut out because plugging a cable into the CV input of the VCA blocked the positive voltage which was normalled into that jack.  Now, the ADSR EG is sending 0V to the VCA's CV input, so the output of the VCA is silent.\n\n9) Try pressing and holding the red button for various lengths of time to send gates with different pulse-widths to the ADSR EG.  What do you hear?",
+      "pos": [
+        32,
+        1
+      ]
+    },
+    {
+      "id": 192,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 190,
+      "text": "10) It's starting to sound like a note, with a beginning, middle and end!\n\n11) Try adjusting the attack, decay, sustain, and release parmaeters on the EG.  Predict how you think each adjustment will change the feeling of the sound each time you press the gate.  Try pressing the gate to see if you were correct!\n\nYou can scroll down to see the completed patch.",
+      "pos": [
+        48,
+        1
+      ]
+    },
+    {
+      "id": 193,
+      "plugin": "Alikins",
+      "version": "1.0.1",
+      "model": "MomentaryOnButtons",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 0.0
+        },
+        {
+          "id": 9,
+          "value": 0.0
+        },
+        {
+          "id": 10,
+          "value": 0.0
+        },
+        {
+          "id": 11,
+          "value": 0.0
+        },
+        {
+          "id": 12,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 194,
+      "pos": [
+        15,
+        3
+      ]
+    },
+    {
+      "id": 194,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-ADSR",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0675000027
+        },
+        {
+          "id": 1,
+          "value": 0.202230006
+        },
+        {
+          "id": 2,
+          "value": 0.698500693
+        },
+        {
+          "id": 3,
+          "value": 0.140729949
+        },
+        {
+          "id": 4,
+          "value": 1.0
+        }
+      ],
+      "leftModuleId": 193,
+      "rightModuleId": 195,
+      "pos": [
+        19,
+        3
+      ]
+    },
+    {
+      "id": 195,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 7.38500166
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 194,
+      "rightModuleId": 196,
+      "data": {
+        "lissajous": 0,
+        "external": 1
+      },
+      "pos": [
+        22,
+        3
+      ]
+    },
+    {
+      "id": 196,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 195,
+      "rightModuleId": 197,
+      "pos": [
+        35,
+        3
+      ]
+    },
+    {
+      "id": 197,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "VCA-1",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 196,
+      "rightModuleId": 198,
+      "pos": [
+        45,
+        3
+      ]
+    },
+    {
+      "id": 198,
+      "plugin": "Fundamental",
+      "version": "1.2.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 13.1550026
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 197,
+      "rightModuleId": 199,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        48,
+        3
+      ]
+    },
+    {
+      "id": 199,
+      "plugin": "SignalFlux",
+      "version": "1.0.1",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 198,
+      "rightModuleId": 200,
+      "pos": [
+        61,
+        3
+      ]
+    },
+    {
+      "id": 200,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 199,
+      "data": {
+        "audio": {
+          "driver": 6,
+          "offset": 1126536905,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        69,
+        3
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 206,
+      "outputModuleId": 183,
+      "outputId": 0,
+      "inputModuleId": 181,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 207,
+      "outputModuleId": 181,
+      "outputId": 0,
+      "inputModuleId": 182,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 208,
+      "outputModuleId": 181,
+      "outputId": 0,
+      "inputModuleId": 182,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 209,
+      "outputModuleId": 188,
+      "outputId": 1,
+      "inputModuleId": 183,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 210,
+      "outputModuleId": 183,
+      "outputId": 0,
+      "inputModuleId": 186,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 217,
+      "outputModuleId": 199,
+      "outputId": 0,
+      "inputModuleId": 200,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 218,
+      "outputModuleId": 199,
+      "outputId": 0,
+      "inputModuleId": 200,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 219,
+      "outputModuleId": 197,
+      "outputId": 0,
+      "inputModuleId": 198,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 220,
+      "outputModuleId": 197,
+      "outputId": 0,
+      "inputModuleId": 199,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 221,
+      "outputModuleId": 196,
+      "outputId": 1,
+      "inputModuleId": 197,
+      "inputId": 1,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 223,
+      "outputModuleId": 193,
+      "outputId": 0,
+      "inputModuleId": 195,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 224,
+      "outputModuleId": 194,
+      "outputId": 0,
+      "inputModuleId": 195,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 225,
+      "outputModuleId": 193,
+      "outputId": 0,
+      "inputModuleId": 194,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 226,
+      "outputModuleId": 194,
+      "outputId": 0,
+      "inputModuleId": 197,
+      "inputId": 0,
+      "color": "#c91847"
+    }
+  ]
+}

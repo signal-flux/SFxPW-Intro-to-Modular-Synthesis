@@ -1,0 +1,893 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 208,
+      "plugin": "Alikins",
+      "version": "1.0.1",
+      "model": "MomentaryOnButtons",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 0.0
+        },
+        {
+          "id": 9,
+          "value": 0.0
+        },
+        {
+          "id": 10,
+          "value": 0.0
+        },
+        {
+          "id": 11,
+          "value": 0.0
+        },
+        {
+          "id": 12,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 214,
+      "rightModuleId": 218,
+      "pos": [
+        42,
+        0
+      ]
+    },
+    {
+      "id": 209,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 6.75000191
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.570000172
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 215,
+      "rightModuleId": 210,
+      "data": {
+        "lissajous": 0,
+        "external": 1
+      },
+      "pos": [
+        52,
+        0
+      ]
+    },
+    {
+      "id": 210,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -22.5180035
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.678999901
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 209,
+      "rightModuleId": 216,
+      "pos": [
+        65,
+        0
+      ]
+    },
+    {
+      "id": 211,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 216,
+      "rightModuleId": 212,
+      "pos": [
+        78,
+        0
+      ]
+    },
+    {
+      "id": 212,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 211,
+      "data": {
+        "audio": {
+          "driver": 6,
+          "offset": 1130114882,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        86,
+        0
+      ]
+    },
+    {
+      "id": 214,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -1.46599674
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 217,
+      "rightModuleId": 208,
+      "pos": [
+        32,
+        0
+      ]
+    },
+    {
+      "id": 215,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-ADSR",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.136500105
+        },
+        {
+          "id": 1,
+          "value": 0.212729871
+        },
+        {
+          "id": 2,
+          "value": 0.578499734
+        },
+        {
+          "id": 3,
+          "value": 0.134729922
+        },
+        {
+          "id": 4,
+          "value": 1.0
+        }
+      ],
+      "leftModuleId": 218,
+      "rightModuleId": 209,
+      "pos": [
+        49,
+        0
+      ]
+    },
+    {
+      "id": 216,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCA-1",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        }
+      ],
+      "leftModuleId": 210,
+      "rightModuleId": 211,
+      "pos": [
+        75,
+        0
+      ]
+    },
+    {
+      "id": 218,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-Mult",
+      "params": [],
+      "leftModuleId": 208,
+      "rightModuleId": 215,
+      "pos": [
+        46,
+        0
+      ]
+    },
+    {
+      "id": 219,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 220,
+      "text": "4) The length of time which you press the button for and hold the gate high for is known as the \"PULSE-WIDTH\" of the gate.  \n\n5) Disconnect the patch cable connecting the output of the button to the input on the mult. Now connect the square wave output of the LFO-1 to the mult's In-A.  Now, we can see the square wave output and hear its affect as it controls the VCA.\n\n6) Since a square wave is just alternating between two a high and a low voltage stage, we can think of low-frequency square waves as a stream of steady gates.  We will call streams of gates at constant rates \"clocks.\"\n\n7) Observe that the LFO has a knob labelled \"P WIDTH.\"  Play with it - what do you notice happening? ",
+      "pos": [
+        16,
+        1
+      ]
+    },
+    {
+      "id": 217,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 222,
+      "rightModuleId": 214,
+      "text": "1) Turn on your sound card in Audio-8 and adjust the attenuator until you hear the VCO at a reasonable volume. Even though nothing is patched into the VCA, a large positive voltage is normalled into its CV input so the VCO is passing right through it.\n\n2) Connect the output of one of the buttons to In-A on the mult module.  Then connect one output of the mult to the X-in on the scope, and one to the CV input on the VCA. The VCA should now silence the VCO since the CV input is 0V (the gate from the button is currently low).  \n\n3) Now when you press the  button, you should see the gate go high on the scope and you should hear the VCO. The longer you hold the button, the longer the gate stays at a high voltage, so the VCA is held open longer and the VCO is heard!",
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 220,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 219,
+      "rightModuleId": 221,
+      "text": "8) The \"P WIDTH\" knob is controlling the pulse-width of the gates in the clock stream! At noon, the pulse-width is exactly half the period of the clock.  Fully counterclockwise, each pulse width takes up almost the entire duration of the period. Fully counterclockwise, the gate pulse-width is just a super short spike to the high voltage level before immediately falling back to 0V. \n\n9) Try setting the pulse-width back to its default value by double clicking the corresponding knob.  Now try adjusting the frequency of the LFO using the FREQ knob.  Observe that the pulse width stayed the same as a percentage of the total period of the clock!  Set the frequency to about 10:30 when you are done exploring.  ",
+      "pos": [
+        32,
+        1
+      ]
+    },
+    {
+      "id": 221,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 220,
+      "rightModuleId": 223,
+      "text": "8) Disconnect the cable which connects the square wave clock stream (via the mult module) to the VCA.\n\n9) Now, take the square wave clock stream from that same output of the mult and patch it into the \"GATE\" input of the ADSR. Now the clock stream will activate the ADSR envelope generator.\n\n10) Patch the envelope generator's output into the mult module's In-B input.  Now send the envelope's output (via the mult module's two outputs) to the Y-in on the scope and to the CV input on the VCA.\n\n11) Now you should hear the envelope opening and closing the VCA.",
+      "pos": [
+        48,
+        1
+      ]
+    },
+    {
+      "id": 222,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 217,
+      "text": "This lab will continue to explore the concept of gates.  It introduces the idea of a \"clock\" or a steady stream of gates produced at a constant rate (for instance, by a square wave LFO). \n\nIt will also explore pulse-width in more depth.   ",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 223,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 221,
+      "rightModuleId": 224,
+      "text": "12) Observe on the scope how the clock stream and envelope line up. As soon as the clock signal goes high, the envelope begins its attack phase. When it completes the attack, it decays to the sustain level.  Try adjusting the sustain knob to change this level!  Then, as soon as the gate goes low, the envelope releases back to 0V.  You can use the ADSR knobs to adjust the attack, decay, and release times.  How can you change the amount of time spent in the sustain phase?\n\n13)  By adjusting the pulse-width of the clock!  Try it out and see for yourself!",
+      "pos": [
+        64,
+        1
+      ]
+    },
+    {
+      "id": 224,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 223,
+      "text": "14) For fun, try adding another LFO to the patch and using it to control the pulse-width of the first LFO using the \"pulse-width modulation\", or PWM input on the first LFO.\n\n15) Remember you will need to adjust the PWM CV attenuverter on the original LFO for the LFO modulator to have any affect via the PWM input!\n\nScroll down to see a completed patch.\n\nAs a challenge, try making a block diagram of the patch below!  The additional notes on this chapter have the completed block diagram.",
+      "pos": [
+        80,
+        1
+      ]
+    },
+    {
+      "id": 225,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -1.46599674
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.511499584
+        }
+      ],
+      "leftModuleId": 234,
+      "rightModuleId": 226,
+      "pos": [
+        34,
+        3
+      ]
+    },
+    {
+      "id": 226,
+      "plugin": "Alikins",
+      "version": "1.0.1",
+      "model": "MomentaryOnButtons",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 0.0
+        },
+        {
+          "id": 9,
+          "value": 0.0
+        },
+        {
+          "id": 10,
+          "value": 0.0
+        },
+        {
+          "id": 11,
+          "value": 0.0
+        },
+        {
+          "id": 12,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 225,
+      "rightModuleId": 227,
+      "pos": [
+        44,
+        3
+      ]
+    },
+    {
+      "id": 227,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-Mult",
+      "params": [],
+      "leftModuleId": 226,
+      "rightModuleId": 228,
+      "pos": [
+        48,
+        3
+      ]
+    },
+    {
+      "id": 228,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-ADSR",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.136500105
+        },
+        {
+          "id": 1,
+          "value": 0.212729871
+        },
+        {
+          "id": 2,
+          "value": 0.578499734
+        },
+        {
+          "id": 3,
+          "value": 0.134729922
+        },
+        {
+          "id": 4,
+          "value": 1.0
+        }
+      ],
+      "leftModuleId": 227,
+      "rightModuleId": 229,
+      "pos": [
+        51,
+        3
+      ]
+    },
+    {
+      "id": 229,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 6.46499729
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.570000172
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 228,
+      "rightModuleId": 230,
+      "data": {
+        "lissajous": 0,
+        "external": 1
+      },
+      "pos": [
+        54,
+        3
+      ]
+    },
+    {
+      "id": 230,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -22.5180035
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.678999901
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 229,
+      "rightModuleId": 233,
+      "pos": [
+        67,
+        3
+      ]
+    },
+    {
+      "id": 231,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 233,
+      "rightModuleId": 232,
+      "pos": [
+        80,
+        3
+      ]
+    },
+    {
+      "id": 232,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 231,
+      "data": {
+        "audio": {
+          "driver": 6,
+          "offset": 1133588539,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        88,
+        3
+      ]
+    },
+    {
+      "id": 233,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCA-1",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        }
+      ],
+      "leftModuleId": 230,
+      "rightModuleId": 231,
+      "pos": [
+        77,
+        3
+      ]
+    },
+    {
+      "id": 234,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -3.92300487
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 235,
+      "rightModuleId": 225,
+      "pos": [
+        24,
+        3
+      ]
+    },
+    {
+      "id": 235,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 234,
+      "text": "This is an additional LFO that I added!-------------------->",
+      "pos": [
+        8,
+        3
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 228,
+      "outputModuleId": 211,
+      "outputId": 0,
+      "inputModuleId": 212,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 229,
+      "outputModuleId": 211,
+      "outputId": 0,
+      "inputModuleId": 212,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 230,
+      "outputModuleId": 216,
+      "outputId": 0,
+      "inputModuleId": 211,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 231,
+      "outputModuleId": 210,
+      "outputId": 0,
+      "inputModuleId": 216,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 239,
+      "outputModuleId": 231,
+      "outputId": 0,
+      "inputModuleId": 232,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 240,
+      "outputModuleId": 231,
+      "outputId": 0,
+      "inputModuleId": 232,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 241,
+      "outputModuleId": 233,
+      "outputId": 0,
+      "inputModuleId": 231,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 242,
+      "outputModuleId": 230,
+      "outputId": 0,
+      "inputModuleId": 233,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 245,
+      "outputModuleId": 225,
+      "outputId": 3,
+      "inputModuleId": 227,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 246,
+      "outputModuleId": 227,
+      "outputId": 0,
+      "inputModuleId": 229,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 247,
+      "outputModuleId": 227,
+      "outputId": 1,
+      "inputModuleId": 228,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 248,
+      "outputModuleId": 228,
+      "outputId": 0,
+      "inputModuleId": 227,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 249,
+      "outputModuleId": 227,
+      "outputId": 3,
+      "inputModuleId": 229,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 250,
+      "outputModuleId": 227,
+      "outputId": 4,
+      "inputModuleId": 233,
+      "inputId": 0,
+      "color": "#c91847"
+    },
+    {
+      "id": 251,
+      "outputModuleId": 234,
+      "outputId": 0,
+      "inputModuleId": 225,
+      "inputId": 3,
+      "color": "#0986ad"
+    }
+  ]
+}

@@ -2,6 +2,7 @@
 
 0. [Pre-Class Prep Work](#Pre-Class-Prep-Work)
 1. [Week 1: Modular Thinking](#Week-1)
+2. [Week 2: Creating Events](#Week-2)
 
 ## Pre-Class Prep Work
 
@@ -66,4 +67,68 @@ Pitch, Timbre, Loudness, Voltage, Signal, Input, Output, Control Voltage (CV), M
 
 
 
+
+
+## Week 2
+
+### Creating Events
+
+This week will introduce you to the core tools for creating events and layering modulation and sound in the modular synthesis world: triggers, gates, clocks, envelopes, triggers, and mixers.  We will also explore tonality and basic music theory as they relate to tuning synthesizers: intervals, scales, the V/Oct standard, and quantizers.
+
+### Agenda
+
+- **Review** 
+  - Voltage as Sound
+  - Control Voltage
+  - Voltage-Controlled Oscillators and LFOs
+  - Attenuators and Attenuverters
+  - Voltage Controlled Amplifiers
+- **Creating an Event**
+  - Gates and Triggers
+  - Clocks
+  - Envelopes
+- **Creating a Melody**
+  - Scales, Pitch, and Frequency
+  - Volt/Octave
+  - Sequencers
+  - Quantizers
+  - Sample & Hold and Slew Limiters (if time permits)
+- **Mixers**
+  - Control Voltage
+  - Audio
+- **Break** (5 minutes)
+- **Lab - Creating Harmonized Sequences**
+  - Using Clocks to drive CV and Gate sequencers
+  - Using Quantizers to create V/Oct CV
+  - Using Envelope Generators and VCAs to shape events
+  - Using Mixers to combine multiple audio sources
+  - Using Mixers and VCAs to alter CV sequences
+- **Modular Thinking: Understanding a Patch**
+  - Top-down analysis
+  - Bottom-up analysis
+  - Dealing with the unfamiliar/unknown
+
+### Key Vocabulary
+
+[Click here for definitions](./glossary.md#week-2)
+
+Trigger, Gate, Triggers, Rising-Edge, Trigger/Gate Threshold, Gates, Pulse-Width, Clocks, Clock Modulation, Envelope, Envelope Generator (EG), Attack, Decay, Sustain, Release, Interval, Octave, Scale, Volt-Per-Octave (V/oct), Sequence/Sequencers, Quantizer, Unity Mixer, Mixer
+
+### Homework
+
+| Type        | Link                                                         |
+| ----------- | ------------------------------------------------------------ |
+| *Review*    | [Chapter 04: Gates, Triggers, Clocks, and Envelope Generators](./Chapter-04/chapter04.md) |
+|             | [Chapter 05: Sequences, Quantizers, Scales and Volt-per-octave, Quantizers)](./Chapter-05/chapter05.md) |
+|             | [Chapter 06: Mixers](./Chapter-06/chapter06.md)              |
+|             | [Patch Analysis](./assignments/Patch-Analysis/patch-analysis.md) |
+|             | [Module Breakdown](./assignments/module-breakdown.md)        |
+|             | Powerpoint [[.pptx](./powerpoints/week2_powerpoint.pptx), [.pdf](./powerpoints/week2_powerpoint.pdf)] |
+|             |                                                              |
+| *Suggested* | [Try out some "Exploration Ideas"](./assignments/exploration-ideas.md) |
+|             | [Come to *Modular on the Spot* @ Nowadays](<https://www.facebook.com/events/nowadays/signal-flux-hosts-modular-on-the-spot/2065950230178187/>) |
+|             | Morton Subotnick - Silver Apples of the Moon (1967) - [[Youtube](https://www.youtube.com/watch?v=3G1hRNLlYpg)] |
+|             | Wendy Carlos - Switched on Bach (1968) - [[Youtube](https://www.youtube.com/watch?v=fVxGpN8B4BQ)] |
+|             | Mort Garson - (Mother Earth's) Plantasia (1976) - [[Youtube](https://www.youtube.com/watch?v=l0vrsO3_HpU)] |
+|             | Kaitlyn Aurelia Smith - In the Studio w/ Fact Mag [[Youtube](https://www.youtube.com/watch?v=95UvPlhjbE4)] |
 

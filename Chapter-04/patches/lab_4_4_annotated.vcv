@@ -1,0 +1,845 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 236,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -12.0420351
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 253,
+      "rightModuleId": 239,
+      "pos": [
+        56,
+        0
+      ]
+    },
+    {
+      "id": 237,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 238,
+      "rightModuleId": 258,
+      "data": {
+        "audio": {
+          "driver": 6,
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 1024
+        }
+      },
+      "pos": [
+        77,
+        0
+      ]
+    },
+    {
+      "id": 238,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 239,
+      "rightModuleId": 237,
+      "pos": [
+        69,
+        0
+      ]
+    },
+    {
+      "id": 239,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCA-1",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        }
+      ],
+      "leftModuleId": 236,
+      "rightModuleId": 238,
+      "pos": [
+        66,
+        0
+      ]
+    },
+    {
+      "id": 246,
+      "plugin": "dBiz",
+      "version": "1.1.2",
+      "model": "Contorno",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 0.0
+        },
+        {
+          "id": 9,
+          "value": 0.0
+        },
+        {
+          "id": 10,
+          "value": 0.0
+        },
+        {
+          "id": 11,
+          "value": 0.0
+        },
+        {
+          "id": 12,
+          "value": 0.0
+        },
+        {
+          "id": 13,
+          "value": 0.0
+        },
+        {
+          "id": 14,
+          "value": 0.0
+        },
+        {
+          "id": 15,
+          "value": 0.0
+        },
+        {
+          "id": 16,
+          "value": 0.630000234
+        },
+        {
+          "id": 17,
+          "value": 0.24300009
+        },
+        {
+          "id": 18,
+          "value": 0.0
+        },
+        {
+          "id": 19,
+          "value": 0.0
+        },
+        {
+          "id": 20,
+          "value": 0.633000493
+        },
+        {
+          "id": 21,
+          "value": 0.234000057
+        },
+        {
+          "id": 22,
+          "value": 0.0
+        },
+        {
+          "id": 23,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 252,
+      "rightModuleId": 253,
+      "pos": [
+        26,
+        0
+      ]
+    },
+    {
+      "id": 247,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 252,
+      "text": "Make sure you update your plugins ('Library -> Update All') before doing this lab!  This lab will introduce the  concept of a \"trigger\", which is just a gate where you do not care about the pulse-width Typically, triggers are set to have an extremely narrow pulse width.  \n\nThe lab will also introduce an AD envelope generator (as opposed to an ADSR envelope generator). We will use two AD envelope generators to create a kick drum.\n\n1) This new module with a bunch of sliders and jacks might look overwhelming, but observe that it is 4 identical copies of the same column of interface elements - its really just 4 copies of a single \"module\" glued together into a bigger one! This new module is an \"Attack-Decay\"  Envelope Generator, or AD EG.",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 248,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 251,
+      "rightModuleId": 249,
+      "text": "4) The envelope output of one of the AD envelope generators has already been connected to the Y-In of the Scope.  Try pressing the blue \"trigg\" button of the corresponding EG.  This should initiate one envelope which you can see on the scope.  Try adjusting the two sliders in the same column.  What do you think they control? \n\n5) The left slider controls the attack time, while the right slider controls the decay time; higher positions mean longer times for the corresponding part of the envelope.  The two jacks with blue rings around them directly below the sliders are CV inputs which allow you to modulate the length of each phase - they are like remote control inputs for the sliders!",
+      "pos": [
+        16,
+        1
+      ]
+    },
+    {
+      "id": 249,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 248,
+      "rightModuleId": 250,
+      "text": "6) Mult the output of this AD EG so that it goes to the FM input on VCO-1.\n\n7) Now increase the volume of the attenuator so you can just barely hear VCO-1 passing through the VCA. Then decrease the pitch of VCO-1 using the frequency knob until the note is so low you can just barely hear it.\n\n8) Set the attack and decay sliders on the AD EG to the second line from the top. Fire the AD envelope by pressing the corresponding trigger.  Why did nothing happen to VCO-1, even though the AD envelope is being sent to the VCO-1's frequency modulation (FM) input?  Shouldn't we hear the pitch rise and fall?\n ",
+      "pos": [
+        32,
+        1
+      ]
+    },
+    {
+      "id": 250,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 249,
+      "rightModuleId": 254,
+      "text": "9) The envelope had no effect on the VCO-1's frequency because the FM CV attenuator was all the way clockwise.  Remember, this attenuator controls how much of an affect the frequency modulation control voltage input actually has on the frequency of the VCO.\n\n10) Try setting the FM CV attenuator on VCO-1 to around noon.  Trigger the envelope again using the button on the AD EG.  Now you should hear the pitch of the EG ramp up and down as the envelope rises and falls.  What will happen if you set the FM CV attenuator fully CW and then trigger the envelope again??\n\n11) The envelope will push the pitch of VCO-1 to an even higher pitch.  Since the length of the envelope did not change, it sounds like the pitch is \"traveling faster.\"",
+      "pos": [
+        48,
+        1
+      ]
+    },
+    {
+      "id": 251,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 248,
+      "text": "2) AD envelope generators are different from ADSR envelope generators.  They do not have a sustain or release phase.  When an AD envelope generator receives a gate, it ramps from 0V to its maximum in the amount of time determined by its attack parameter.  It then falls back to 0V in the amount of time determined by its decay parameter.  Note that the length of the incoming gate did not matter.\n\n3) When the length of a gate does not matter to a module, we say that the module only cares about \"TRIGGERS\" - or the \"RISING-EDGE\" of a gate - the moment when the gate goes from 0V to its high voltage. Any gate can be used as a trigger.  You can also think of triggers as gates with a very short pulse-width.  Let's see this all in action!",
+      "pos": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 252,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -1.64600003
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.604369581
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 247,
+      "rightModuleId": 246,
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 253,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 8.08499813
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 246,
+      "rightModuleId": 236,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        43,
+        0
+      ]
+    },
+    {
+      "id": 254,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 250,
+      "rightModuleId": 257,
+      "text": "12) Set the FM CV attenator to around 1o'clock.  Set the attack slider to its minimum position (bottom) and the decay slider to the third line from the top.\n\n13) Try pressing the button to trigger the envelope generator.  What do you hear?  \n\n14) It sounds a lot like a kick drum, the driving element of a vast amount of rhythmic music!\n\n15) Pressing the button over and over again is pretty annoying... let's automate that task using a clock (or constant gate stream).  Connect the square wave output of the LFO-1 to the \"Trigg\" input (next to the trigger button) on the envelope generator. Now, the AD EG will trigger ever time a new clock pulse arrives!",
+      "pos": [
+        64,
+        1
+      ]
+    },
+    {
+      "id": 257,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 254,
+      "text": "16) Now mult the clock stream from the LFO-1 to the Y-Input on the scope.  Play with the pulse width (P. Width knob) of the LFO-1.  Notice that the length of each clock pulse does not change how the AD EG produces its envelopes!  The AD EG is just treating the clock stream as a stream of \"TRIGGERS\" rather than gates \n\n17) Try playing with the FM CV knob on VCO-1, the frequency of LFO-1, and the decay time of the envelope generator.  How do each of these controls affect your kick drum?\n\n18) Finally, mult the clock stream from LFO-1 into the trigger input of the second (adjacent) envelope generator.  Send that envelope generator's output to the VCA's control voltage input, taking over from the normalled positive voltage..  ",
+      "pos": [
+        80,
+        1
+      ]
+    },
+    {
+      "id": 258,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 237,
+      "text": "19) Set the second EG's attack time to the minimum.  Set the decay time to be slightly longer than the decay time of the first envelope.  Now, every time a clock pulse occurs, both envelopes will fire simultaneously.  The second envelope will close the VCA so that there is silence in between drum hits, instead of the VCO's constant low rumble.  The longer the second envelope generator's decay time, the more rumble will be heard after the initial percussive pitch spike!\n\nTry sending different waveform outputs from VCO-1 to the VCA.  Which do you like best?\n\nScroll down for a completed version of this patch.  Try sketching a block diagram of this patch in your notebook!  ",
+      "pos": [
+        87,
+        0
+      ]
+    },
+    {
+      "id": 259,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 0.189999908
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.372109562
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 260,
+      "pos": [
+        9,
+        3
+      ]
+    },
+    {
+      "id": 260,
+      "plugin": "dBiz",
+      "version": "1.1.2",
+      "model": "Contorno",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 0.0
+        },
+        {
+          "id": 9,
+          "value": 0.0
+        },
+        {
+          "id": 10,
+          "value": 0.0
+        },
+        {
+          "id": 11,
+          "value": 0.0
+        },
+        {
+          "id": 12,
+          "value": 0.0
+        },
+        {
+          "id": 13,
+          "value": 0.0
+        },
+        {
+          "id": 14,
+          "value": 0.0
+        },
+        {
+          "id": 15,
+          "value": 0.0
+        },
+        {
+          "id": 16,
+          "value": 0.0
+        },
+        {
+          "id": 17,
+          "value": 0.0
+        },
+        {
+          "id": 18,
+          "value": 0.0
+        },
+        {
+          "id": 19,
+          "value": 0.0
+        },
+        {
+          "id": 20,
+          "value": 0.399000436
+        },
+        {
+          "id": 21,
+          "value": 0.627000451
+        },
+        {
+          "id": 22,
+          "value": 0.0
+        },
+        {
+          "id": 23,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 259,
+      "rightModuleId": 261,
+      "pos": [
+        19,
+        3
+      ]
+    },
+    {
+      "id": 261,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 8.08499813
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 260,
+      "rightModuleId": 262,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        36,
+        3
+      ]
+    },
+    {
+      "id": 262,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -44.6040726
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.627000272
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 261,
+      "rightModuleId": 263,
+      "pos": [
+        49,
+        3
+      ]
+    },
+    {
+      "id": 263,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCA-1",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        }
+      ],
+      "leftModuleId": 262,
+      "rightModuleId": 264,
+      "pos": [
+        59,
+        3
+      ]
+    },
+    {
+      "id": 264,
+      "plugin": "SignalFlux",
+      "version": "1.1.0",
+      "model": "Attenuate",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0464999899
+        }
+      ],
+      "leftModuleId": 263,
+      "rightModuleId": 265,
+      "pos": [
+        62,
+        3
+      ]
+    },
+    {
+      "id": 265,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 264,
+      "data": {
+        "audio": {
+          "driver": 6,
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 1024
+        }
+      },
+      "pos": [
+        70,
+        3
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 252,
+      "outputModuleId": 238,
+      "outputId": 0,
+      "inputModuleId": 237,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 253,
+      "outputModuleId": 238,
+      "outputId": 0,
+      "inputModuleId": 237,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 263,
+      "outputModuleId": 246,
+      "outputId": 0,
+      "inputModuleId": 253,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 264,
+      "outputModuleId": 236,
+      "outputId": 0,
+      "inputModuleId": 239,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 265,
+      "outputModuleId": 239,
+      "outputId": 0,
+      "inputModuleId": 238,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 266,
+      "outputModuleId": 264,
+      "outputId": 0,
+      "inputModuleId": 265,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 270,
+      "outputModuleId": 263,
+      "outputId": 0,
+      "inputModuleId": 264,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 272,
+      "outputModuleId": 264,
+      "outputId": 0,
+      "inputModuleId": 265,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 273,
+      "outputModuleId": 260,
+      "outputId": 0,
+      "inputModuleId": 261,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 274,
+      "outputModuleId": 260,
+      "outputId": 0,
+      "inputModuleId": 262,
+      "inputId": 1,
+      "color": "#0986ad"
+    },
+    {
+      "id": 278,
+      "outputModuleId": 259,
+      "outputId": 3,
+      "inputModuleId": 261,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 279,
+      "outputModuleId": 260,
+      "outputId": 1,
+      "inputModuleId": 263,
+      "inputId": 0,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 280,
+      "outputModuleId": 259,
+      "outputId": 3,
+      "inputModuleId": 260,
+      "inputId": 0,
+      "color": "#c91847"
+    },
+    {
+      "id": 281,
+      "outputModuleId": 259,
+      "outputId": 3,
+      "inputModuleId": 260,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 271,
+      "outputModuleId": 262,
+      "outputId": 0,
+      "inputModuleId": 263,
+      "inputId": 1,
+      "color": "#c9b70e"
+    }
+  ]
+}
