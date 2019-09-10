@@ -1,8 +1,9 @@
 # Exploration Ideas
 
-Here's a list of ideas for you to try on your own! Treat them as starting points for exploration.  Do not worry too much about making something that you think "sounds good."  Instead, focus on experimenting and learning.  Try to build your intuition for what is happening and why.  Use scopes to investigate signals.  Try adding in attenuators and VCAs to control modulation.  Have fun!  Try getting lost in what you are doing.
+Here's a list of ideas for you to try on your own! Treat them as starting points for exploration.  Do not worry too much about making something that you think "sounds good."  Instead, focus on experimenting and learning.  Try to build your intuition for what is happening and why.  Use scopes to investigate signals.  Try adding in attenuators and VCAs to control modulation.  Have fun!  Be open to getting lost in the process.
 
 - Use a mixer to combine two sequences of different lengths. You will need to use two Seq-3 modules.  Send the mixed result to a quantizer and then to an oscillator. 
+
 - Make sure that two VCOs start out at the same frequency before they are fed any sequence.  Then use two rows of one sequencer to control the two separate VCO's pitches.    Use a separate quantizer for each row (try setting the quantizers to use the same notes as each other first, then try different notes). You will need to use a mixer to combine the two VCOs (see Lab 6.6).
 - Make sure that two VCOs start out at the same frequency before they are fed any sequence.  Use one row of a sequencer to control the pitch of two separate VCOs - patch one copy of the row to a quantizer and then to the VCO's V/oct input.  Patch the other copy of the sequence through an attenuverter before sending it to a quantizer, and then on to the second VCO.  Make sure the quantizers have the same set of notes active. You will need to send the VCOs to a mixer to combine them. What happens when you use the attenuverter to alter the sequence - and even invert it! - before it reaches the second VCO?
 - Use an LFO to speed a sequencer up and slow it down.

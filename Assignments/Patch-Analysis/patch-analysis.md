@@ -1,12 +1,12 @@
 # Patch Analysis
 
-One of the most important tools as you become a synthesist is becoming self-sufficient.  No matter how much you think you know, you will never know anything!  Knowing *what to do* when you don't know something though is the most valuable tool you can have!  This assignment will help you develop that skill.
+One of the most important skills to develop as a synthesist is  self-sufficiency.  No matter how much you think you know, you will never know everything!  Knowing *what to do* when you don't know something is the most valuable tool you can have!  This assignment will help you develop that intuition.
 
-Your task is to break down the patches in the included folders. There are further instructions within the patch, as well as a guide for analyzing patches included below.
+Your task is to break down the patches in the included folders. There are further instructions within the patch, as well as a guide for analyzing the patches included below. You may also refer to Allen Strange's [Rapout Approach to Electronic Instrument Configurations](../rapout.pdf) for more guidance.
 
 Once you think you have a good sense of what is happening in each patch, please look over the annotated version which explains what every part of the patch is doing!
 
-If you encounter a module you do not understand, try right-clicking it and hovering over the `Plugin` submenu to find the `Manual` link.  You can also try searching the internet for more info on that type of module.  There is one module in Patch 2 which will likely be unfamiliar - but do not fret, you can figure it out!  Part of learning about synthesis is learning *how to learn* what you do not know!
+If you encounter a module you do not understand, try right-clicking it and hovering over the `Plugin` submenu to find the `Manual` link.  You can also try searching the internet for more info on that type of module.  There is one module in Patch 2 which will likely be unfamiliar - but do not fret, you can figure it out!  Part of learning about synthesis is learning *how to learn* what you do not know.
 
 Do not forget to make sure you sound card is set correctly and that the volume is turned on!
 
@@ -22,7 +22,7 @@ Do not forget to make sure you sound card is set correctly and that the volume i
 
 ## Analysis Principles
 
-When looking at a patch - whether in a tutorial video, on a forum, with a collaborator, in this class, or even after you have been patching in a flow/experimental-state for a while - it can be quite overwhelming to figure out what is going on.  However, if you make the task of analyzing a modular synthesis patch more... modular... it becomes much more manageable!  Here are some useful tools to help you break the task of "analyze this patch" down into smaller parts.
+When looking at a patch - whether in a tutorial video, on a forum, with a collaborator, in this class, or even after you have been patching in a flow/experimental-state for a while - it can be quite overwhelming to figure out what is going on.  However, if you make the task of analyzing a modular synthesis patch more... modular... it becomes much more manageable!  Here are some useful tools to help you break down the task of "analyze this patch" into smaller parts.
 
 ### Sound
 

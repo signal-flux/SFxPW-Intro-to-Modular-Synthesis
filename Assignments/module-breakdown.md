@@ -1,8 +1,8 @@
 # Module Breakdown
 
-One of the most important tools as you become a synthesist is becoming self-sufficient.  No matter how much you think you know, you will never know anything!  Knowing *what to do* when you don't know something though is the most valuable tool you can have!  This assignment will help you develop that skill.
+One of the most important skills to develop as a synthesist is  self-sufficiency.  No matter how much you think you know, you will never know everything!  Knowing *what to do* when you don't know something is the most valuable tool you can have!  This assignment will help you develop that intuition.
 
-In class you were assigned a number - that number determines which modules you will be researching for the class this week.  They will all be from Émilie Gillet's brilliant, influential line of open-source Eurorack modules under her *Mutable Instruments* brand name.  They are also available in VCV Rack under the brand name *Audible Instruments*.  If you complete the the assignment with the first module you've been assigned, try moving on to the "challenge" category!
+In class you were assigned a number - that number determines which modules you will be researching for the class this week.  They will all be from Émilie Gillet's brilliant, influential line of open-source Eurorack modules under her [*Mutable Instruments*](https://mutable-instruments.net/) brand name.  They are also available in VCV Rack under the brand name *Audible Instruments*.  If you complete the the assignment with the first module you've been assigned, try moving on to the "challenge" category!
 
 **Modules**
 
