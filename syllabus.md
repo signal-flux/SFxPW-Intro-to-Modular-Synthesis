@@ -73,7 +73,7 @@ Pitch, Timbre, Loudness, Voltage, Signal, Input, Output, Control Voltage (CV), M
 
 ### Creating Events
 
-This week will introduce you to the core tools for creating events and layering modulation and sound in the modular synthesis world: triggers, gates, clocks, envelopes, triggers, and mixers.  We will also explore tonality and basic music theory as they relate to tuning synthesizers: intervals, scales, the V/Oct standard, and quantizers.
+*This week will introduce you to the core tools for creating events and layering modulation and sound in the modular synthesis world: triggers, gates, clocks, envelopes, triggers, and mixers.  We will also explore tonality and basic music theory as they relate to tuning synthesizers: intervals, scales, the V/Oct standard, and quantizers.*
 
 ### Agenda
 
