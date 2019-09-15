@@ -10,7 +10,7 @@ Welcome to Signal Flux and Pioneer Works *Introduction to Modular Synthesis* cla
 
 [Glossary](./glossary.md)
 
-[Exploration Ideas](./assignments/exploration-ideas.md)
+[Exploration Ideas](./Assignments/exploration-ideas.md)
 
 - [00: Introduction to Modular Thinking](./Chapter-00/chapter00.md)
 - [01: Introduction to VCV Rack and Generating Voltage](./Chapter-01/chapter01.md)
