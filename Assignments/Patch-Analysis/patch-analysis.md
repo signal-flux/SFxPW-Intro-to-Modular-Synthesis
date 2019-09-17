@@ -20,6 +20,10 @@ Do not forget to make sure you sound card is set correctly and that the volume i
 
 [Patch 2 Annotated](./patch_2/patch_annotated.vcv)
 
+Or, download all the files as a .zip by going to this link and pressing "download":
+
+[Patch Analysis Files (.zip)](./Patch-Analysis.zip)
+
 ## Analysis Principles
 
 When looking at a patch - whether in a tutorial video, on a forum, with a collaborator, in this class, or even after you have been patching in a flow/experimental-state for a while - it can be quite overwhelming to figure out what is going on.  However, if you make the task of analyzing a modular synthesis patch more... modular... it becomes much more manageable!  Here are some useful tools to help you break down the task of "analyze this patch" into smaller parts.
