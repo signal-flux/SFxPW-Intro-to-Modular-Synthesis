@@ -3,6 +3,7 @@
 0. [Pre-Class Prep Work](#Pre-Class-Prep-Work)
 1. [Week 1: Modular Thinking](#Week-1)
 2. [Week 2: Creating Events](#Week-2)
+3. [Week 3: Timbre and Time](#Week-3)
 
 ## Pre-Class Prep Work
 
