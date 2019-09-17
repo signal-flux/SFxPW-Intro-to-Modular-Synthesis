@@ -58,11 +58,11 @@ Combinations of Euclidean rhythms are core elements of many musical traditions f
 
 *BPM* stands for beats-per-minute, and is the primary unit for measuring tempo, i.e. musical speed.
 
-### PPQN
+### Clock Resolution: PPQN
 
-*PPQN* stands for "parts-per-quarter-note."  A 16th note clock would be considered 4 PPQN since there are 4 16th notes per one quarter note.  An 8th note clock would be considered 2PPQN because there are two 8th notes per quarter note.  
+*PPQN* stands for "parts-per-quarter-note."  A 16th note clock would be considered 4 PPQN since there are 4 16th notes per one quarter note.  An 8th note clock would be considered 2PPQN because there are two 8th notes per quarter note.  This is known as the "clock resolution" since it specifies how precise divisions of time are as the clock signal is passed from one module to another.
 
-Many modules expect a clock input to drive them forward through a sequence or pattern.  Some of these modules need clocks at a certain speed to make sure they advance correctly and stay in sync with other modules.  For instance, if a sequencer can generate 32nd notes, it probably would need an 8 PPQN clock to make sure that each 32nd note happens at the correct point in time!
+Many modules expect a clock input to drive them forward through a sequence or pattern.  Some of these modules need clocks at a certain speed to make sure they advance correctly and stay in sync with other modules.  For instance, if a sequencer can generate 32nd notes, it probably would need an 8 PPQN clock to make sure that each 32nd note happens at the correct point in time!  Making sure that module that expects to receive a clock at a certain resolution actually receives that clock is very important to make sure sequencers and pattern generators run at the correct speed!
 
 ### Topograph and Mutable Grids
 
