@@ -40,6 +40,8 @@ Use this [demo](https://www.desmos.com/calculator/tbmwhmxrx4) to explore mixing 
 
 Sounds which are more complex than  an oscillation, like a percussive hit or spoken language, may include many more sine waves that are not harmonic multiples of a fundamental frequency.  These are known as *partials*.
 
+[This website](http://hyperphysics.phy-astr.gsu.edu/hbase/Audio/fourier.html) goes into more detail on Fourier analysis and synthesis!
+
 ### Frequency Domain and Spectrum
 
 So far, we have always been viewing voltages in the *time domain*: the x-axis is time while the y-axis measures voltage magnitude.  This allows us to see the waveshape of a sound as it shows the voltage rising and falling as time progresses.  On the other hand, the *frequency domain* is a new tool we can use to understand the harmonic content of a sound: the x-axis is frequency, while the y-axis measures the amount of energy at each frequency, i.e. the amplitude of the corresponding sine waves: in other words, it shows us which "building block" sine waves we need to mix together - and how much of each - in order to create another sound.
