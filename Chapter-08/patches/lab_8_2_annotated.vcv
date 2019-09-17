@@ -1,0 +1,543 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 318,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -21.0599976
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 320,
+      "rightModuleId": 329,
+      "pos": [
+        49,
+        0
+      ]
+    },
+    {
+      "id": 319,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCA-1",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        }
+      ],
+      "leftModuleId": 329,
+      "rightModuleId": 326,
+      "pos": [
+        67,
+        0
+      ]
+    },
+    {
+      "id": 320,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-ADSR",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0959999636
+        },
+        {
+          "id": 1,
+          "value": 0.24423033
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 328,
+      "rightModuleId": 318,
+      "pos": [
+        46,
+        0
+      ]
+    },
+    {
+      "id": 324,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 331,
+      "data": {
+        "audio": {
+          "driver": 6,
+          "offset": 1065353216,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        86,
+        0
+      ]
+    },
+    {
+      "id": 326,
+      "plugin": "AS",
+      "version": "1.0.3",
+      "model": "ReverbStereoFx",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.561000049
+        },
+        {
+          "id": 1,
+          "value": 0.951999724
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 319,
+      "rightModuleId": 331,
+      "data": {
+        "as_FxBypass": [
+          false
+        ]
+      },
+      "pos": [
+        70,
+        0
+      ]
+    },
+    {
+      "id": 327,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "SEQ3",
+      "params": [
+        {
+          "id": 0,
+          "value": 2.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 8.0
+        },
+        {
+          "id": 4,
+          "value": 0.419999957
+        },
+        {
+          "id": 5,
+          "value": 1.1099999
+        },
+        {
+          "id": 6,
+          "value": 1.16999984
+        },
+        {
+          "id": 7,
+          "value": 1.99500012
+        },
+        {
+          "id": 8,
+          "value": 1.85999978
+        },
+        {
+          "id": 9,
+          "value": 1.30499995
+        },
+        {
+          "id": 10,
+          "value": 1.24499977
+        },
+        {
+          "id": 11,
+          "value": 2.28000021
+        },
+        {
+          "id": 12,
+          "value": 0.0
+        },
+        {
+          "id": 13,
+          "value": 0.0
+        },
+        {
+          "id": 14,
+          "value": 0.0
+        },
+        {
+          "id": 15,
+          "value": 0.0
+        },
+        {
+          "id": 16,
+          "value": 0.0
+        },
+        {
+          "id": 17,
+          "value": 0.0
+        },
+        {
+          "id": 18,
+          "value": 0.0
+        },
+        {
+          "id": 19,
+          "value": 0.0
+        },
+        {
+          "id": 20,
+          "value": 0.0
+        },
+        {
+          "id": 21,
+          "value": 0.0
+        },
+        {
+          "id": 22,
+          "value": 0.0
+        },
+        {
+          "id": 23,
+          "value": 0.0
+        },
+        {
+          "id": 24,
+          "value": 0.0
+        },
+        {
+          "id": 25,
+          "value": 0.0
+        },
+        {
+          "id": 26,
+          "value": 0.0
+        },
+        {
+          "id": 27,
+          "value": 0.0
+        },
+        {
+          "id": 28,
+          "value": 0.0
+        },
+        {
+          "id": 29,
+          "value": 0.0
+        },
+        {
+          "id": 30,
+          "value": 0.0
+        },
+        {
+          "id": 31,
+          "value": 0.0
+        },
+        {
+          "id": 32,
+          "value": 0.0
+        },
+        {
+          "id": 33,
+          "value": 0.0
+        },
+        {
+          "id": 34,
+          "value": 0.0
+        },
+        {
+          "id": 35,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 332,
+      "rightModuleId": 328,
+      "data": {
+        "running": true,
+        "gates": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 328,
+      "plugin": "ML_modules",
+      "version": "1.0.2",
+      "model": "Quantum",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 0.0
+        },
+        {
+          "id": 9,
+          "value": 0.0
+        },
+        {
+          "id": 10,
+          "value": 0.0
+        },
+        {
+          "id": 11,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 327,
+      "rightModuleId": 320,
+      "data": {
+        "scale": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mode": 1,
+        "transpose_select": 1,
+        "toggle_mode": 0
+      },
+      "pos": [
+        38,
+        0
+      ]
+    },
+    {
+      "id": 329,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCF",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.5
+        },
+        {
+          "id": 1,
+          "value": 0.5
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.651999891
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 318,
+      "rightModuleId": 319,
+      "pos": [
+        59,
+        0
+      ]
+    },
+    {
+      "id": 331,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-VCM",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.800000012
+        },
+        {
+          "id": 1,
+          "value": 0.800000012
+        },
+        {
+          "id": 2,
+          "value": 0.800000012
+        },
+        {
+          "id": 3,
+          "value": 0.800000012
+        },
+        {
+          "id": 4,
+          "value": 0.800000012
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 326,
+      "rightModuleId": 324,
+      "data": {
+        "disableOutputLimit": false
+      },
+      "pos": [
+        76,
+        0
+      ]
+    },
+    {
+      "id": 332,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 327,
+      "text": "This lab will introduce you to reverb, a common effect used to give a sound a sense of \"space.\"\n\n1) Connect the gate output of the sequencer to the gate input of the ADSR EG.  Mult the ADSR EG's output to both the VCF's cutoff frequency CV input and the VCA's CV input.\n\n2) Connect the Row 1 output of the sequencer to the quantizer input. Connect the quantizer output to the VCO's V/oct input.\n\n3) Connect the VCO's square output to the VCF's audio IN jack.  Connect the VCF's lowpass output to the VCA's main input.  Connect the VCA's output to the Reverb unit's L input (left).  Connect the Reverb unit's L output to one of the mixer's inputs. Listen to the mixer's output.",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 333,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 334,
+      "text": "4) Adjust the cutoff frequency CV attenuverter on the VCF clockwise so that the envelope opens and closes the filter.\n\n5) You should be hearing the VCO playing a sequence as the ADSR EG opens and closes both the VCF and VCA.\n\n6) Currently, we do not hear the effect of the reverb unit at all because the DRY/WET control is set to fully DRY.  We are hearing the original sound sent to the reverb unit pass through unaffected\n\n7) Slowly turn the DRY/WET knob clockwise.  What do you hear?\n\n",
+      "pos": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 334,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 333,
+      "text": "8) You should hear the smeared out \"reflections\" of the original sound rising in the mix and the original sound getting quieter in the mix as the knob moves towards WET.\n\n9) Push the knob all the way towards WET, and then set it to about noon so you can hear both the dry sound and the reverb equally.\n\n10) Play with the DECAY parameter.  It controls how long it takes for all the reflections to fade out.  Notice how it changes the sense of the space that the sound is ocurring in.\n\n11) Play with the DAMP parameter.  It changes how dark or bright each reflection is (i.e. it adds filtration to the reflections), similar to the COLOR control in the last lab.",
+      "pos": [
+        16,
+        1
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 15,
+      "outputModuleId": 331,
+      "outputId": 0,
+      "inputModuleId": 324,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 16,
+      "outputModuleId": 331,
+      "outputId": 0,
+      "inputModuleId": 324,
+      "inputId": 1,
+      "color": "#c9b70e"
+    }
+  ]
+}

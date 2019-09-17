@@ -1,0 +1,316 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 300,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Delay",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.644499898
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.5
+        },
+        {
+          "id": 3,
+          "value": 0.5
+        }
+      ],
+      "leftModuleId": 304,
+      "rightModuleId": 305,
+      "pos": [
+        36,
+        0
+      ]
+    },
+    {
+      "id": 301,
+      "plugin": "Alikins",
+      "version": "1.0.1",
+      "model": "MomentaryOnButtons",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 0.0
+        },
+        {
+          "id": 9,
+          "value": 0.0
+        },
+        {
+          "id": 10,
+          "value": 0.0
+        },
+        {
+          "id": 11,
+          "value": 0.0
+        },
+        {
+          "id": 12,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 307,
+      "rightModuleId": 302,
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 302,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-ADSR",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.141421005
+        },
+        {
+          "id": 1,
+          "value": 0.316229999
+        },
+        {
+          "id": 2,
+          "value": 1.0
+        },
+        {
+          "id": 3,
+          "value": 0.316229999
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 301,
+      "rightModuleId": 303,
+      "pos": [
+        20,
+        0
+      ]
+    },
+    {
+      "id": 303,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 302,
+      "rightModuleId": 304,
+      "pos": [
+        23,
+        0
+      ]
+    },
+    {
+      "id": 304,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCA-1",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 303,
+      "rightModuleId": 300,
+      "pos": [
+        33,
+        0
+      ]
+    },
+    {
+      "id": 305,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-VCM",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.800000012
+        },
+        {
+          "id": 1,
+          "value": 0.800000012
+        },
+        {
+          "id": 2,
+          "value": 0.800000012
+        },
+        {
+          "id": 3,
+          "value": 0.800000012
+        },
+        {
+          "id": 4,
+          "value": 0.800000012
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 300,
+      "rightModuleId": 306,
+      "data": {
+        "disableOutputLimit": false
+      },
+      "pos": [
+        44,
+        0
+      ]
+    },
+    {
+      "id": 306,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 305,
+      "data": {
+        "audio": {
+          "driver": 6,
+          "deviceName": "Speakers (Realtek High Definition Audio)",
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        54,
+        0
+      ]
+    },
+    {
+      "id": 307,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 301,
+      "text": "This lab will introduce you to delay, one of the central types of effect units.  \n\nA delay unit generates echoes which  repeat the input sound after a fixed amount of time, known as the DELAY TIME.  The number of echos is determined by the FEEDBACK gain, which sets how much of each echo is sent back to the input to be delayed again.  \n\nThe MIX or DRY/WET control determines the balance of the original signal vs the wet, effected signal that is output.  \n\nSome delay units also have a COLOR control, which places a filter in the feedback loop so that each echos timbre changes.  Usually, noon is unfiltered feedback, CW is highpass, and CCW is lowpass.",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 308,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 309,
+      "text": "1) Connect the output of a button to the gate input of the ADSR EG.\n\n2) Connect the ADSR EG's output to the VCA's CV input.  \n\n3) Connect the VCO's sawtooth output to the VCA's main input.\n\n4) Connect the VCA's output to the DELAY's main IN jack.\n\n5) Connect the DELAY's output to the first channel of the mixer, and lsiten to the output of the mixer.\n\n6) Press and release the button to activate the ADSR.  \n\n7) You should hear one note, as well as a delayed copy of the note.",
+      "pos": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 309,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 308,
+      "rightModuleId": 310,
+      "text": "8) Increase the FEEDBACK gain using the FDBK knob, and then press the button again.  What changed?  Repeat this step.  \n\n9) As the feedback gain increases, more and more of the delayed signal is fed back to the input, resulting in more and more repeats occuring.\n\n10) Try adjusting the TIME control, and then press the red button.  What changes?\n\n11) The spacing of the repeats changes - this is known as the DELAY TIME.\n\n12) Try setting the COLOR knob fully CCW and then press the button.  Listen as each repeat gets darker and darker as the feedback passes through a LPF.",
+      "pos": [
+        16,
+        1
+      ]
+    },
+    {
+      "id": 310,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 309,
+      "text": "13) Repeat step 12, but with COLOR CW.  Listen as each repeat gets thinner as the feedback passes through a HPF.",
+      "pos": [
+        32,
+        1
+      ]
+    }
+  ],
+  "cables": []
+}

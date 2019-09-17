@@ -1,0 +1,140 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 300,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCF",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.5
+        },
+        {
+          "id": 1,
+          "value": 0.5
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 307,
+      "rightModuleId": 301,
+      "pos": [
+        19,
+        0
+      ]
+    },
+    {
+      "id": 301,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-VCM",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.800000012
+        },
+        {
+          "id": 1,
+          "value": 0.800000012
+        },
+        {
+          "id": 2,
+          "value": 0.800000012
+        },
+        {
+          "id": 3,
+          "value": 0.800000012
+        },
+        {
+          "id": 4,
+          "value": 0.800000012
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 300,
+      "rightModuleId": 302,
+      "data": {
+        "disableOutputLimit": false
+      },
+      "pos": [
+        27,
+        0
+      ]
+    },
+    {
+      "id": 302,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 301,
+      "data": {
+        "audio": {
+          "driver": 7,
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        37,
+        0
+      ]
+    },
+    {
+      "id": 306,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 307,
+      "text": "1) Patch the WHITE NOISE output of the Noise module to the input of the VCF.\n\n2) Patch the lowpass output of the VCF to the mixer.  Listen to the mixer's output.  \n\n3) Adjust the filter's cutoff.  Listen to how the character of the noise brightens and darkens.  Try performing cutoff sweeps with the resonance set to different positions. \n\n4) Repeat steps 2 and 3 using the highpass output of the VCF.\n\n5) Switch back to the lowpass output. Repeat steps 1-4 using the BLUE, PINK, RED, and GAUSSIAN Noise outputs.  Observe how the character of the noise is different for each.",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 307,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-Noise",
+      "params": [],
+      "leftModuleId": 306,
+      "rightModuleId": 300,
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 308,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "text": "Try adding an LFO and an ADSR envelope generator to the patch.  Use the LFO as a clock to activate the EG.  Use the EG to control the cutoff frequency of the VCF.  Don't forget to adjust the FREQ CV attenuverter! ",
+      "pos": [
+        0,
+        1
+      ]
+    }
+  ],
+  "cables": []
+}

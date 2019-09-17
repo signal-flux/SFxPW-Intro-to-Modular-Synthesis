@@ -1,0 +1,260 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 285,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-SampleHold",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 1.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 288,
+      "rightModuleId": 286,
+      "data": {
+        "noise_type": 0,
+        "range_offset": 1.0,
+        "range_scale": 5.0
+      },
+      "pos": [
+        36,
+        0
+      ]
+    },
+    {
+      "id": 286,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 6.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 285,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        39,
+        0
+      ]
+    },
+    {
+      "id": 287,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -0.916999817
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.407879651
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 289,
+      "rightModuleId": 288,
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 288,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -4.48099852
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 287,
+      "rightModuleId": 285,
+      "pos": [
+        26,
+        0
+      ]
+    },
+    {
+      "id": 289,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 287,
+      "text": "This lab will introduce you to the Sample and Hold module, or S+H.  S+H are tools for turning any signal into a stepped sequence.  \n\nThey expect two inputs: a signal to sample, or store, and a trigger to indicate when to sample the other signal!\n\nWhen a trigger arrives, the module checks the signal to sample, freezes its current voltage, and send that stored voltage to the output.  The output does not change voltage until another trigger arrives to start the process over.\n\nLet's take a look!",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 290,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 291,
+      "text": "1) Mult the right LFO's sine wave output to the X-in on the scope and the IN jack from the S+H module's upper set (the bottom jacks are just a second copy of the same functionality as the top). \n\n2) Patch the matching OUT jack from the S+H module to the Y-input.\n\n3)  Try pressing the button above the GATE jack on the S/H module.  What happens?\n\n4) You should see the output of the S+H module jump to the level the LFO was at when you hit the button the S+H stays at that level until you hit the button again - try it!",
+      "pos": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 291,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 290,
+      "rightModuleId": 292,
+      "text": "5) Each time you hit the button, the S+H module SAMPLES the input voltage and then HOLDS the output at the sampled value until the next trigger occurs.\n\n6) Let's automate the S+H by using an LFO to trigger sampling. Patch the square wave output of the LFO to the GATE input on the S+H.  Set the clocking LFO's frequency so that it is a bit faster than the sine wave LFO.\n\n7) The S+H output should now be a staircased step sequence version of the LFO!\n\n8) Now press the button on the S+H marked \"TRK\" - this stands for TRACK.  It converts the SAMPLE and Hold into a TRACK and Hold.  How does the behavior of the T+H output change?",
+      "pos": [
+        16,
+        1
+      ]
+    },
+    {
+      "id": 292,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 291,
+      "text": "9) The T+H is now gate sensitive!  When a gate arrives, instead of jumping to the new voltage and freezing, it now tracks, or follows the input voltage until the gate goes low.  Once the gate goes low, the T+H holds.  A T+H tracks (or follows) the input voltage when the gate is high, and holds (or freezes) in place as soon as the gate goes low.  \n\nTry adding an attenuator and a quantizer to process the S+H output!  Use it to control the pitch of an oscillator and create a generative sequence.  This elminates the weird rhythmic artifacts we previously got when patching the LFO directly into the quantizer previously!\n\nThe phasing relationship between the clocking frequency and the sampled signal will create an evolving pattern.",
+      "pos": [
+        32,
+        1
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 296,
+      "outputModuleId": 288,
+      "outputId": 0,
+      "inputModuleId": 285,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 297,
+      "outputModuleId": 288,
+      "outputId": 0,
+      "inputModuleId": 286,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 298,
+      "outputModuleId": 285,
+      "outputId": 0,
+      "inputModuleId": 286,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 299,
+      "outputModuleId": 287,
+      "outputId": 3,
+      "inputModuleId": 285,
+      "inputId": 0,
+      "color": "#0c8e15"
+    }
+  ]
+}

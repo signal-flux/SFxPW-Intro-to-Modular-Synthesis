@@ -1,0 +1,172 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 309,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-Noise",
+      "params": [],
+      "leftModuleId": 314,
+      "rightModuleId": 310,
+      "pos": [
+        32,
+        0
+      ]
+    },
+    {
+      "id": 310,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-SampleHold",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 309,
+      "rightModuleId": 312,
+      "data": {
+        "noise_type": 0,
+        "range_offset": 1.0,
+        "range_scale": 5.0
+      },
+      "pos": [
+        35,
+        0
+      ]
+    },
+    {
+      "id": 311,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 7.6999979
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 312,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        41,
+        0
+      ]
+    },
+    {
+      "id": 312,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-Slew",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.316229999
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.316229999
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 310,
+      "rightModuleId": 311,
+      "pos": [
+        38,
+        0
+      ]
+    },
+    {
+      "id": 313,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 314,
+      "text": "This lab will introduce you to the Slew Limiter, a tool for creating smooth transitions between voltage changes.  Slew limiters smooth out changes in a voltage. The output voltage is like a “laggy” version of the input voltage: it takes time to catch up (slew) to the input.\n\nA slew limiter has two main parameters: the RISE-time and FALL-time.  When the input voltage increases, the output voltage rises to the new voltage in the amount of time specified by rise. When the input voltage decreases, the output voltage falls to the new voltage in the amount of time specified by fall. \r\nSLs can be used to smooth out random sequences, create glissando/slides, and much more! Let's take a look!",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 314,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 313,
+      "rightModuleId": 309,
+      "text": "1) Patch the white noise output of the Noise module to the first S+H channel's sample IN jack.  \n\n2) Mult the corresponding S+H output to the SLEW module's IN jack and the Scope's X-in.\n\n3) Patch the Slew Limiter's output to the Y-in on the Scope.  \n\n4) Press the S+H button to sample the white noise voltage and send it to the Slew Limiter.  What do you see happen on the Scope?\n\n5) You should see the Slew Limiter's output ramp from its current value to the new value it received from the S+H module. \n\n6) Decrease the RISE- and FALL-times using the corresponding knobs. \n",
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 315,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "text": "7) Trigger the S+H again.  This time, it should have ramped to the new voltage much more quickly.\n\n8) Set the FALL-time so that it is longer than the RISE-time.  Try triggering the S+H several times.  Notice that when the new voltage is greater than the old voltage, it uses the RISE-time, and when the new voltage is less, it uses the FALL-time.\n\nTry adding a VCO, VCF, and LFO to this patch.\n\nUse the VCF to process the VCO.  Use the LFO to clock the S+H module.  Use the Slew Limiter's output to control the cutoff frequency of the filter. Try different settings for RISE and FALL.  Listen as the filter's cutoff smoothly moves to and from random voltages!",
+      "pos": [
+        16,
+        1
+      ]
+    }
+  ],
+  "cables": []
+}

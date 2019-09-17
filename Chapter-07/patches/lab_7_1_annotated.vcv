@@ -1,0 +1,306 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 256,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCF",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.5
+        },
+        {
+          "id": 1,
+          "value": 0.5
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 257,
+      "rightModuleId": 260,
+      "pos": [
+        52,
+        0
+      ]
+    },
+    {
+      "id": 257,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 258,
+      "rightModuleId": 256,
+      "pos": [
+        42,
+        0
+      ]
+    },
+    {
+      "id": 258,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -0.862999678
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 270,
+      "rightModuleId": 257,
+      "pos": [
+        32,
+        0
+      ]
+    },
+    {
+      "id": 260,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 16.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 256,
+      "rightModuleId": 262,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        60,
+        0
+      ]
+    },
+    {
+      "id": 261,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 262,
+      "data": {
+        "audio": {
+          "driver": 6,
+          "offset": 1127251626,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        83,
+        0
+      ]
+    },
+    {
+      "id": 262,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-VCM",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.77450031
+        },
+        {
+          "id": 1,
+          "value": 0.800000012
+        },
+        {
+          "id": 2,
+          "value": 0.800000012
+        },
+        {
+          "id": 3,
+          "value": 0.800000012
+        },
+        {
+          "id": 4,
+          "value": 0.7530002
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 260,
+      "rightModuleId": 261,
+      "data": {
+        "disableOutputLimit": false
+      },
+      "pos": [
+        73,
+        0
+      ]
+    },
+    {
+      "id": 266,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 270,
+      "text": "This lab will familiarize with the basics of a Voltage-Controlled Filter, or VCF.  VCFs are essential tools for modifying the timbre of sounds.\n\nRecall that any waveshape is made by adding together sine waves at the fundamental frqeuency and integer multiples of that frqeuency (aka harmonics).  A filter changes the waveshape, or timbre, of a sound by modifying its spectrum - i.e. changing the amplitude of the various sine waves that make up a sound.\n\nA filter attenuates the partials beyond the cutoff frequency - lowpass filters attenuate frequencies above the cutoff, while highpass filters attenaute frequencies below the cutoff.  The further a frequency is from the cutoff, the more it gets attenuated.",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 270,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 266,
+      "rightModuleId": 258,
+      "text": "1) Mult the sawtooth output of the VCO to the VCF's main IN jack and the Scope's X-in jack.  Mult the LPF (lowpass filter) output of the VCF to the Scope's Y-in jack and to the mixer's Channel 1 input jack.\n\n2) Slowly adjust the filter's cutoff frequency knob (FREQ).  What do you hear?  What do you see on the scope?\n\n3) Notice how the filtered morphs from a sinewave at the fundamental frequency to a sawtooth at the fundamental frequency as more and more of the harmonics are added into the mix when the cutoff frequency increases.  Listen as the sound changes from a pure sine tone into a bright, rich sawtooth wave.",
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 271,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 272,
+      "text": "4) Move both patch cables connected to the lowpass output of the VCF to the highpass output.  Move the cutoff frequency back and forth again.  Listen as the sound changes from the full sawtooth wave to a thin, tinny sounding version as the cutoff frequency increases.  \n\n5) Switch the patch cables back to the lowpass output of the VCF. \n\n6) Patch the sawtooth output of the LFO to the FREQ input of the VCF.  Adjust the FREQ CV attenuverter on the VCF clockwise.  Set the FREQ knob to noon.  What do you hear? \n\n7) The LFO is automatically adjusting the cutoff frequency.  Try changing the LFO's frequency and try using different outputs of the LFO.  ",
+      "pos": [
+        16,
+        1
+      ]
+    },
+    {
+      "id": 272,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 271,
+      "text": "8) Increase the knob labeled \"RES\" to about noon.  This knob adjusts the RESONANCE of the filter, or how much it amplifies (rather than attenuates) the cutoff frequency.\n\n9) Try different positions of resonance and different speeds of the LFO listen as the filter becomes a bit \"squelchier\" and almost more vocal. \n\n10) Once the resonance knob passes about 2:30, you can hear an additional sine wave directly at the cutoff frequency at all times - this is known as \"self-oscillation.\"  Disconnect the VCO from the VCF's input.  Turn the resonance knob to the max - it is generating a sine wave at the cutoff frequency!",
+      "pos": [
+        32,
+        1
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 274,
+      "outputModuleId": 262,
+      "outputId": 0,
+      "inputModuleId": 261,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 275,
+      "outputModuleId": 262,
+      "outputId": 0,
+      "inputModuleId": 261,
+      "inputId": 1,
+      "color": "#c9b70e"
+    }
+  ]
+}

@@ -1,0 +1,502 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 336,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "SEQ3",
+      "params": [
+        {
+          "id": 0,
+          "value": 2.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 8.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.88499999
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 1.70999932
+        },
+        {
+          "id": 9,
+          "value": 0.0
+        },
+        {
+          "id": 10,
+          "value": 2.95499945
+        },
+        {
+          "id": 11,
+          "value": 0.0
+        },
+        {
+          "id": 12,
+          "value": 0.0
+        },
+        {
+          "id": 13,
+          "value": 0.0
+        },
+        {
+          "id": 14,
+          "value": 0.0
+        },
+        {
+          "id": 15,
+          "value": 0.0
+        },
+        {
+          "id": 16,
+          "value": 0.0
+        },
+        {
+          "id": 17,
+          "value": 0.0
+        },
+        {
+          "id": 18,
+          "value": 0.0
+        },
+        {
+          "id": 19,
+          "value": 0.0
+        },
+        {
+          "id": 20,
+          "value": 0.0
+        },
+        {
+          "id": 21,
+          "value": 0.0
+        },
+        {
+          "id": 22,
+          "value": 0.0
+        },
+        {
+          "id": 23,
+          "value": 0.0
+        },
+        {
+          "id": 24,
+          "value": 0.0
+        },
+        {
+          "id": 25,
+          "value": 0.0
+        },
+        {
+          "id": 26,
+          "value": 0.0
+        },
+        {
+          "id": 27,
+          "value": 0.0
+        },
+        {
+          "id": 28,
+          "value": 0.0
+        },
+        {
+          "id": 29,
+          "value": 0.0
+        },
+        {
+          "id": 30,
+          "value": 0.0
+        },
+        {
+          "id": 31,
+          "value": 0.0
+        },
+        {
+          "id": 32,
+          "value": 0.0
+        },
+        {
+          "id": 33,
+          "value": 0.0
+        },
+        {
+          "id": 34,
+          "value": 0.0
+        },
+        {
+          "id": 35,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 343,
+      "rightModuleId": 339,
+      "data": {
+        "running": true,
+        "gates": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 337,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -27.7019901
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 339,
+      "rightModuleId": 338,
+      "pos": [
+        41,
+        0
+      ]
+    },
+    {
+      "id": 338,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCF",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.5
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 337,
+      "rightModuleId": 341,
+      "pos": [
+        51,
+        0
+      ]
+    },
+    {
+      "id": 339,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-ADSR",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.388230145
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.316229999
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 336,
+      "rightModuleId": 337,
+      "pos": [
+        38,
+        0
+      ]
+    },
+    {
+      "id": 340,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-VCM",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.800000012
+        },
+        {
+          "id": 1,
+          "value": 0.800000012
+        },
+        {
+          "id": 2,
+          "value": 0.800000012
+        },
+        {
+          "id": 3,
+          "value": 0.800000012
+        },
+        {
+          "id": 4,
+          "value": 0.800000012
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 341,
+      "rightModuleId": 342,
+      "data": {
+        "disableOutputLimit": false
+      },
+      "pos": [
+        72,
+        0
+      ]
+    },
+    {
+      "id": 341,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": -0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 16.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 338,
+      "rightModuleId": 340,
+      "data": {
+        "lissajous": 0,
+        "external": 0
+      },
+      "pos": [
+        59,
+        0
+      ]
+    },
+    {
+      "id": 342,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 340,
+      "data": {
+        "audio": {
+          "driver": 6,
+          "deviceName": "Speakers (Realtek High Definition Audio)",
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        82,
+        0
+      ]
+    },
+    {
+      "id": 343,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 336,
+      "text": "This lab will introduce you to a simple distortion affect.  Distortion can be used to make a sound crunchier, more intense, and harsher.\n\n1) Mult the sawtooth output of the VCO to the VCF's audio input and the Scope's X-in.  Mult the lowpass output of the VCF to the Scope's Y-in and one of the audio IN jacks on the mixer. Listen to the ouput of the mixer.\n\n2) Increase the VCF's cutoff frequency to the maximum.  Observe the lowpass output morph into the original sawtooth input as the cutoff frequency increases.\n\n3) Slowly increase the VCF's knob labeled DRIVE.  What do you hear?  What do you see?",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 344,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 345,
+      "text": "4) \"DRIVE\" is increasing the gain of the signal (making it louder), but once the signal gets beyond a certain threshold, it begins clipping, or having the top part of its shape cut off/rounded off.  The top point of the wave gets squashed and flattened out. This has the effect of changing the harmonic content of the sound since the waveshape is changing.  You may wish to adjust the \"Y SCL\" (Y Scale) knob on the Scope one notch CCW to shrink the waveform on the scope so that you can see the clipping more clearly.\n\n5) Adjust the DRIVE back to its minimum position.  Set the cutoff frequency to about noon.  Slowly increase the DRIVE again.  Listen as the timbre changes and observe the waveform get clipped again (the top part flattens out).",
+      "pos": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 345,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 344,
+      "rightModuleId": 346,
+      "text": "Let's hear it with a sequence so that we get a little more context for how this might be used.\n\n6) Patch the Gate output of the sequencer to the gate input of the ADSR envelope generator.\n\n7) Patch the ADSR envelope generator's output to the VCF's cutoff frequency CV input. Adjust the cutoff frequency CV attenuverter clockwise so that the envelope opens and closes the filter.  Set the filter's cutoff frequency knob to about 9:30.\n\n8) Turn the DRIVE knob to max and then back to min so you can hear its effect.\n\n9) Patch the Sequencer's Row-1 output to VCO's V/Oct input.\n",
+      "pos": [
+        16,
+        1
+      ]
+    },
+    {
+      "id": 346,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 345,
+      "text": "10) You should now hear the oscillator playing a sequence.  Slowly increase the DRIVE.  Listen as the sound becomes \"buzzier.\"\n\n11) Adjust the cutoff frequency CV attenuverter to a position that you like.  Try adjusting the cutoff frequency knob as well. \n\n12) Try adding some resonance to the filter using the corresponding knob.  ",
+      "pos": [
+        32,
+        1
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 22,
+      "outputModuleId": 337,
+      "outputId": 2,
+      "inputModuleId": 338,
+      "inputId": 3,
+      "color": "#0986ad"
+    },
+    {
+      "id": 24,
+      "outputModuleId": 337,
+      "outputId": 2,
+      "inputModuleId": 341,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 25,
+      "outputModuleId": 338,
+      "outputId": 0,
+      "inputModuleId": 341,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 26,
+      "outputModuleId": 338,
+      "outputId": 0,
+      "inputModuleId": 340,
+      "inputId": 0,
+      "color": "#c91847"
+    },
+    {
+      "id": 27,
+      "outputModuleId": 340,
+      "outputId": 0,
+      "inputModuleId": 342,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 28,
+      "outputModuleId": 340,
+      "outputId": 0,
+      "inputModuleId": 342,
+      "inputId": 1,
+      "color": "#c9b70e"
+    }
+  ]
+}

@@ -1,0 +1,495 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 5,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "LFO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 1.67500091
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.987059951
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 16,
+      "rightModuleId": 12,
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 7,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCF",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.307499915
+        },
+        {
+          "id": 1,
+          "value": 0.5
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.561000109
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 11,
+      "pos": [
+        54,
+        0
+      ]
+    },
+    {
+      "id": 8,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-VCM",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.800000012
+        },
+        {
+          "id": 1,
+          "value": 0.800000012
+        },
+        {
+          "id": 2,
+          "value": 0.800000012
+        },
+        {
+          "id": 3,
+          "value": 0.800000012
+        },
+        {
+          "id": 4,
+          "value": 0.800000012
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 15,
+      "rightModuleId": 9,
+      "data": {
+        "disableOutputLimit": false
+      },
+      "pos": [
+        62,
+        1
+      ]
+    },
+    {
+      "id": 9,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 8,
+      "data": {
+        "audio": {
+          "driver": 6,
+          "deviceName": "Speakers (Realtek High Definition Audio)",
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        72,
+        1
+      ]
+    },
+    {
+      "id": 10,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-ADSR",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.00749999657
+        },
+        {
+          "id": 1,
+          "value": 0.580230236
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.316229999
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 11,
+      "pos": [
+        41,
+        0
+      ]
+    },
+    {
+      "id": 11,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 10,
+      "rightModuleId": 7,
+      "pos": [
+        44,
+        0
+      ]
+    },
+    {
+      "id": 12,
+      "plugin": "Ohmer",
+      "version": "1.1.3.1",
+      "model": "RKD",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 1.0
+        },
+        {
+          "id": 3,
+          "value": 1.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 5,
+      "data": {
+        "visiblePCB": false,
+        "jmprCountingDown": false,
+        "jmprGate": false,
+        "jmprMaxDivRange16": true,
+        "jmprMaxDivRange32": true,
+        "jmprSpread": false,
+        "jmprAutoReset": false,
+        "tableSet": 0
+      },
+      "pos": [
+        26,
+        0
+      ]
+    },
+    {
+      "id": 13,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-ADSR",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.580230236
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.316229999
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 14,
+      "pos": [
+        41,
+        1
+      ]
+    },
+    {
+      "id": 14,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -17.9820004
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.535499513
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 13,
+      "rightModuleId": 15,
+      "pos": [
+        44,
+        1
+      ]
+    },
+    {
+      "id": 15,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCF",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.307499915
+        },
+        {
+          "id": 1,
+          "value": 0.5
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.591999769
+        },
+        {
+          "id": 4,
+          "value": 0.684000075
+        }
+      ],
+      "leftModuleId": 14,
+      "rightModuleId": 8,
+      "pos": [
+        54,
+        1
+      ]
+    },
+    {
+      "id": 16,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 5,
+      "text": "This lab will introduce you to the Clock Divider, one of the fundamental types of clock modulators.\n\nA clock divider usually has one input for a clock signal and many outputs for different DIVISIONS of that clock signal.\n\nEach division is numbered with some number N.  That output will only generate one pulse for every N input pulses, so it generates a clock at the original frequency divided by N - hence the name: clock divider!\n\nLet's take a look.",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 17,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 18,
+      "text": "1) Two subtractive synth voices have been set up (VCO into VCF into VCA, both VCF and VCA controlled by a single envelope generator). Review their patch connections to verify the signal flow.  Set your sound card appropriately on Audio-8.\n\n2) Connect the square wave output of the LFO to one of the ADSR envelope generators.  Listen to the frequency of the square wave clock.\n\n3) Disconnect the clock from the EG gate input.  Now, patch the square wave clock to the CLK (clock) input on the RKD clock divider module.\n\n4) Patch the output labeled \"1\" to one of the EG gate inputs.  You should hear it being clocked at the same rate as before!",
+      "pos": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 18,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 17,
+      "text": "5) Now patch the output labeled \"3\" to the other EG gate input.  What do you hear?\n\n6) You should now hear the other VCO playing one note on every third note that the first VCO plays!\n\n7) Try clocking the second VCO using various outputs from the clock divider.  Count the number of notes the first VCO plays per every one note the second VCO plays to make sure the clock divider is working correctly!\n\n8) Try clocking the first envelope generator from the /3 output and the second envelope generator from the /4 output.  See if you can count how long the rhythmic pattern they create is!",
+      "pos": [
+        16,
+        1
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 3,
+      "outputModuleId": 7,
+      "outputId": 0,
+      "inputModuleId": 8,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 4,
+      "outputModuleId": 8,
+      "outputId": 0,
+      "inputModuleId": 9,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 5,
+      "outputModuleId": 8,
+      "outputId": 0,
+      "inputModuleId": 9,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 6,
+      "outputModuleId": 10,
+      "outputId": 0,
+      "inputModuleId": 7,
+      "inputId": 0,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 7,
+      "outputModuleId": 10,
+      "outputId": 0,
+      "inputModuleId": 8,
+      "inputId": 1,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 8,
+      "outputModuleId": 11,
+      "outputId": 3,
+      "inputModuleId": 7,
+      "inputId": 3,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 12,
+      "outputModuleId": 15,
+      "outputId": 0,
+      "inputModuleId": 8,
+      "inputId": 2,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 13,
+      "outputModuleId": 14,
+      "outputId": 3,
+      "inputModuleId": 15,
+      "inputId": 3,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 14,
+      "outputModuleId": 13,
+      "outputId": 0,
+      "inputModuleId": 8,
+      "inputId": 3,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 15,
+      "outputModuleId": 13,
+      "outputId": 0,
+      "inputModuleId": 15,
+      "inputId": 0,
+      "color": "#0c8e15"
+    }
+  ]
+}

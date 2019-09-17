@@ -1,0 +1,891 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 19,
+      "plugin": "FrozenWasteland",
+      "version": "1.8.0",
+      "model": "QuadAlgorithmicRhythm",
+      "params": [
+        {
+          "id": 0,
+          "value": 16.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 16.0
+        },
+        {
+          "id": 8,
+          "value": 1.0
+        },
+        {
+          "id": 9,
+          "value": 0.0
+        },
+        {
+          "id": 10,
+          "value": 0.0
+        },
+        {
+          "id": 11,
+          "value": 0.0
+        },
+        {
+          "id": 12,
+          "value": 0.0
+        },
+        {
+          "id": 13,
+          "value": 0.0
+        },
+        {
+          "id": 14,
+          "value": 16.0
+        },
+        {
+          "id": 15,
+          "value": 1.0
+        },
+        {
+          "id": 16,
+          "value": 0.0
+        },
+        {
+          "id": 17,
+          "value": 0.0
+        },
+        {
+          "id": 18,
+          "value": 0.0
+        },
+        {
+          "id": 19,
+          "value": 0.0
+        },
+        {
+          "id": 20,
+          "value": 0.0
+        },
+        {
+          "id": 21,
+          "value": 16.0
+        },
+        {
+          "id": 22,
+          "value": 1.0
+        },
+        {
+          "id": 23,
+          "value": 0.0
+        },
+        {
+          "id": 24,
+          "value": 0.0
+        },
+        {
+          "id": 25,
+          "value": 0.0
+        },
+        {
+          "id": 26,
+          "value": 0.0
+        },
+        {
+          "id": 27,
+          "value": 0.0
+        },
+        {
+          "id": 28,
+          "value": 0.0
+        },
+        {
+          "id": 29,
+          "value": 0.0
+        },
+        {
+          "id": 30,
+          "value": 0.0
+        },
+        {
+          "id": 31,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 39,
+      "data": {
+        "algorithm1": 0,
+        "algorithm2": 0,
+        "algorithm3": 0,
+        "algorithm4": 0,
+        "constantTime": 0,
+        "masterTrack": 0,
+        "chainMode": 0,
+        "muted": 0
+      },
+      "pos": [
+        26,
+        1
+      ]
+    },
+    {
+      "id": 23,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-Noise",
+      "params": [],
+      "leftModuleId": 26,
+      "rightModuleId": 33,
+      "pos": [
+        65,
+        0
+      ]
+    },
+    {
+      "id": 24,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -42.82201
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.617500305
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 28,
+      "pos": [
+        62,
+        2
+      ]
+    },
+    {
+      "id": 25,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 27,
+      "pos": [
+        62,
+        1
+      ]
+    },
+    {
+      "id": 26,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-ADSR",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.263729841
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.394229978
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 23,
+      "pos": [
+        62,
+        0
+      ]
+    },
+    {
+      "id": 28,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-ADSR",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.172229871
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.316229999
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 24,
+      "pos": [
+        59,
+        2
+      ]
+    },
+    {
+      "id": 29,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-VCM",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.800000012
+        },
+        {
+          "id": 1,
+          "value": 0.800000012
+        },
+        {
+          "id": 2,
+          "value": 0.800000012
+        },
+        {
+          "id": 3,
+          "value": 0.800000012
+        },
+        {
+          "id": 4,
+          "value": 0.800000012
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 30,
+      "data": {
+        "disableOutputLimit": false
+      },
+      "pos": [
+        88,
+        1
+      ]
+    },
+    {
+      "id": 30,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 29,
+      "data": {
+        "audio": {
+          "driver": 6,
+          "deviceName": "Speakers (Realtek High Definition Audio)",
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        98,
+        1
+      ]
+    },
+    {
+      "id": 31,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCF",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.150499895
+        },
+        {
+          "id": 1,
+          "value": 0.5
+        },
+        {
+          "id": 2,
+          "value": 0.384000033
+        },
+        {
+          "id": 3,
+          "value": 1.0
+        },
+        {
+          "id": 4,
+          "value": 0.847499788
+        }
+      ],
+      "leftModuleId": 27,
+      "pos": [
+        75,
+        1
+      ]
+    },
+    {
+      "id": 32,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "SEQ3",
+      "params": [
+        {
+          "id": 0,
+          "value": 2.67200089
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 8.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.465000004
+        },
+        {
+          "id": 6,
+          "value": 1.75500011
+        },
+        {
+          "id": 7,
+          "value": 1.04999995
+        },
+        {
+          "id": 8,
+          "value": 0.344999969
+        },
+        {
+          "id": 9,
+          "value": 0.915000081
+        },
+        {
+          "id": 10,
+          "value": 0.88500011
+        },
+        {
+          "id": 11,
+          "value": 1.01999998
+        },
+        {
+          "id": 12,
+          "value": 0.0
+        },
+        {
+          "id": 13,
+          "value": 0.0
+        },
+        {
+          "id": 14,
+          "value": 0.0
+        },
+        {
+          "id": 15,
+          "value": 0.0
+        },
+        {
+          "id": 16,
+          "value": 0.0
+        },
+        {
+          "id": 17,
+          "value": 0.0
+        },
+        {
+          "id": 18,
+          "value": 0.0
+        },
+        {
+          "id": 19,
+          "value": 0.0
+        },
+        {
+          "id": 20,
+          "value": 0.0
+        },
+        {
+          "id": 21,
+          "value": 0.0
+        },
+        {
+          "id": 22,
+          "value": 0.0
+        },
+        {
+          "id": 23,
+          "value": 0.0
+        },
+        {
+          "id": 24,
+          "value": 0.0
+        },
+        {
+          "id": 25,
+          "value": 0.0
+        },
+        {
+          "id": 26,
+          "value": 0.0
+        },
+        {
+          "id": 27,
+          "value": 0.0
+        },
+        {
+          "id": 28,
+          "value": 0.0
+        },
+        {
+          "id": 29,
+          "value": 0.0
+        },
+        {
+          "id": 30,
+          "value": 0.0
+        },
+        {
+          "id": 31,
+          "value": 0.0
+        },
+        {
+          "id": 32,
+          "value": 0.0
+        },
+        {
+          "id": 33,
+          "value": 0.0
+        },
+        {
+          "id": 34,
+          "value": 0.0
+        },
+        {
+          "id": 35,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 39,
+      "data": {
+        "running": true,
+        "gates": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "pos": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 27,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-ADSR",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.462000012
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.286499768
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 25,
+      "rightModuleId": 31,
+      "pos": [
+        72,
+        1
+      ]
+    },
+    {
+      "id": 33,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCF",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.372500002
+        },
+        {
+          "id": 1,
+          "value": 0.5
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.970000207
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 23,
+      "pos": [
+        68,
+        0
+      ]
+    },
+    {
+      "id": 34,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 35,
+      "text": "This lab will introduce you to a Euclidean Rhythm generator, a tool for creating complex rhythms out of a simple clock. \n\n1) Patch the GATE output of the sequencer to the CLOCK input on the Quad Algorithmic Rhythm generator.\n\n2) Observe how the green indicator bar is now scrolling along the sequence and looping around. The yellow rectangels indicate the length of each of the four gate sequences.  Filled rectangles indicate steps where a hit occurs.\n\n3) Patch the first BEAT OUT jack to the first GATE  input on the upper most envelope generator. What do you hear? ",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 35,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 34,
+      "rightModuleId": 36,
+      "text": "4) Every time the green indicator for that row reaches the step with the filled rectangle, you should hear a white noise burst as the envelope generator is triggered and opens/closes the filter and corresponding VCA.\n\n5) Adjust the DIVS knob for the first row.  This is the \"Euclidean Trigs/Fill\" control.  Observe how the number of hits in that row increases - and notice how every time one more hit is added, it does its best to evenly divide the hits into the row.\n\n6) Now patch the BEAT OUT jack for the second row into the GATE input of the second envelope generator.  Increase the number of hits for that row by adjusting the corresonding DIVS knob. ",
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 36,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 35,
+      "text": "7) You should now hear two rhythms playing against each other - one is noise, and the other is the VCO.\n\n8) Find a combination of the two DIVS knobs that creates a rhythmic relationship which you find pleasing.  Now carefully adjust the OFFSET knob for one of the two rows.  What happened?\n\n9) You should have heard - and seen! - the hits for the corresponding row move one step over each time you adjusted the knob.  This is controlling the \"Euclidean Offset/Rotation\" parameter.\n\n10) Patch the BEAT OUT for the third row to the third envelope generator's GATE input.",
+      "pos": [
+        32,
+        0
+      ]
+    },
+    {
+      "id": 37,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 38,
+      "text": "11) Increase the number of hits for the third row by adjusting the DIVS knob for that row.  You should now hear the percussive kick-drum like sound from the bottom VCO triggering every time the Euclidean rhythm has a hit in that row!\n\n12) Try changing the length of that row by adjusting the STEPS knob for that row.  Notice how the number of illuminated yellow rectangles for that row has decreased.  Also notice that it changed the spacing of the hits to compensate for having fewer steps to distribute the hits between! Now that row loops back around before the other rows, and the become \"out of sync,\" creating phasing, polyrhythmic patterns!",
+      "pos": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 38,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 37,
+      "rightModuleId": 40,
+      "text": "13) Try setting each row to a different length.  The rhythm should now become pretty chaotic - there's nothing to really lock on to as they are all repeating at a different rates.  How can we tame this?\n\n14)  Notice that the lower left gate output of the sequencer is patched to the clock input on the clock divider.  This output of the sequencer pulses every time the sequence reaches that step.  Let's take the /2 output from the from the clock divider and patch it to the RESET input on the Quad Alogirthmic Rhythm Generator. \n\n15) The /2 output pulses once for every two pulses of the input, which means it pulses once for every 16 pulses of the sequencer clock. ",
+      "pos": [
+        16,
+        2
+      ]
+    },
+    {
+      "id": 39,
+      "plugin": "Ohmer",
+      "version": "1.1.3.1",
+      "model": "RKD",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 1.0
+        },
+        {
+          "id": 3,
+          "value": 1.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 32,
+      "rightModuleId": 19,
+      "data": {
+        "visiblePCB": false,
+        "jmprCountingDown": false,
+        "jmprGate": false,
+        "jmprMaxDivRange16": true,
+        "jmprMaxDivRange32": true,
+        "jmprSpread": false,
+        "jmprAutoReset": false,
+        "tableSet": 0
+      },
+      "pos": [
+        22,
+        1
+      ]
+    },
+    {
+      "id": 40,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 38,
+      "text": "16) Every time the clock divider sends a pulse to the RESET input on the rhythm generator, the rhythm generator resets all of its rows back to the first step.  This means that each row will restart every 16 steps - so we now have generated a complex rhythm that is no longer polyrhythmic!",
+      "pos": [
+        32,
+        2
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 35,
+      "outputModuleId": 23,
+      "outputId": 1,
+      "inputModuleId": 33,
+      "inputId": 3,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 40,
+      "outputModuleId": 33,
+      "outputId": 0,
+      "inputModuleId": 29,
+      "inputId": 2,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 39,
+      "outputModuleId": 26,
+      "outputId": 0,
+      "inputModuleId": 29,
+      "inputId": 3,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 41,
+      "outputModuleId": 31,
+      "outputId": 0,
+      "inputModuleId": 29,
+      "inputId": 4,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 42,
+      "outputModuleId": 27,
+      "outputId": 0,
+      "inputModuleId": 29,
+      "inputId": 5,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 43,
+      "outputModuleId": 27,
+      "outputId": 0,
+      "inputModuleId": 31,
+      "inputId": 0,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 44,
+      "outputModuleId": 25,
+      "outputId": 2,
+      "inputModuleId": 31,
+      "inputId": 3,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 45,
+      "outputModuleId": 28,
+      "outputId": 0,
+      "inputModuleId": 29,
+      "inputId": 7,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 46,
+      "outputModuleId": 28,
+      "outputId": 0,
+      "inputModuleId": 24,
+      "inputId": 1,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 47,
+      "outputModuleId": 24,
+      "outputId": 0,
+      "inputModuleId": 29,
+      "inputId": 6,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 48,
+      "outputModuleId": 29,
+      "outputId": 0,
+      "inputModuleId": 30,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 49,
+      "outputModuleId": 29,
+      "outputId": 0,
+      "inputModuleId": 30,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 52,
+      "outputModuleId": 26,
+      "outputId": 0,
+      "inputModuleId": 33,
+      "inputId": 0,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 54,
+      "outputModuleId": 32,
+      "outputId": 4,
+      "inputModuleId": 39,
+      "inputId": 2,
+      "color": "#c9b70e"
+    }
+  ]
+}

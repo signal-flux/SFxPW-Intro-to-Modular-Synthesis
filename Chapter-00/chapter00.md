@@ -125,7 +125,7 @@ In the next series of lessons, we will start building up our collection of flash
 | 04      | Creating an *event* - something which has a beginning, middle, and end, through the use of envelope generators (EGs); triggers, gates, and clocks: the drivers of modular time. |
 | 05      | Accurately controlling the pitch of oscillators using the volt-per-octave tuning standard, quantizers, and scales. |
 | 06      | Using mixers to combine audio signals; using mixers to combine control voltage signals. |
-| 07      | Sculpting the timbre of sound by controlling waveshape and using voltage-controlled filters (VCFs); the frequency domain and fourier analysis. |
-| 08      | Techniques for creating rhythm out of clock streams.         |
-| 09      | Utilities like sample+hold and slew limiting.                |
-| 10      | Controlled randomness.                                       |
+| 07      | Sculpting the timbre of sound by controlling waveshape and using voltage-controlled filters (VCFs); the frequency domain and Fourier analysis; noise. |
+| 08      | Introduction to FX: Delay, Reverb, Distortion                |
+| 09      | Sample+Hold and Slew Limiting                                |
+| 10      | Techniques for creating rhythm out of clock streams.         |
