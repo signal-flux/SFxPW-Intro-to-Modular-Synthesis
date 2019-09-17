@@ -12,6 +12,8 @@ Right-click (or alt/opt-click) on the links below; then click `Save as ..` to do
 
 [Lab 10.2: Euclidean Rhythms](./patches/lab_10_2_annotated.vcv)
 
+[Lab 10.3: A Rhythmic Pattern Interpolator](./patches/lab_10_3_annotated.vcv)
+
 You can also go to the page below and click download to get a .zip file containing all the labs for Chapter 10:
 
 [Chapter 10 Labs (zip)](./patches/ch10_vcv_labs.zip)
@@ -51,3 +53,18 @@ Combinations of Euclidean rhythms are core elements of many musical traditions f
 ### Resets
 
 *Reset* inputs allow you to set a sequencer or rhythm generator to the first step in its sequence or pattern.  This is very useful for synchronizing many different devices together, or for offsetting sequences/patterns in relationship to each other by sending different devices separate reset triggers. 
+
+### BPM
+
+*BPM* stands for beats-per-minute, and is the primary unit for measuring tempo, i.e. musical speed.
+
+### PPQN
+
+*PPQN* stands for "parts-per-quarter-note."  A 16th note clock would be considered 4 PPQN since there are 4 16th notes per one quarter note.  An 8th note clock would be considered 2PPQN because there are two 8th notes per quarter note.  
+
+Many modules expect a clock input to drive them forward through a sequence or pattern.  Some of these modules need clocks at a certain speed to make sure they advance correctly and stay in sync with other modules.  For instance, if a sequencer can generate 32nd notes, it probably would need an 8 PPQN clock to make sure that each 32nd note happens at the correct point in time!
+
+### Topograph and Mutable Grids
+
+The *Topograph* module used in lab 10.3 is based off of *Mutable Instruments Grids*.  Right click the module in VCV Rack and click on its manual (in the plugin submenu) to learn more! Be sure to check out the [Grids](https://mutable-instruments.net/modules/grids/manual/) manual for a more detailed over.
+
