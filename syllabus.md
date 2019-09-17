@@ -185,6 +185,7 @@ Fourier Analysis/Synthesis, Harmonic, Partial, Spectrum, Frequency Domain, Spect
 |             | [Chapter 09: Sample+Hold and Slew Limiters](./Chapter-09/chapter09.md) |
 |             | [Chapter 10: Clock Modulators and Rhythm](./Chapter-10/chapter10.md) |
 |             | [Visit Control](./Assignments/Visit-Control/visit-control.md) |
+|             |                                                              |
 
 
 | *Suggested* | Surgeon – From Farthest Known Objects (2016) [[*Spotify*](https://open.spotify.com/album/3y3v158VcH2ENOIdKGImca?si=GCrFwvIAT1axTA49gEGERA)] |
