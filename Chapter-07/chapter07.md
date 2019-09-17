@@ -18,6 +18,10 @@ Right-click (or alt/opt-click) on the links below; then click `Save as ..` to do
 
 [Lab 7.5: Analysis Exercise](./patches/lab_7_5.vcv)
 
+You can also go to the page below and click download to get a .zip file containing all the labs for Chapter 7:
+
+[Chapter 7 Labs (zip)](./patches/ch07_vcv_labs.zip)
+
 ## Additional Notes
 
 If there is anything you are having trouble understanding in the labs, see if the notes below help! If you want more guidance, comment in the slack, or shoot Izzy or Sam a message!

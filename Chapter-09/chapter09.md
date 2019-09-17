@@ -12,6 +12,10 @@ Right-click (or alt/opt-click) on the links below; then click `Save as ..` to do
 
 [Lab 9.2: Slew Limiters](./patches/lab_9_2_annotated.vcv)
 
+You can also go to the page below and click download to get a .zip file containing all the labs for Chapter 9:
+
+[Chapter 9 Labs (zip)](./patches/ch09_vcv_labs.zip)
+
 ## Additional Notes
 
 If there is anything you are having trouble understanding in the labs, see if the notes below help! If you want more guidance, comment in the slack, or shoot Izzy or Sam a message!

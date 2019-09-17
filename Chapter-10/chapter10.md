@@ -12,7 +12,9 @@ Right-click (or alt/opt-click) on the links below; then click `Save as ..` to do
 
 [Lab 10.2: Euclidean Rhythms](./patches/lab_10_2_annotated.vcv)
 
+You can also go to the page below and click download to get a .zip file containing all the labs for Chapter 10:
 
+[Chapter 10 Labs (zip)](./patches/ch10_vcv_labs.zip)
 
 ## Additional Notes
 

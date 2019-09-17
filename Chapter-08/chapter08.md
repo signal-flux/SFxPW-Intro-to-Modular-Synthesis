@@ -14,7 +14,9 @@ Right-click (or alt/opt-click) on the links below; then click `Save as ..` to do
 
 [Lab 8.3 Distortion](./patches/lab_8_3_annotated.vcv)
 
+You can also go to the page below and click download to get a .zip file containing all the labs for Chapter 8:
 
+[Chapter 8 Labs (zip)](./patches/ch08_vcv_labs.zip)
 
 ## Additional Notes
 
