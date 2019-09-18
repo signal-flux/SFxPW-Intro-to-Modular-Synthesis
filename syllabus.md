@@ -124,7 +124,7 @@ Trigger, Gate, Triggers, Rising-Edge, Trigger/Gate Threshold, Gates, Pulse-Width
 |             | [Chapter 06: Mixers](./Chapter-06/chapter06.md)              |
 |             | [Patch Analysis](./Assignments/Patch-Analysis/patch-analysis.md) |
 |             | [Module Breakdown](./Assignments/module-breakdown.md)        |
-|             | Powerpoint [[.pptx](./powerpoints/week2_powerpoint.pptx), [.pdf](./powerpoints/week2_powerpoint.pdf)] |
+|             | Presentation [[.pptx](./powerpoints/week2_powerpoint.pptx), [.pdf](./powerpoints/week2_powerpoint.pdf)] |
 |             |                                                              |
 | *Suggested* | [Try out some "Exploration Ideas"](./Assignments/exploration-ideas.md) |
 |             | [Come to *Modular on the Spot* @ Nowadays](<https://www.facebook.com/events/nowadays/signal-flux-hosts-modular-on-the-spot/2065950230178187/>) |
@@ -185,7 +185,8 @@ Fourier Analysis/Synthesis, Harmonic, Partial, Spectrum, Frequency Domain, Spect
 |             | [Chapter 09: Sample+Hold and Slew Limiters](./Chapter-09/chapter09.md) |
 |             | [Chapter 10: Clock Modulators and Rhythm](./Chapter-10/chapter10.md) |
 |             | [Visit Control](./Assignments/Visit-Control/visit-control.md) |                                                                                                                       |
-|             |                                                             |
+|             | Presentation [[.pptx](./powerpoints/week3_powerpoint.pptx),[.pdf](./powerpoints/week3_powerpoint.pdf)]                                                         |
+|||
 | *Suggested* | Surgeon – From Farthest Known Objects (2016) [[*Spotify*](https://open.spotify.com/album/3y3v158VcH2ENOIdKGImca?si=GCrFwvIAT1axTA49gEGERA)] |
 |             | Venetian Snares – Traditional Synthesizer Music (2016) [[Bandcamp](https://venetiansnares.bandcamp.com/album/traditional-synthesizer-music), [*Spotify*](https://open.spotify.com/album/7nqOcV9Ilnrnuzwvq77xn4?si=sraSdOMRQmyWs6w70Q1h1g)] |
 |             | Emily Sprague – Water Memory (2017) [[Bandcamp](https://mlesprg.bandcamp.com/album/water-memory), [*Spotify*](https://open.spotify.com/album/7GFnprDHbH3BkxjCiOH0k6?si=OpynT78DTKatBdXWT6rdxg)] |
