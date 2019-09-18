@@ -185,7 +185,7 @@ Fourier Analysis/Synthesis, Harmonic, Partial, Spectrum, Frequency Domain, Spect
 |             | [Chapter 09: Sample+Hold and Slew Limiters](./Chapter-09/chapter09.md) |
 |             | [Chapter 10: Clock Modulators and Rhythm](./Chapter-10/chapter10.md) |
 |             | [Visit Control](./Assignments/Visit-Control/visit-control.md) |                                                                                                                       |
-|             |                                                              |
+|             |                                                             |
 | *Suggested* | Surgeon – From Farthest Known Objects (2016) [[*Spotify*](https://open.spotify.com/album/3y3v158VcH2ENOIdKGImca?si=GCrFwvIAT1axTA49gEGERA)] |
 |             | Venetian Snares – Traditional Synthesizer Music (2016) [[Bandcamp](https://venetiansnares.bandcamp.com/album/traditional-synthesizer-music), [*Spotify*](https://open.spotify.com/album/7nqOcV9Ilnrnuzwvq77xn4?si=sraSdOMRQmyWs6w70Q1h1g)] |
 |             | Emily Sprague – Water Memory (2017) [[Bandcamp](https://mlesprg.bandcamp.com/album/water-memory), [*Spotify*](https://open.spotify.com/album/7GFnprDHbH3BkxjCiOH0k6?si=OpynT78DTKatBdXWT6rdxg)] |
