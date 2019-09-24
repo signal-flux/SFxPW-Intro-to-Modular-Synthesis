@@ -227,7 +227,7 @@ In our final week together, we will learn about interfacing modular systems with
   
 ### Key Vocabulary
 
-[Click here for definitions](./glosary.md#week-4)
+[Click here for definitions](./glossary.md#week-4)
 
 MIDI, Envelope Follower, AC Coupled, DC Coupled, Interface, Stereo, Mono, DAC, ADC, Run, Start/Stop, Reset, Clock, CV-to-MIDI, MIDI-to-CV, Line Level vs Modular Level
 
