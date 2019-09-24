@@ -1,0 +1,251 @@
+{
+  "version": "1.1.1",
+  "modules": [
+    {
+      "id": 5,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "rightModuleId": 10,
+      "text": "This lab will teach you how to record in VCV Rack!\n\n1) Patch the Left and Right outputs of the Mixer (marked L and R) the left and right inputs (1/2) on the Audio-8 module and the InL and InR inputs on the recorder module.  \n\n2) Click the \"Autosave\" switch on the recorder to deactivate autosaving.  By doing this, the recorder will prompt you for where you want to save your audio-file every time (\"choose file\").  \n\n3) Patch one of your VCOs to the mixer's  Channel 1 IN jack.  Patch the other VCO to the mixer's Channel 2 IN jack.    ",
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 6,
+      "plugin": "Bogaudio",
+      "version": "1.1.22",
+      "model": "Bogaudio-Mix4",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.909999669
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.909090936
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.909090936
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 0.0
+        },
+        {
+          "id": 9,
+          "value": 0.909090936
+        },
+        {
+          "id": 10,
+          "value": 0.0
+        },
+        {
+          "id": 11,
+          "value": 0.0
+        },
+        {
+          "id": 12,
+          "value": 0.909090936
+        },
+        {
+          "id": 13,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 9,
+      "rightModuleId": 7,
+      "pos": [
+        33,
+        1
+      ]
+    },
+    {
+      "id": 7,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 6,
+      "data": {
+        "audio": {
+          "driver": 7,
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        48,
+        1
+      ]
+    },
+    {
+      "id": 8,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": -9.63048744
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 9,
+      "pos": [
+        13,
+        1
+      ]
+    },
+    {
+      "id": 9,
+      "plugin": "Fundamental",
+      "version": "1.2.1",
+      "model": "VCO",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        },
+        {
+          "id": 2,
+          "value": 2.3695035
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.5
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 8,
+      "rightModuleId": 6,
+      "pos": [
+        23,
+        1
+      ]
+    },
+    {
+      "id": 10,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 5,
+      "rightModuleId": 11,
+      "text": "4) Set the fader's on both channels to their minimum so the two oscillators are fully silenced.\n\n5) Play with the faders so you can get a sence of how they affect volume.\n\n6) Play with the PAN knob to push the two VCOs to the left and right in the stereo field (remember, stereo just means \"two audio outputs, one for the left side and one for the right side).\n\n7) When you are ready press \"START\" on the recorder module to make a short recording.  Choose where to save your output file in the popup dialog box.  Then press \"STOP\" when you are done.",
+      "pos": [
+        16,
+        0
+      ]
+    },
+    {
+      "id": 11,
+      "plugin": "Core",
+      "version": "1.0.0",
+      "model": "Notes",
+      "params": [],
+      "leftModuleId": 10,
+      "rightModuleId": 12,
+      "text": "8) Listen to your recording and verify that it came out okay!\n\n\nNB: The sample rate will be determined by the settings on your Audio-8 module.  44.1kHz or 48kHz are CD-quality and better...  The higher the sample rate, the larger the audio-file will be.\n\nYou can change the bit-depth of the recording by right-clicking on the recorder module and choosing a different bit-depth.  If this sounds like greek to you, do not worry about it!",
+      "pos": [
+        32,
+        0
+      ]
+    },
+    {
+      "id": 12,
+      "plugin": "NYSTHI",
+      "version": "1.0.3",
+      "model": "MasterRecorder",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 11,
+      "data": {
+        "nysthi_id": "MR_bMoj0xwx",
+        "wavebits": 9,
+        "m_attenuation": 1.0
+      },
+      "pos": [
+        48,
+        0
+      ]
+    }
+  ],
+  "cables": []
+}

@@ -2,20 +2,14 @@
 [Week 2]: #Week-2
 [Week 3]: #Week-3
 [Week 4]: #Week-4
-[Alphabetical]: #Alphabetical
-
 
 
 # Key Vocabulary/Glossary
 
 - [Week 1]
 - [Week 2]
-
 - [Week 3]
-
 - [Week 4]
-
-- [Alphabetical]
 
 ## Week 1
 
@@ -110,8 +104,20 @@
 | *Slew Limiter*                    | *Slew limiters* smooth out changes in a voltage. The output voltage is like a “laggy” version of the input voltage: it takes time to catch up (*slew*) to the input. A slew limiter has two main parameters: the *rise-time* and *fall-time*.When the input voltage increases, the output voltage rises to the new voltage in the amount of time specified by *rise*. When the input voltage decreases, the output voltage falls to the new voltage in the amount of time specified by *fall*. SLs can be used to smooth out random sequences, create glissando/slides, and much more! |
 
 ## Week 4
-
-  
-
-## Alphabetical
-
+| Term                      | Definition                                                   |
+| ------------------------- | ------------------------------------------------------------ |
+|*MIDI*| MIDI = Musical Instrument Digital Interface.   A protocol (a.k.a. "communication language") for digital synthesizers and musical instruments to send information between each other, like clock synchronization information, note data, gate/trigger information, or control parameter data. |
+|*Envelope follower*| Extracts a "volume envelope" from an audio signal, i.e. a voltage contour which rises as the input audio signal gets louder and falls as the output audio signal decreases. |
+|*AC-coupled*| An input jack that blocks DC voltage (i.e. constant voltages), only allowing AC (alternative current, i.e. quickly changing voltage). This is useful if you have an audio signal which you want to remove any accidental DC offset in it to avoid clipping (distorting) on audio hardware. |
+|*DC-coupled*| An input jack that accepts DC voltages (constant or slowly changing voltages) in addition to AC voltages and passes them both through unaltered.  This means the device can process both control voltage or audio. |
+|*Audio Interface*| An external sound card for digitizing an analog audio signal from your synthesizer and sending it into your computer for recording or processing; can also take digital audio signals within the computer and converter them to analog audio signals which can connect to speakers.  Interfaces may have many inputs and outputs for various different types of audio signals (e.g. microphone inputs, synthesizer "line level" inputs, and so on).  DC-coupled interfaces are particularly useful because they can be used to receive CV from a modular synthesizer to control digital parameters within the computer and they can generate CV signals from the computer to control your modular system. |
+|*DAC*| Digital-to-Analog-Conversion, i.e. converting a digital signal (like an audio-file on a computer) into an analog signal (electricity along a cable) |
+|*ADC*| Analog-to-Digital-Conversion, i.e. converting an analog signal (like electricity along a cable) into a digital signal (data on a computer) |
+|*MIDI-to-CV*| Computer or other synthesizer as leader, modular as follower.|
+|*CV-to-MIDI*|Modular as leader, other gear follows.|
+|*DC-coupled Interfaces*|Allows either device (computer or modular) to be leader/follower.|
+|*Start/Stop*|A trigger which indicates the clock should begin or stop.|
+|*Run*|A gate which indicates the clokc should be running.|
+|*Reset*|A trigger which indicates the start of the bar.|
+|*Clock*|A repetitive pulse which drives other devices.|
+|*Modular level vs line level*|Modular level (the signal coming from your system) is much higher in amplitude (louder) than that of line level (the level coming from a mixer or other audio source) which is higher than instrument level (passive signals from most guitars and basses). Therefore, it is necessary to have ways of attentuating modular signal levels before sending it to speakers or headphones, or amplifying line level signals for use in modular.|

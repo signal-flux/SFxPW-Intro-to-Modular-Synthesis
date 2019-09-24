@@ -4,6 +4,7 @@
 1. [Week 1: Modular Thinking](#Week-1)
 2. [Week 2: Creating Events](#Week-2)
 3. [Week 3: Timbre and Time](#Week-3)
+4. [Week 4: The Real World](#Week-4)
 
 ## Pre-Class Prep Work
 
@@ -193,3 +194,55 @@ Fourier Analysis/Synthesis, Harmonic, Partial, Spectrum, Frequency Domain, Spect
 |             | Robert Aiki Aubrey Lowe – Exploratorium Performance [[YouTube](https://www.youtube.com/watch?v=Jr_8RmjXK54)] |
 |             | Caterina Barbieri – Boiler Room [[YouTube]](https://www.youtube.com/watch?v=W25FTlO42VY) |
 |             |                                                              |
+
+
+
+## Week 4
+
+### The Real World
+
+In our final week together, we will learn about interfacing modular systems with other hardware and software. We will also explore how to continuing to building your modular practice. 
+
+### Agenda
+
+- **Review**
+- **Deeper into VCV Rack**
+  - Recording
+  - MIDI Controller
+  - VST Plugins
+  - Installing Plugin Libraries
+- **Hardware Interfacing**
+  - MIDI
+  - Audio Interfaces
+  - DC-coupled Interface Tools (CV Tools, Silent Way)
+  - Clock Sync
+- **Hardware**
+  - Organizing/Planning a Case
+  - Compositional Goals/Paradigms
+  - ModularGrid
+  - Semi-Modular
+- **Other Possibilities**
+  - Digital Modular (Max/MSP, Bitwig's The Grid, Reaktor, VCV Rack)
+  - DAWs
+  
+### Key Vocabulary
+
+[Click here for definitions](./glosary.md#week-4)
+
+MIDI, Envelope Follower, AC Coupled, DC Coupled, Interface, Stereo, Mono, DAC, ADC, Run, Start/Stop, Reset, Clock, CV-to-MIDI, MIDI-to-CV, Line Level vs Modular Level
+
+### Homework
+
+| Type        | Link                                                         |
+| ----------- | ------------------------------------------------------------ |
+| *Review*|[Recording a Short Composition](./Assignments/Recording/recording.md) |
+|             | Presentation [[.pptx](./powerpoints/week4_powerpoint.pptx),[.pdf](./powerpoints/week4_powerpoint.pdf)]                                                         |
+|||
+| *Suggested* | Hiro Kone – Pure Expenditure (2018) [[*Bandcamp*](https://hirokone.bandcamp.com/album/pure-expenditure)] |
+||Sarah Davachi – The Untuning of the Sky (2013) [[*Spotify*](https://open.spotify.com/album/1PjLyOslcdAAGudH6YTgES?si=xqhXeOqfR8OXsBm3TL207w)]|
+||Alessandro Cortini – Forse 1 (2013) [[*Spotify*](https://open.spotify.com/album/1HmOuZVCAp0Y39JaqknZ6K?si=LyJfXTd-QCGVdENbhzhxng)]|
+||M. Geddes Gengras – Collected Works Vol. 2 New Process Music (2014) [[*Spotify*](https://open.spotify.com/album/2whNBoO7PGZyhuCEaHEv7z?si=BZp8gM0lSI2_deB4cgHJoQ)]|
+||M. Geddes Gengras – Against the Clock [[YouTube](https://www.youtube.com/watch?v=-n3Sye0cLRI)]|
+||Russel E.L. Butler – Moog Sonic Origins [[YouTube](https://www.youtube.com/watch?v=slY-F8VJrg0)]|
+||Switched on Presents: Daedelus & Using Modular Synthesizers Live [[YouTube]](https://www.youtube.com/watch?v=XZjeR7eLyWU)|
+||RBMA: Mark Verbos on Designing Modular Synths [[YouTube](https://www.youtube.com/watch?v=AFxxvCXf-k0)]|
