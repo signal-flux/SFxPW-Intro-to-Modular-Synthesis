@@ -6,17 +6,17 @@
 
 ![Radio](./images/pw_radio_icon.png)
 
-Modular synthesis is all about *inputs* and *outputs*.  You can think of the radio pictured here like a very simple "module."  It has a couple of inputs: a *volume knob,* a *station knob*, and some *radio waves* flying through the air towards the antenna.  It uses these inputs to create an output: the sound of a radio station at a certain volume traveling towards your ears!  The *volume knob* is an *control parameter* which controls volume.  The *station knob* is also a control parameter; it selects which *audio input* (the various radio waves) to listen to, i.e. it selects your radio station! 
+Modular synthesis is all about *inputs* and *outputs*.  You can think of the radio pictured here like a very simple "module."  It has a couple of inputs: a *volume knob,* a *station knob*, and some *radio waves* flying through the air towards the antenna.  It uses these inputs to create an output: the sound of a radio station at a certain volume traveling towards your ears!  The *volume knob* is a *control parameter* which controls volume.  The *station knob* is also a control parameter; it selects which *audio input* (the various radio waves) to listen to, i.e. it selects your radio station!
 
 ![Radio I/O](./images/pw_radio_io_cropped.png)
 
-***Modules in a modular synthesizer do the same thing: they take in a series of inputs and produce an output (or multiple outputs!).   The output is created by applying set of rules to the various inputs.*** 
+***Modules in a modular synthesizer do the same thing: they take in a series of inputs and produce an output (or multiple outputs!).   The output is created by applying set of rules to the various inputs.***
 
 Let's consider this in the context of the radio first.  What "rules" does the radio apply to the *inputs* in order to produce an *output*?  
 
 ![Radio Block Diagram](./images/pw_radio_blocks.png)
 
-First, it receives lots of radio waves for different stations at its antenna.  Then it selects which radio station to listen to based off of the *station input parameter* This audio input is passed to an *amplifier*, which makes the incoming audio signal louder or quieter based on the position of the *volume input parameter*.  Once this final signal has been created, it gets sent to a speaker for our listening pleasure!  This "block" based diagram shows us the *signal flow*.  *Signal flow* describes the path signals (both *control* and *audio*) take as they flow through the system.  Individual *modules* or *processing blocks* receive input signals and create new output signals to pass along.   
+First, it receives lots of radio waves for different stations at its antenna.  Then it selects which radio station to listen to based off of the *station input parameter*. This audio input is passed to an *amplifier*, which makes the incoming audio signal louder or quieter based on the position of the *volume input parameter*.  Once this final signal has been created, it gets sent to a speaker for our listening pleasure!  This "block" based diagram shows us the *signal flow*.  *Signal flow* describes the path signals (both *control* and *audio*) take as they flow through the system.  Individual *modules* or *processing blocks* receive input signals and create new output signals to pass along.   
 
 ![Radio I/O](./images/pw_radio_table.png)
 
@@ -50,7 +50,7 @@ In the context of modular synthesizers, an individual *module* is a device that 
 
 
 
-Each module provides its own functionality to the user.  The various operations performed by modules can be divided into three broad categories: 
+Each module provides its own functionality to the user.  The various operations performed by modules can be divided into three broad categories:
 
 1. Generating audio signals: e.g. a pure tone, a percussive noise, a rumbling bass, or even playing back a pre-recorded sound!
 2. Processing or transforming audio signals: e.g. making a sound louder or quieter, brighter or softer, applying an effect like reverb, delay, or distortion.
@@ -76,7 +76,7 @@ The process of patching is *modular* in nature: each module performs its own dis
 
 ## 0.2 Voltage & Sound
 
-So how are these mysterious *signals* being sent over the cables?  What exactly are they?  The signals that modules pass to each other via patch cables are *electrical* signals which are measured in *voltage*. 
+So how are these mysterious *signals* being sent over the cables?  What exactly are they?  The signals that modules pass to each other via patch cables are *electrical* signals which are measured in *voltage*.
 
 All voltages have an *magnitude* and *polarity*.  Magnitude represents how big the voltage is.  Polarity means whether the voltage is positive or negative. For instance, at different points in time, an output might be sending out `+2V`, or `-7.4V`, or `+10.5V`.  These voltages all have different magnitudes, while two of them have the same polarity.  
 
@@ -108,7 +108,7 @@ The different time scales to be considered when composing with a modular synthes
 
 So how do we actually do all this?  To build a patch - or analyze one - it iss important to be able to understand a few things:
 
-1. *Transformation Rules*: What does each module do?  What kind of signal does it output?  How do the different inputs of a module affect the way the output is produced? 
+1. *Transformation Rules*: What does each module do?  What kind of signal does it output?  How do the different inputs of a module affect the way the output is produced?
 2. *Signal Flow*: Which outputs are being sent into which inputs?  How do these connections affect each module?
 3. *Signals*: What does a signal "look" like - is it moving fast? Slow? Is it constant?  Is it a repeating pattern? How large does it get?  How small?  Is it positive?  Negative?  How is the source module producing this signal?  How will the signal affect the destination module it is being patched into?
 4. *Experimentation may involve stumbling in the dark*: Embrace it.  Enjoy it. See where it takes you, and don't stress if it's not where you expected/where you wanted.  You can always unpatch and start down a new path.
